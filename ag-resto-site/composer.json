@@ -1,0 +1,19 @@
+{
+    "name": "ag/resto-site",
+    "description": "Special plugin for Resto site",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Anton Grakhov",
+            "email": "ant.grakhov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AG_Resto_Site\\": "core/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
