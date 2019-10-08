@@ -1,0 +1,116 @@
+.cart {
+	width: 100%;
+
+	&_thead,
+	&_item {
+		border-bottom: 1px solid $gray-200;
+	}
+
+	&-product {
+		&-thumbnail {
+			width: 130px;
+
+			@include media-breakpoint-down('xs') {
+				width: 100%;
+				text-align: center !important;
+			}
+		}
+
+		&-title {
+			font-size: .9375rem;
+			color: $secondary;
+		}
+
+		&-article {
+			font-size: .875rem;
+			color: $gray-700;
+		}
+
+		&-quantity,
+		&-remove,
+		&-price {
+			text-align: center;
+		}
+
+		&-quantity {
+			&-toggle {
+				$padding-y: .1em;
+
+				padding: {
+					top: $padding-y;
+					bottom: $padding-y;
+				}
+
+				padding: .15em .6em;
+			}
+
+			input[type="number"] {
+				width: $grid-gutter-width;
+				text-align: center;
+				appearance: textfield;
+				border: none;
+			}
+		}
+
+		&-subtotal {
+			text-align: right;
+		}
+	}
+
+	thead {
+		display: none;
+
+		@include media-breakpoint-up('sm') {
+			display: table-header-group;
+		}
+	}
+
+	th,
+	td {
+		padding: .8em .5em;
+	}
+
+	th {
+		font-size: .875rem;
+		color: $secondary;
+	}
+
+	td {
+		display: block;
+
+		@include media-breakpoint-down('xs') {
+			text-align: right;
+
+			&[data-title]::before {
+				float: left;
+				content: attr(data-title) ': ';
+				font-weight: $font-weight-bold;
+			}
+		}
+
+		@include media-breakpoint-up('sm') {
+			display: table-cell;
+
+			&[data-title]::before {
+				display: none;
+			}
+		}
+
+		&.cart-product {
+			&-price,
+			&-subtotal {
+				font: {
+					family: $font-sub;
+					size: .9375rem;
+					weight: $font-weight-extra-bold;
+				}
+			}
+		}
+	}
+
+	&_tfoot {
+		td {
+			padding: 2em 0 1em;
+		}
+	}
+}

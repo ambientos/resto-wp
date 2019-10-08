@@ -1,0 +1,295 @@
+.ico {
+	display: inline-block;
+	vertical-align: middle;
+
+	&:first-child:not(div):not(:last-child) {
+		margin-right: .5em;
+	}
+
+	&::before {
+		display: inline-block;
+		vertical-align: top;
+		content: '';
+		background: {
+			repeat: no-repeat;
+			position: 50% 50%;
+			size: contain;
+		}
+	}
+
+
+	//
+	// Button icons
+	//
+
+	&[class*='_btn-ico'] {
+		&::before {
+			$size: $grid-gutter-width * .5;
+
+			width: $size;
+			height: $size;
+		}
+	}
+
+	@each $ico in $btn-icons {
+		&._btn-ico-#{$ico} {
+			&::before {
+				background-image: url('#{$img-dir}btn-#{$ico}.svg');
+			}
+		}
+	}
+
+
+	//
+	// Top and Bottom icons
+	//
+
+	&[class*='_top-'],
+	&[class*='_bottom-'] {
+		&::before {
+			$size: 24px;
+
+			width: $size;
+			height: $size;
+		}
+	}
+
+	@each $ico in $top-icons {
+		&._top-#{$ico} {
+			&::before {
+				background-image: url('#{$img-dir}top-#{$ico}.svg');
+			}
+		}
+	}
+
+	@each $ico in $bottom-icons {
+		&._bottom-#{$ico} {
+			&::before {
+				background-image: url('#{$img-dir}bottom-#{$ico}.svg');
+			}
+		}
+	}
+
+
+	//
+	// List icons
+	//
+
+	&[class*='_list-'] {
+		&::after {
+			$size: 56px;
+
+			@include flex-width($size);
+
+			height: $size;
+			background: {
+				repeat: no-repeat;
+				position: 50% 50%;
+				size: contain;
+			}
+		}
+	}
+
+	@each $ico in $list-icons {
+		&._list-#{$ico} {
+			&::after {
+				background-image: url('#{$img-dir}list-#{$ico}.svg');
+			}
+		}
+	}
+
+
+	//
+	// Search icons
+	//
+
+	&[class*='_search-'] {
+		&::before {
+			$size: 15px;
+
+			height: $size;
+			width: $size;
+			margin: {
+				top: .1em;
+				right: .3em;
+			}
+			background: {
+				repeat: no-repeat;
+				position: 50% 50%;
+				size: contain;
+			}
+		}
+	}
+
+	@each $ico in $search-icons {
+		&._search-#{$ico} {
+			&::before {
+				background-image: url('#{$img-dir}search-#{$ico}.svg');
+			}
+		}
+	}
+
+
+	//
+	// Links icons
+	//
+
+	&[class*='_link'] {
+		$size: $grid-gutter-width * 1.5;
+
+		@include flex-width($size);
+		height: $size;
+
+		&:first-child {
+			margin-right: 1em;
+		}
+	}
+
+
+	//
+	// Social links
+	//
+
+	&._social {
+		width: 60%;
+		height: 60%;
+
+		&-item {
+			border-radius: 50%;
+			background-color: $gray-200;
+
+			@include media-breakpoint-down('md') {
+				$size: $grid-gutter-width * 1.5;
+
+				width: $size;
+				height: $size;
+			}
+
+			@include media-breakpoint-up('lg') {
+				$size: $grid-gutter-width * 2;
+
+				width: $size;
+				height: $size;
+			}
+
+			&:not(:last-child),
+			&:first-child {
+				margin-right: 1em;
+			}
+		}
+	}
+
+
+	//
+	// Promo icons
+	//
+
+	&[class*='_promo'] {
+		$size: $grid-gutter-width * 1.2;
+
+		&::before {
+			@include flex-width($size);
+			width: $size;
+			height: $size;
+			margin: {
+				top: -.3em;
+				right: .5em;
+			}
+		}
+	}
+
+	@each $ico in $promo-icons {
+		&._promo-#{$ico} {
+			&::before {
+				background-image: url('#{$img-dir}promo-#{$ico}.svg');
+			}
+		}
+	}
+
+
+	//
+	// File Types icons
+	//
+
+	&[class*='_file'] {
+		$size: $grid-gutter-width * 1.4;
+
+		&::before {
+			@include flex-width($size);
+
+			width: $size;
+			height: $size;
+			border-radius: 50%;
+			background-color: $gray-200;
+		}
+	}
+
+	@each $ico in $file-icons {
+		&._file-#{$ico} {
+			&::before {
+				background: {
+					image: url('#{$img-dir}file-#{$ico}.svg');
+					size: auto 50%;
+				}
+			}
+		}
+	}
+
+
+	//
+	// Other icons
+	//
+
+	&._search {
+		$size: 15px;
+
+		width: $size;
+		height: $size;
+	}
+
+	&._cart-mini,
+	&._video-title {
+		&::before {
+			$size: 20px;
+
+			width: $size;
+			height: $size;
+		}
+	}
+
+	&._cart-mini::before {
+		background-image: url('#{$img-dir}cart.svg');
+	}
+
+	&._video-title::before {
+		margin: {
+			top: .1em;
+			right: .5em;
+		}
+		background-image: url('#{$img-dir}video.svg');
+	}
+
+	&._back::before {
+		$size: 16px;
+
+		width: $size;
+		height: $size;
+		margin: {
+			top: .2em;
+			right: .5em;
+		}
+		background-image: url('#{$img-dir}chevron-left.svg');
+	}
+
+	&._list::before {
+		$size: 12px;
+
+		width: $size;
+		height: $size;
+		margin: {
+			top: .2em;
+			right: .5em;
+		}
+		background-image: url('#{$img-dir}list.svg');
+	}
+}

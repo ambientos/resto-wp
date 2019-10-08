@@ -1,0 +1,20 @@
+.navi {
+	&-with-icon {
+		svg {
+			$size: $grid-gutter-width * .5;
+
+			width: $size;
+			height: $size;
+		}
+	}
+
+	&-social {
+		&-list {
+			white-space: nowrap;
+		}
+
+		&-item:not(:first-child):not(:last-child) {
+			margin-right: .5em;
+		}
+	}
+}

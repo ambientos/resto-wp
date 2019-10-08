@@ -1,0 +1,38 @@
+.screen-reader-text {
+	$size: 1px;
+
+	position: absolute;
+	width: $size;
+	height: $size;
+	margin: -$size;
+	padding: 0;
+	border: 0;
+	clip: rect($size, $size, $size, $size);
+	clip-path: inset(50%);
+	overflow: hidden;
+	word-wrap: normal !important;
+}
+
+.text {
+	&-center {
+		text-align: center !important;
+	}
+
+	&-right {
+		text-align: right !important;
+	}
+}
+
+.container-inner {
+	max-width: 990px;
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+
+.carousel-container {
+	@include media-breakpoint-down('lg') {
+		padding: 0 $grid-gutter-width * .7;
+	}
+}

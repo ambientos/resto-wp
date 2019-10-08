@@ -1,0 +1,16 @@
+.search {
+	&-list {
+		&-item {
+			$margin: 1.5em;
+
+			margin-bottom: $margin;
+			padding-bottom: $margin * 1.2;
+			border-bottom: 1px solid $gray-200;
+
+			&-type {
+				margin-bottom: .5em;
+				color: $primary;
+			}
+		}
+	}
+}

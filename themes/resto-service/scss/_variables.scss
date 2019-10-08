@@ -1,0 +1,44 @@
+//
+// Image Directory
+//
+
+$img-dir: '../i/';
+
+
+//
+// Fonts Variables
+//
+
+$font-dir:	 '../fonts/';
+
+$font-main:  'OpenSans';
+$font-sub:   'MullerNarrow';
+
+$fonts:	(
+	( $font-main, 'regular',    normal, 400, 20190904 ),
+	( $font-main, 'italic',     italic, 400, 20190904 ),
+	( $font-main, 'bold',       normal, 700, 20190904 ),
+	( $font-sub,  'light',      normal, 300, 20190904 ),
+	( $font-sub,  'extra-bold', normal, 800, 20190904 ),
+);
+
+
+//
+// Icons
+//
+
+$bottom-icons: ( 'fb', 'wa', 'in' );
+
+$file-icons: ( 'zip', 'doc', 'pdf' );
+
+$top-icons: ( 'wa', 'tg', 'vb', 'sk' );
+
+$search-icons: ( 'post', 'product', 'video', 'lesson' );
+
+$btn-icons: ( 'qa', 'test', 'question', 'card', 'cart', 'remove' );
+
+$promo-icons: ( 'support', 'consult', 'install', 'kkm', 'price', 'service' );
+
+$list-icons: ( 'barcode', 'chat', 'int', 'ok', 'pc', 'truck', 'work', 'workflow', 'tv', 'food', 'home', 'coffee', 'ofd', 'fn', 'ribbon' );
+
+$solution-icons: ( 'startup', 'sand', 'shrimp', 'smoothie', 'cashier', 'restaurant' );

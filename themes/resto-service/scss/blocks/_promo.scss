@@ -1,0 +1,414 @@
+%quote {
+	$size: $grid-gutter-width * .667;
+
+	position: absolute;
+	width: $size;
+	height: $size;
+	content: '';
+	background: {
+		repeat: no-repeat;
+		position: 50% 50%;
+		image: url('#{$img-dir}quote.svg');
+		size: contain;
+	}
+}
+
+.promo {
+	position: relative;
+
+	&-container {
+		background: {
+			repeat: no-repeat;
+			position: 50% 0;
+		}
+
+		@include media-breakpoint-down('md') {
+			$padding-y: $grid-gutter-width * .8;
+
+			padding: {
+				top: $padding-y;
+				bottom: $padding-y;
+			}
+			background-size: cover;
+		}
+
+		@include media-breakpoint-up('lg') {
+			min-height: 580px;
+			padding: {
+				top: 1px;
+				bottom: $grid-gutter-width * .8;
+			}
+			background-size: auto 100%;
+		}
+	}
+
+	&-breadcrumbs {
+		color: $white;
+
+		@include media-breakpoint-down('md') {
+			margin-top: 0;
+		}
+	}
+
+	&-content {
+		&:not(._home) {
+			max-width: 448px;
+			background-color: $white;
+
+			@include media-breakpoint-down('md') {
+				padding: $grid-gutter-width;
+			}
+
+			@include media-breakpoint-up('lg') {
+				padding: $grid-gutter-width * 2;
+			}
+		}
+
+		&._home {
+			max-width: 570px;
+			color: $white;
+		}
+	}
+
+	&-title {
+		margin-bottom: .5em;
+		line-height: 1.1;
+		color: $black;
+		text-transform: uppercase;
+
+		@include media-breakpoint-down('md') {
+			font-size: 1.875rem;
+		}
+
+		@include media-breakpoint-up('lg') {
+			font-size: 3.125rem;
+		}
+
+		&._home {
+			color: inherit;
+		}
+	}
+
+	&-text {
+		font-size: 1.125rem;
+	}
+
+	&-more {
+		margin-top: 2em;
+	}
+
+	&-tel {
+		display: block;
+		font: {
+			family: $font-sub;
+			weight: $font-weight-light;
+		}
+		color: inherit;
+
+		@include media-breakpoint-down('xs') {
+			margin-top: 1em;
+		}
+
+		@include media-breakpoint-down('md') {
+			font-size: 1.875rem;
+		}
+
+		@include media-breakpoint-up('lg') {
+			font-size: 3.1875rem;
+		}
+	}
+
+	&-map {
+		padding: $grid-gutter-width * .5;
+		background-color: $gray-100;
+	}
+
+	&-brands {
+		color: $white;
+		background-color: $primary;
+
+		@include media-breakpoint-down('md') {
+			padding: 2em 0;
+		}
+
+		@include media-breakpoint-up('lg') {
+			$margin-y: 141px;
+
+			margin-top: -$margin-y;
+			padding: {
+				top: calc(6em + #{$margin-y});
+				bottom: 4em;
+			}
+		}
+
+		&-title {
+			margin-bottom: .8em;
+			font: {
+				family: $font-sub;
+				size: 1.875rem;
+				weight: $font-weight-bold;
+			}
+		}
+
+		&-text,
+		&-thumb {
+			&:not(:last-child) {
+				@include media-breakpoint-down('md') {
+					margin-bottom: 2em;
+				}
+
+				@include media-breakpoint-up('lg') {
+					margin-bottom: 4em;
+				}
+			}
+		}
+
+		&-all {
+			@include media-breakpoint-down('md') {
+				margin-top: 1.5em;
+			}
+
+			@include media-breakpoint-up('lg') {
+				margin-top: 2.5em;
+			}
+		}
+
+		&-thumbs {
+			&-item {
+				margin: 2em 0;
+				text-align: center;
+			}
+		}
+
+		.col-md-6 {
+			@include media-breakpoint-up('lg') {
+				padding: {
+					left: 3em;
+					right: 3em;
+				}
+			}
+		}
+	}
+
+	&-type {
+		&-item {
+			display: block;
+
+			@include media-breakpoint-down('md') {
+				margin: 1.5em 0;
+			}
+
+			@include media-breakpoint-up('lg') {
+				margin: 1.5em 0 3.5em;
+			}
+
+			&._important {
+				&:hover {
+					img {
+						border-color: $primary;
+					}
+				}
+
+				img {
+					border: 6px solid $white;
+
+					@include transition;
+				}
+			}
+
+			&-title {
+				margin-bottom: 1em;
+				font: {
+					family: $font-sub;
+					weight: $font-weight-extra-bold;
+				}
+
+				@include media-breakpoint-down('sm') {
+					font-size: 1rem;
+				}
+
+				@include media-breakpoint-up('md') {
+					font-size: 1.25rem;
+				}
+			}
+
+			&-thumb {
+				img {
+					border-radius: 50%;
+					box-shadow: 0 10px 20px 1px rgba($black, .2);
+				}
+			}
+		}
+	}
+
+	&-adv {
+		position: relative;
+		margin: 1.5em 0;
+
+		@include media-breakpoint-up('sm') {
+			max-width: 300px;
+			margin: {
+				top: 0;
+				bottom: 0;
+			}
+
+			&::before {
+				$size: $grid-gutter-width * .8;
+
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: $size;
+				height: $size;
+				margin: auto;
+				content: '';
+				border: {
+					width: 7px;
+					style: solid;
+					color: $primary;
+					radius: 50%;
+				}
+				background-color: $white;
+			}
+		}
+
+		&._left {
+			@include media-breakpoint-up('sm') {
+				margin-left: auto;
+
+				&::before {
+					right: -2.25em;
+				}
+			}
+		}
+
+		&._right {
+			@include media-breakpoint-up('sm') {
+				margin-left: $grid-gutter-width;
+
+				&::before {
+					left: -4.75em;
+				}
+
+				&:not(._first) {
+					margin-top: 150px;
+				}
+
+				&._first {
+					margin-top: 20px;
+				}
+			}
+		}
+
+		&-container {
+			position: relative;
+			margin-bottom: 2em;
+
+			@include media-breakpoint-up('sm') {
+				margin-bottom: 4em;
+
+				&::before {
+					position: absolute;
+					left: 0;
+					top: 6em;
+					right: 0;
+					bottom: 8em;
+					width: 2px;
+					margin: 0 auto;
+					content: '';
+					background-color: $primary;
+				}
+			}
+		}
+
+		&-title {
+			font: {
+				family: $font-sub;
+				size: 1.25rem;
+				weight: $font-weight-extra-bold;
+			}
+		}
+
+		&-list {
+			margin: 1em 0 0;
+			padding-left: 1.5em;
+
+			li {
+				margin: .7em 0;
+			}
+		}
+
+		&-btn {
+			margin: 1.5em 0;
+			text-align: center;
+
+			@include media-breakpoint-up('sm') {
+				margin: {
+					left: 3em;
+					bottom: $grid-gutter-width;
+				}
+			}
+		}
+	}
+
+	&-cite {
+		&-carousel {
+			.owl-stage,
+			.owl-item {
+				display: flex;
+			}
+		}
+
+		&-item {
+			position: relative;
+			border-radius: .3em;
+			background-color: $white;
+			overflow: hidden;
+
+			&::before {
+				$margin: .7em;
+
+				left: $margin;
+				bottom: $margin;
+
+				@extend %quote;
+			}
+
+			&-content {
+				position: relative;
+				padding: $grid-gutter-width;
+				font-family: $font-sub;
+				color: $gray-900;
+
+				&::before {
+					$margin: .7em;
+
+					top: $margin;
+					right: $margin;
+					transform: rotate(180deg);
+
+					@extend %quote;
+				}
+			}
+
+			&-name {
+				font: {
+					size: 1.25rem;
+					weight: $font-weight-bold;
+				}
+			}
+
+			&-title {
+				margin: .5em 0 1em;
+				font-family: $font-main;
+			}
+
+			&-excerpt {
+				font: {
+					size: 1.25rem;
+					weight: $font-weight-light;
+				}
+			}
+		}
+	}
+}

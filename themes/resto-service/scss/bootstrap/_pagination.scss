@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .nav-links {
+    $color: $gray-600;
+
+    padding: .7em 0 .1em;
+
+    &-label {
+      margin-right: 1em;
+    }
+
+    .page-numbers {
+      $margin-pn: 1em;
+
+      display: inline-block;
+      margin-bottom: .7em;
+      width: $grid-gutter-width;
+      padding: .5em 0;
+      font-size: .875rem;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 50%;
+
+      &.current {
+        font-weight: $font-weight-bold;
+        background-color: $gray-200;
+      }
+    }
+
+    &,
+    a {
+      color: $color;
+    }
+
+    a:hover {
+      color: darken($color, 30%);
+    }
+  }
+}

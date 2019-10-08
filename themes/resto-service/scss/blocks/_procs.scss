@@ -1,0 +1,83 @@
+.procs {
+	$padding-top: 88px;
+
+	@include media-breakpoint-up('md') {
+		&::before {
+			display: block;
+			position: relative;
+			top: $padding-top + $grid-gutter-width * .8 * .55;
+			margin: 0 7%;
+			content: '';
+			border-top: 2px solid $primary;
+		}
+	}
+
+	&-list {
+		position: relative;
+
+		&-item {
+			position: relative;
+			flex: {
+				basis: 0;
+				grow: 1;
+			}
+			max-width: 100%;
+			padding: $padding-top 1em 0;
+			font: {
+				family: $font-sub;
+				weight: $font-weight-extra-bold;
+			}
+			text-align: center;
+
+			&::before,
+			&::after {
+				display: block;
+				content: '';
+			}
+
+			@include media-breakpoint-up('md') {
+				&::before {
+					$size: $grid-gutter-width * .8;
+
+					width: $size;
+					height: $size;
+					margin: auto;
+					border: {
+						width: 7px;
+						style: solid;
+						color: $primary;
+						radius: 50%;
+					}
+					background-color: $white;
+				}
+			}
+
+			&::after {
+				position: absolute;
+				left: 0;
+				top: 1em;
+				right: 0;
+				width: 80px;
+				height: $padding-top - $grid-gutter-width;
+				margin: auto;
+				background: {
+					repeat: no-repeat;
+					position: 50% 50%;
+					size: contain;
+				}
+			}
+
+			@for $ico from 1 through 7 {
+				&._#{$ico}::after {
+					background-image: url('#{$img-dir}procs-#{$ico}.svg');
+				}
+			}
+
+			&-title {
+				margin: .5em 0 .8em;
+				font-size: 1rem;
+				color: $primary;
+			}
+		}
+	}
+}

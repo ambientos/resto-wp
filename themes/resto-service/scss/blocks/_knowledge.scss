@@ -1,0 +1,68 @@
+.knowledge {
+	&-title {
+		margin-bottom: 0;
+		font-size: 2.125rem;
+	}
+
+	&-video {
+		&-item {
+			margin-bottom: $grid-gutter-width;
+
+			&-thumb {
+				img {
+					border: 5px solid $white;
+					box-shadow: 0 5px 5px 0 rgba($black, .07);
+				}
+			}
+
+			&-title {
+				display: block;
+				line-height: 1.3;
+			}
+
+			&-back {
+				font-weight: $font-weight-bold;
+			}
+		}
+	}
+
+	&-article {
+		&-list {
+			margin-top: $grid-gutter-width * .5;
+
+			&-all {
+				padding: 2em 0;
+			}
+		}
+
+		&-item {
+			margin: $grid-gutter-width * .5 0;
+
+			&-meta,
+			&-excerpt {
+				color: $body-color;
+			}
+
+			&-title,
+			&-excerpt {
+				display: block;
+			}
+
+			&-title {
+				margin: .3em 0;
+				font: {
+					size: 1.0625rem;
+					weight: $font-weight-bold;
+				}
+			}
+
+			&-meta {
+				font-size: .875rem;
+			}
+
+			&-excerpt {
+				margin-top: .8em;
+			}
+		}
+	}
+}
