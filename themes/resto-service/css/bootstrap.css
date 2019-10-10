@@ -1753,7 +1753,7 @@ select.form-control[size], select.form-control[multiple] {
   height: auto; }
 
 textarea.form-control {
-  height: auto; }
+  height: 80px; }
 
 .form-group {
   margin-bottom: 1rem; }

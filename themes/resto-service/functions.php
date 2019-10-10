@@ -31,7 +31,7 @@ function resto_setup() {
 	/**
 	 * Theme image sizes
 	 */
-	//add_image_size( 'service-thumb', 445, 345, false );
+	add_image_size( 'testimonial-thumb', 370, 240, true );
 
 	/**
 	 * Theme filters
@@ -115,6 +115,40 @@ function resto_register_sidebars(){
 }
 
 add_action( 'widgets_init', 'resto_register_sidebars' );
+
+
+/**
+ * Add support upload extra file types
+ */
+
+function resto_add_file_types_to_uploads($file_types){
+	$new_filetypes = array();
+
+	$new_filetypes['svg'] = 'image/svg+xml';
+
+	$file_types = array_merge($file_types, $new_filetypes );
+
+	return $file_types;
+}
+
+function resto_allow_upload_svg( $type_and_ext, $file, $filename, $mimes ){
+	if( '.svg' === strtolower( substr($filename, -4) ) ){
+		$filesize = filesize( $file ) / 1024;
+
+		if( $filesize < 50 && current_user_can('manage_options') ){
+			$type_and_ext['ext']  = 'svg';
+			$type_and_ext['type'] = 'image/svg+xml';
+		}
+		else {
+			$type_and_ext['ext'] = $type_and_ext['type'] = false;
+		}
+	}
+
+	return $type_and_ext;
+}
+
+add_action('upload_mimes', 'resto_add_file_types_to_uploads');
+add_filter('wp_check_filetype_and_ext', 'resto_allow_upload_svg', 10, 4);
 
 
 /**

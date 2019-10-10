@@ -3,15 +3,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AG Resto Site Plugin 1.0\n"
-"POT-Creation-Date: 2019-08-26 14:14+0300\n"
-"PO-Revision-Date: 2019-08-26 14:14+0300\n"
+"POT-Creation-Date: 2019-10-10 15:38+0500\n"
+"PO-Revision-Date: 2019-10-10 15:39+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -20,4 +20,42 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: core/Plugin.php:50 core/Plugin.php:60
+msgid "Testimonials"
+msgstr "Отзывы"
 
+#: core/Plugin.php:51
+msgid "Testimonial"
+msgstr "Отзыв"
+
+#: core/Plugin.php:52
+msgid "Add New Testimonial"
+msgstr "Добавить новый отзыв"
+
+#: core/Plugin.php:53
+msgid "Add New Testimonial item"
+msgstr "Добавить новый отзыв"
+
+#: core/Plugin.php:54
+msgid "Edit Testimonial Item"
+msgstr "Редактировать отзыв"
+
+#: core/Plugin.php:55
+msgid "New Testimonial Item"
+msgstr "Новый отзыв"
+
+#: core/Plugin.php:56
+msgid "View Testimonial Item"
+msgstr "Посмотреть отзыв"
+
+#: core/Plugin.php:57
+msgid "Search Testimonials"
+msgstr "Поиск по отзывам"
+
+#: core/Plugin.php:58
+msgid "Nothing found Testimonials"
+msgstr "Отзывов не найдено"
+
+#: core/Plugin.php:59
+msgid "Nothing found Testimonials in Trash"
+msgstr "В корзине отзывов не найдено"

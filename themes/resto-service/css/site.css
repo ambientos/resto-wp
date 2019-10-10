@@ -150,6 +150,8 @@
         opacity: 1;
         visibility: visible; }
       .header-nav-list li:hover a {
+        background-color: #303d4b; }
+      .header-nav-list li.current-menu-item a {
         background-color: #303d4b; } }
     @media (max-width: 991.98px) {
       .header-nav-list li.menu-item-has-children::after {

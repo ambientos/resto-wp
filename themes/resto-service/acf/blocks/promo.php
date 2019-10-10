@@ -8,8 +8,6 @@ $btn_text   = $block['data']['btn_btn-text'];
 $btn_link   = $block['data']['btn_btn-link'];
 $addict     = $block['data']['addict'];
 
-//print_r($block);
-
 $container_classes = 'home' === $block_type ? ' d-flex align-items-center' : '';
 $home_addict_class = 'home' === $block_type ? ' _home' : '';
 

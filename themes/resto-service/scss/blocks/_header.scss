@@ -154,6 +154,10 @@
 							background-color: $bg-menu-hover;
 						}
 					}
+
+					&.current-menu-item a {
+						background-color: $bg-menu-hover;
+					}
 				}
 
 				&.menu-item-has-children {
