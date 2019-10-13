@@ -60,6 +60,7 @@
 			}
 
 			&-content {
+				height: 100%;
 				order: 2;
 
 				@include media-breakpoint-down('xs') {
