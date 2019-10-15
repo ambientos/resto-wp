@@ -147,7 +147,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<td class="actions" colspan="6">
 					<div class="row d-flex align-items-center justify-content-between">
 						<div class="form-input-with-button form-group col-md-5">
-							<input class="form-control" type="text" placeholder="E-mail">
+							<input class="form-control" type="email" placeholder="E-mail">
 							<input class="btn btn-white" type="button" value="<?php echo esc_attr( __( 'Send to E-mail', 'resto' ) ) ?>">
 						</div>
 						<div class="form-group col-md-4">

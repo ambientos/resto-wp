@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-15 06:17+0500\n"
-"PO-Revision-Date: 2019-10-15 06:18+0500\n"
+"POT-Creation-Date: 2019-10-15 22:11+0500\n"
+"PO-Revision-Date: 2019-10-15 22:14+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -37,22 +37,26 @@ msgid "Header Menu"
 msgstr "Header Menu"
 
 #: functions.php:19
+msgid "Sidebar Product Category Menu"
+msgstr "Sidebar Product Category Menu"
+
+#: functions.php:20
 msgid "Footer Main Menu"
 msgstr "Footer Main Menu"
 
-#: functions.php:20
+#: functions.php:21
 msgid "Footer Sub Menu"
 msgstr "Footer Sub Menu"
 
-#: functions.php:84
+#: functions.php:85
 msgid "After Content"
 msgstr "After Content"
 
-#: functions.php:96
+#: functions.php:97
 msgid "Footer Menu List"
 msgstr "Footer Menu List"
 
-#: functions.php:108
+#: functions.php:109
 msgid "Hidden"
 msgstr "Hidden"
 
@@ -121,6 +125,59 @@ msgstr "Извините, но по вашему запросу ничего н�
 msgid "Search:"
 msgstr "Найти:"
 
+#: woocommerce/cart/cart.php:31
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:32
+msgid "Unit price"
+msgstr "Цена за единицу"
+
+#: woocommerce/cart/cart.php:33
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:34
+msgid "Remove"
+msgstr "Удалить"
+
+#: woocommerce/cart/cart.php:35
+msgid "Total Price"
+msgstr "Общая цена"
+
+#: woocommerce/cart/cart.php:79
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:83
+msgid "Article"
+msgstr "Артикул"
+
+#: woocommerce/cart/cart.php:125
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:151
+msgid "Send to E-mail"
+msgstr "Отправить на E-mail"
+
+#: woocommerce/cart/cart.php:154
+#, php-format
+msgid ""
+"By submitting your data through these forms, you agree to <a href=\"%s\" "
+"target=\"_blank\">personal data processing policy</a>"
+msgstr ""
+"Отправляя свои данные через эти формы, вы соглашаетесь с <a href=\"%s\" "
+"target=\"_blank\">политикой обработки персональных данных</a>"
+
+#: woocommerce/cart/cart.php:157 woocommerce/wc.php:110
+msgid "Buy One&nbsp;Click"
+msgstr "Купить в&nbsp;1&nbsp;клик"
+
+#: woocommerce/loop/pagination.php:35 woocommerce/wc.php:45
+msgid "Sort by:"
+msgstr "Сортировать:"
+
 #: woocommerce/single-product/add-to-cart/simple.php:42
 msgid "Add to&nbsp;Cart"
 msgstr "Добавить в&nbsp;корзину"
@@ -145,39 +202,31 @@ msgstr "Бесплатный тест оборудования"
 msgid "Ask a Question"
 msgstr "Задать вопрос"
 
-#: woocommerce/wc.php:44
-msgid "Sort by:"
-msgstr "Сортировать:"
-
-#: woocommerce/wc.php:101
+#: woocommerce/wc.php:103
 msgid "Price"
 msgstr "Стоимость"
 
-#: woocommerce/wc.php:108
-msgid "Buy One&nbsp;Click"
-msgstr "Купить в&nbsp;1&nbsp;клик"
-
-#: woocommerce/wc.php:115 woocommerce/wc.php:219
+#: woocommerce/wc.php:117 woocommerce/wc.php:221
 msgid "Under the Order"
 msgstr "Под заказ"
 
-#: woocommerce/wc.php:129
+#: woocommerce/wc.php:131
 msgid "Characteristics"
 msgstr "Характеристики"
 
-#: woocommerce/wc.php:194
+#: woocommerce/wc.php:196
 msgid "Documentation and downloads"
 msgstr "Документация и файлы для загрузки"
 
-#: woocommerce/wc.php:219
+#: woocommerce/wc.php:221
 msgid "In stock"
 msgstr "В наличии"
 
-#: woocommerce/wc.php:245
+#: woocommerce/wc.php:247
 msgid "More"
 msgstr "Подробнее"
 
-#: woocommerce/wc.php:282
+#: woocommerce/wc.php:295
 #, php-format
 msgid "%d item in total"
 msgid_plural "%d items in total"
@@ -185,14 +234,14 @@ msgstr[0] "%d товар на сумму"
 msgstr[1] "%d товара на сумму"
 msgstr[2] "%d товаров на сумму"
 
-#: woocommerce/wc.php:284
+#: woocommerce/wc.php:297
 msgid "View your shopping cart"
 msgstr "Посмотреть корзину"
 
-#: woocommerce/wc.php:285
+#: woocommerce/wc.php:298
 msgid "Order"
 msgstr "Оформить"
 
-#: woocommerce/wc.php:288
+#: woocommerce/wc.php:301
 msgid "Cart is Empty"
 msgstr "Корзина пуста"
