@@ -8,11 +8,18 @@
 
 	&-product {
 		&-thumbnail {
-			width: 130px;
+			$width: 100px;
+
+			width: $width;
 
 			@include media-breakpoint-down('xs') {
 				width: 100%;
 				text-align: center !important;
+			}
+
+			img {
+				width: $width;
+				height: auto;
 			}
 		}
 

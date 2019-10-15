@@ -1551,11 +1551,14 @@
   .cart_thead, .cart_item {
     border-bottom: 1px solid #e9ecef; }
   .cart-product-thumbnail {
-    width: 130px; }
+    width: 100px; }
     @media (max-width: 575.98px) {
       .cart-product-thumbnail {
         width: 100%;
         text-align: center !important; } }
+    .cart-product-thumbnail img {
+      width: 100px;
+      height: auto; }
   .cart-product-title {
     font-size: .9375rem;
     color: #26303b; }

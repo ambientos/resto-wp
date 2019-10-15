@@ -120,6 +120,8 @@
 			else {
 				control.val( ++controlValue )
 			}
+
+			control.trigger('change')
 		})
 	}
 })(jQuery)
