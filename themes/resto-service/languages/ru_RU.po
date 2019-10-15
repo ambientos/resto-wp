@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-10 15:37+0500\n"
-"PO-Revision-Date: 2019-10-10 15:38+0500\n"
+"POT-Creation-Date: 2019-10-15 06:17+0500\n"
+"PO-Revision-Date: 2019-10-15 06:18+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -44,15 +44,15 @@ msgstr "Footer Main Menu"
 msgid "Footer Sub Menu"
 msgstr "Footer Sub Menu"
 
-#: functions.php:82
+#: functions.php:84
 msgid "After Content"
 msgstr "After Content"
 
-#: functions.php:94
+#: functions.php:96
 msgid "Footer Menu List"
 msgstr "Footer Menu List"
 
-#: functions.php:106
+#: functions.php:108
 msgid "Hidden"
 msgstr "Hidden"
 
@@ -120,3 +120,79 @@ msgstr "Извините, но по вашему запросу ничего н�
 #: searchform.php:3
 msgid "Search:"
 msgstr "Найти:"
+
+#: woocommerce/single-product/add-to-cart/simple.php:42
+msgid "Add to&nbsp;Cart"
+msgstr "Добавить в&nbsp;корзину"
+
+#: woocommerce/single-product/product-image.php:38
+msgid "Best Price Guaranteed"
+msgstr "Гарантия лучшей цены"
+
+#: woocommerce/single-product/product-image.php:45
+msgid "Awaiting product image"
+msgstr ""
+
+#: woocommerce/single-product/related.php:26
+msgid "You often buy with this product"
+msgstr "С этим товаром часто покупают"
+
+#: woocommerce/wc.php:35
+msgid "Free hardware test"
+msgstr "Бесплатный тест оборудования"
+
+#: woocommerce/wc.php:38
+msgid "Ask a Question"
+msgstr "Задать вопрос"
+
+#: woocommerce/wc.php:44
+msgid "Sort by:"
+msgstr "Сортировать:"
+
+#: woocommerce/wc.php:101
+msgid "Price"
+msgstr "Стоимость"
+
+#: woocommerce/wc.php:108
+msgid "Buy One&nbsp;Click"
+msgstr "Купить в&nbsp;1&nbsp;клик"
+
+#: woocommerce/wc.php:115 woocommerce/wc.php:219
+msgid "Under the Order"
+msgstr "Под заказ"
+
+#: woocommerce/wc.php:129
+msgid "Characteristics"
+msgstr "Характеристики"
+
+#: woocommerce/wc.php:194
+msgid "Documentation and downloads"
+msgstr "Документация и файлы для загрузки"
+
+#: woocommerce/wc.php:219
+msgid "In stock"
+msgstr "В наличии"
+
+#: woocommerce/wc.php:245
+msgid "More"
+msgstr "Подробнее"
+
+#: woocommerce/wc.php:282
+#, php-format
+msgid "%d item in total"
+msgid_plural "%d items in total"
+msgstr[0] "%d товар на сумму"
+msgstr[1] "%d товара на сумму"
+msgstr[2] "%d товаров на сумму"
+
+#: woocommerce/wc.php:284
+msgid "View your shopping cart"
+msgstr "Посмотреть корзину"
+
+#: woocommerce/wc.php:285
+msgid "Order"
+msgstr "Оформить"
+
+#: woocommerce/wc.php:288
+msgid "Cart is Empty"
+msgstr "Корзина пуста"

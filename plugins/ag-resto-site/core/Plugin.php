@@ -45,6 +45,69 @@ class Plugin {
 	 * Registering Custom Post Types and Custom Taxonomies
 	 */
 	public static function register_cpt_ct() {
+		/**
+		 * Solutions
+		 */
+		register_post_type( 'rs-solution', array(
+			'labels' => array(
+				'name'               => __( 'Solutions', TEXT_DOMAIN ),
+				'singular_name'      => __( 'Solution', TEXT_DOMAIN ),
+				'add_new'            => __( 'Add New Solution', TEXT_DOMAIN ),
+				'add_new_item'       => __( 'Add New Solution item', TEXT_DOMAIN ),
+				'edit_item'          => __( 'Edit Solution Item', TEXT_DOMAIN ),
+				'new_item'           => __( 'New Solution Item', TEXT_DOMAIN ),
+				'view_item'          => __( 'View Solution Item', TEXT_DOMAIN ),
+				'search_items'       => __( 'Search Solutions', TEXT_DOMAIN ),
+				'not_found'          => __( 'Nothing found Solutions', TEXT_DOMAIN ),
+				'not_found_in_trash' => __( 'Nothing found Solutions in Trash', TEXT_DOMAIN ),
+				'menu_name'          => __( 'Solutions', TEXT_DOMAIN ),
+			),
+			'public'              => true,
+			'show_in_rest'        => false,
+			'menu_position'       => 5,
+			'menu_icon'           => 'dashicons-book-alt',
+			'supports'            => array( 'title', 'editor', 'thumbnail', ),
+			'has_archive'         => false,
+			'rewrite'             => array(
+				'slug'            => 'solution',
+				'with_front'      => false,
+				'feeds'           => false,
+			),
+		) );
+
+		/**
+		 * Services
+		 */
+		register_post_type( 'rs-service', array(
+			'labels' => array(
+				'name'               => __( 'Services', TEXT_DOMAIN ),
+				'singular_name'      => __( 'Service', TEXT_DOMAIN ),
+				'add_new'            => __( 'Add New Service', TEXT_DOMAIN ),
+				'add_new_item'       => __( 'Add New Service item', TEXT_DOMAIN ),
+				'edit_item'          => __( 'Edit Service Item', TEXT_DOMAIN ),
+				'new_item'           => __( 'New Service Item', TEXT_DOMAIN ),
+				'view_item'          => __( 'View Service Item', TEXT_DOMAIN ),
+				'search_items'       => __( 'Search Services', TEXT_DOMAIN ),
+				'not_found'          => __( 'Nothing found Services', TEXT_DOMAIN ),
+				'not_found_in_trash' => __( 'Nothing found Services in Trash', TEXT_DOMAIN ),
+				'menu_name'          => __( 'Services', TEXT_DOMAIN ),
+			),
+			'public'              => true,
+			'show_in_rest'        => false,
+			'menu_position'       => 5,
+			'menu_icon'           => 'dashicons-sos',
+			'supports'            => array( 'title', 'editor', 'thumbnail', ),
+			'has_archive'         => false,
+			'rewrite'             => array(
+				'slug'            => 'service',
+				'with_front'      => false,
+				'feeds'           => false,
+			),
+		) );
+
+		/**
+		 * Testimonials
+		 */
 		register_post_type( 'rs-testimonial', array(
 			'labels' => array(
 				'name'               => __( 'Testimonials', TEXT_DOMAIN ),

@@ -15,9 +15,10 @@ function resto_setup() {
 	 * Register menus
 	 */
 	register_nav_menus( array(
-		'main_menu'     => __( 'Header Menu', 'resto' ),
-		'footer_menu_1' => __( 'Footer Main Menu', 'resto' ),
-		'footer_menu_2' => __( 'Footer Sub Menu', 'resto' ),
+		'main_menu'             => __( 'Header Menu', 'resto' ),
+		'product_category_menu' => __( 'Sidebar Product Category Menu', 'resto' ),
+		'footer_menu_1'         => __( 'Footer Main Menu', 'resto' ),
+		'footer_menu_2'         => __( 'Footer Sub Menu', 'resto' ),
 	) );
 
 	/**
@@ -27,6 +28,7 @@ function resto_setup() {
 	add_theme_support( 'html5', array( 'search-form', 'caption', ) );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'woocommerce' );
 
 	/**
 	 * Theme image sizes
@@ -55,6 +57,7 @@ function resto_scripts_styles() {
 	wp_enqueue_style( 'resto-bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '20191008' );
 	wp_enqueue_style( 'resto-owl-carousel', get_template_directory_uri() . '/css/owl-carousel.css', array(), '20191008' );
 	wp_enqueue_style( 'resto-fancybox', get_template_directory_uri() . '/css/fancybox.css', array(), '20191008' );
+	wp_enqueue_style( 'resto-wc', get_template_directory_uri() . '/css/woocommerce.css', array(), '20191008' );
 	wp_enqueue_style( 'resto-site', get_template_directory_uri() . '/css/site.css', array(), '20191008' );
 
 
@@ -152,6 +155,37 @@ add_filter('wp_check_filetype_and_ext', 'resto_allow_upload_svg', 10, 4);
 
 
 /**
+ * Add icons to Menu Items
+ */
+
+function resto_product_cat_wp_nav_menu_objects( $items, $args ) {
+
+	if ( ! function_exists('get_field') || 'product_category_menu' !== $args->theme_location ) {
+		return $items;
+	}
+
+	foreach( $items as &$item ) {
+		$icon = get_field('icon', $item);
+
+		if ( $icon ) {
+			$item->title = '<span class="ico">'. file_get_contents( $icon['url'] ) .'</span>'. $item->title;
+		}
+	}
+
+	return $items;
+}
+
+add_filter('wp_nav_menu_objects', 'resto_product_cat_wp_nav_menu_objects', 10, 2);
+
+
+/**
+ * Additional Classes
+ */
+
+require 'classes/bs4navwalker.php';
+
+
+/**
  * ACF
  */
 
@@ -173,7 +207,7 @@ require 'inc/customizer.php';
 
 
 /**
- * Additional Classes
+ * WooCommerce
  */
 
-require 'classes/bs4navwalker.php';
+require 'woocommerce/wc.php';

@@ -34,7 +34,9 @@
 						<a class="header-social-item navi-social-item _top-sk ico" href="<?php echo esc_attr( get_option('resto_sk') ); ?>" title="Skype">&nbsp;</a>
 					</div>
 
-					<div class="header-cart _cart-mini ico"><span class="header-cart-num">0</span><span class="header-cart-label">Корзина пуста <span class="header-cart-sum">0 руб.</span></span></div>
+					<div class="header-cart _cart-mini ico d-flex align-items-center">
+						<?php resto_header_cart(); ?>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -10,7 +10,7 @@
 			<div class="widget">
 				<?php the_title( '<h1>', '</h1>' ); ?>
 
-				<?php if ( get_field('item') ) : ?>
+				<?php if ( function_exists('get_field') && get_field('item') ) : ?>
 					<ul class="list-links d-sm-flex flex-wrap">
 						<?php while ( the_repeater_field('item') ) : ?>
 							<li class="list-links-item d-flex col-md-6">

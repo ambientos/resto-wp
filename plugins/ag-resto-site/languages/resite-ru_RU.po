@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AG Resto Site Plugin 1.0\n"
-"POT-Creation-Date: 2019-10-10 15:38+0500\n"
-"PO-Revision-Date: 2019-10-10 15:39+0500\n"
+"POT-Creation-Date: 2019-10-14 23:39+0500\n"
+"PO-Revision-Date: 2019-10-14 23:42+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -20,42 +20,122 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: core/Plugin.php:50 core/Plugin.php:60
+#: core/Plugin.php:53 core/Plugin.php:63
+msgid "Solutions"
+msgstr "Решения"
+
+#: core/Plugin.php:54
+msgid "Solution"
+msgstr "Решение"
+
+#: core/Plugin.php:55
+msgid "Add New Solution"
+msgstr "Добавить новую запись"
+
+#: core/Plugin.php:56
+msgid "Add New Solution item"
+msgstr "Добавить новую запись"
+
+#: core/Plugin.php:57
+msgid "Edit Solution Item"
+msgstr "Редактировать запись"
+
+#: core/Plugin.php:58
+msgid "New Solution Item"
+msgstr "Новая запись"
+
+#: core/Plugin.php:59
+msgid "View Solution Item"
+msgstr "Посмотреть запись"
+
+#: core/Plugin.php:60
+msgid "Search Solutions"
+msgstr "Поиск по записям"
+
+#: core/Plugin.php:61
+msgid "Nothing found Solutions"
+msgstr "Записей не найдено"
+
+#: core/Plugin.php:62
+msgid "Nothing found Solutions in Trash"
+msgstr "В корзине записей не найдено"
+
+#: core/Plugin.php:83 core/Plugin.php:93
+msgid "Services"
+msgstr "Услуги"
+
+#: core/Plugin.php:84
+msgid "Service"
+msgstr "Услуга"
+
+#: core/Plugin.php:85
+msgid "Add New Service"
+msgstr "Добавить новую услугу"
+
+#: core/Plugin.php:86
+msgid "Add New Service item"
+msgstr "Добавить новую услугу"
+
+#: core/Plugin.php:87
+msgid "Edit Service Item"
+msgstr "Редактировать услугу"
+
+#: core/Plugin.php:88
+msgid "New Service Item"
+msgstr "Новая услуга"
+
+#: core/Plugin.php:89
+msgid "View Service Item"
+msgstr "Посмотреть запись"
+
+#: core/Plugin.php:90
+msgid "Search Services"
+msgstr "Поиск по услугам"
+
+#: core/Plugin.php:91
+msgid "Nothing found Services"
+msgstr "Услуг не найдено"
+
+#: core/Plugin.php:92
+msgid "Nothing found Services in Trash"
+msgstr "В корзине услуг не найдено"
+
+#: core/Plugin.php:113 core/Plugin.php:123
 msgid "Testimonials"
 msgstr "Отзывы"
 
-#: core/Plugin.php:51
+#: core/Plugin.php:114
 msgid "Testimonial"
 msgstr "Отзыв"
 
-#: core/Plugin.php:52
+#: core/Plugin.php:115
 msgid "Add New Testimonial"
 msgstr "Добавить новый отзыв"
 
-#: core/Plugin.php:53
+#: core/Plugin.php:116
 msgid "Add New Testimonial item"
 msgstr "Добавить новый отзыв"
 
-#: core/Plugin.php:54
+#: core/Plugin.php:117
 msgid "Edit Testimonial Item"
 msgstr "Редактировать отзыв"
 
-#: core/Plugin.php:55
+#: core/Plugin.php:118
 msgid "New Testimonial Item"
 msgstr "Новый отзыв"
 
-#: core/Plugin.php:56
+#: core/Plugin.php:119
 msgid "View Testimonial Item"
 msgstr "Посмотреть отзыв"
 
-#: core/Plugin.php:57
+#: core/Plugin.php:120
 msgid "Search Testimonials"
 msgstr "Поиск по отзывам"
 
-#: core/Plugin.php:58
+#: core/Plugin.php:121
 msgid "Nothing found Testimonials"
 msgstr "Отзывов не найдено"
 
-#: core/Plugin.php:59
+#: core/Plugin.php:122
 msgid "Nothing found Testimonials in Trash"
 msgstr "В корзине отзывов не найдено"

@@ -72,6 +72,7 @@
 	&-cart {
 		position: relative;
 		max-width: 250px;
+		min-height: 37px;
 		padding-left: $grid-gutter-width * 1.5;
 		font: {
 			family: $font-sub;
@@ -155,8 +156,11 @@
 						}
 					}
 
-					&.current-menu-item a {
-						background-color: $bg-menu-hover;
+					&.current-menu {
+						&-item a,
+						&-parent a {
+							background-color: $bg-menu-hover;
+						}
 					}
 				}
 
@@ -224,6 +228,7 @@
 						weight: $font-weight-normal;
 					}
 
+					&.active,
 					&:hover {
 						background-color: $bg-menu;
 					}
