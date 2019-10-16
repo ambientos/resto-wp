@@ -72,34 +72,6 @@
 
 
 	//
-	// List icons
-	//
-
-	&[class*='_list-'] {
-		&::after {
-			$size: 56px;
-
-			@include flex-width($size);
-
-			height: $size;
-			background: {
-				repeat: no-repeat;
-				position: 50% 50%;
-				size: contain;
-			}
-		}
-	}
-
-	@each $ico in $list-icons {
-		&._list-#{$ico} {
-			&::after {
-				background-image: url('#{$img-dir}list-#{$ico}.svg');
-			}
-		}
-	}
-
-
-	//
 	// Search icons
 	//
 
@@ -194,14 +166,6 @@
 			margin: {
 				top: -.3em;
 				right: .5em;
-			}
-		}
-	}
-
-	@each $ico in $promo-icons {
-		&._promo-#{$ico} {
-			&::before {
-				background-image: url('#{$img-dir}promo-#{$ico}.svg');
 			}
 		}
 	}

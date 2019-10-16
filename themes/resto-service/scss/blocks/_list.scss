@@ -55,8 +55,19 @@
 			}
 
 			&::after {
+				$size: 56px;
+
+				@include flex-width($size);
+
+				height: $size;
 				order: 1;
 				content: '';
+				background: {
+					image: var(--icon);
+					repeat: no-repeat;
+					position: 50% 50%;
+					size: contain;
+				}
 			}
 
 			&-content {

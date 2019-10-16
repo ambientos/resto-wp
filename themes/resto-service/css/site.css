@@ -329,45 +329,6 @@
     background-image: url("../i/bottom-wa.svg"); }
   .ico._bottom-in::before {
     background-image: url("../i/bottom-in.svg"); }
-  .ico[class*='_list-']::after {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 56px;
-            flex: 0 0 56px;
-    max-width: 56px;
-    height: 56px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain; }
-  .ico._list-barcode::after {
-    background-image: url("../i/list-barcode.svg"); }
-  .ico._list-chat::after {
-    background-image: url("../i/list-chat.svg"); }
-  .ico._list-int::after {
-    background-image: url("../i/list-int.svg"); }
-  .ico._list-ok::after {
-    background-image: url("../i/list-ok.svg"); }
-  .ico._list-pc::after {
-    background-image: url("../i/list-pc.svg"); }
-  .ico._list-truck::after {
-    background-image: url("../i/list-truck.svg"); }
-  .ico._list-work::after {
-    background-image: url("../i/list-work.svg"); }
-  .ico._list-workflow::after {
-    background-image: url("../i/list-workflow.svg"); }
-  .ico._list-tv::after {
-    background-image: url("../i/list-tv.svg"); }
-  .ico._list-food::after {
-    background-image: url("../i/list-food.svg"); }
-  .ico._list-home::after {
-    background-image: url("../i/list-home.svg"); }
-  .ico._list-coffee::after {
-    background-image: url("../i/list-coffee.svg"); }
-  .ico._list-ofd::after {
-    background-image: url("../i/list-ofd.svg"); }
-  .ico._list-fn::after {
-    background-image: url("../i/list-fn.svg"); }
-  .ico._list-ribbon::after {
-    background-image: url("../i/list-ribbon.svg"); }
   .ico[class*='_search-']::before {
     height: 15px;
     width: 15px;
@@ -417,18 +378,6 @@
     height: 36px;
     margin-top: -.3em;
     margin-right: .5em; }
-  .ico._promo-support::before {
-    background-image: url("../i/promo-support.svg"); }
-  .ico._promo-consult::before {
-    background-image: url("../i/promo-consult.svg"); }
-  .ico._promo-install::before {
-    background-image: url("../i/promo-install.svg"); }
-  .ico._promo-kkm::before {
-    background-image: url("../i/promo-kkm.svg"); }
-  .ico._promo-price::before {
-    background-image: url("../i/promo-price.svg"); }
-  .ico._promo-service::before {
-    background-image: url("../i/promo-service.svg"); }
   .ico[class*='_file']::before {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 42px;
@@ -818,10 +767,12 @@
       font-family: "MullerNarrow";
       font-size: 1.25rem;
       font-weight: 800; }
-    .promo-adv-list {
+      .promo-adv-title::before {
+        background-image: var(--icon); }
+    .promo-adv > ul {
       margin: 1em 0 0;
       padding-left: 1.5em; }
-      .promo-adv-list li {
+      .promo-adv > ul li {
         margin: .7em 0; }
     .promo-adv-btn {
       margin: 1.5em 0;
@@ -902,10 +853,19 @@
       counter-increment: list-ico;
       content: counter(list-ico); }
     .list-ico-item::after {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 56px;
+              flex: 0 0 56px;
+      max-width: 56px;
+      height: 56px;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1;
-      content: ''; }
+      content: '';
+      background-image: var(--icon);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain; }
     .list-ico-item-content {
       height: 100%;
       -webkit-box-ordinal-group: 3;
@@ -1051,6 +1011,7 @@
   position: relative;
   margin: -1px -1px 0 0;
   padding: 45px 30px 30px;
+  list-style: none;
   border: 1px solid #e9ecef;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }

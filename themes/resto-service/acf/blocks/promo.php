@@ -1,5 +1,7 @@
 <?php
 
+global $promo_breadcrumbs;
+
 $block_type = $block['data']['type'];
 $thumb_bg   = get_field('thumb');
 $title      = $block['data']['title'];
@@ -16,6 +18,10 @@ $home_addict_class = 'home' === $block_type ? ' _home' : '';
 <div class="promo">
 	<div class="promo-container<?php echo $container_classes ?>" style="background-image:url(<?php echo esc_url( $thumb_bg ) ?>)">
 		<div class="container">
+			<?php if ( ! is_front_page() ) : $promo_breadcrumbs = true; ?>
+				<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
+			<?php endif; ?>
+
 			<div class="promo-content<?php echo $home_addict_class ?>">
 				<h1 class="promo-title<?php echo $home_addict_class ?>"><?php echo esc_html( $title ); ?></h1>
 				<div class="promo-text"><?php echo wpautop( $content ); ?></div>

@@ -25,7 +25,7 @@ function resto_acf_init(){
 
 
 		/**
-		 * Grid block
+		 * Widget block
 		 */
 		acf_register_block_type( array(
 			'name'            => 'widget',
@@ -34,6 +34,74 @@ function resto_acf_init(){
 			'render_template' => 'acf/blocks/widget.php',
 			'category'        => 'formatting',
 			'icon'            => 'excerpt-view',
+			'keywords'        => array( 'widget', 'block' ),
+			'supports'        => array(
+				'mode' => false,
+			),
+		) );
+
+
+		/**
+		 * Services Line block
+		 */
+		acf_register_block_type( array(
+			'name'            => 'service-line',
+			'title'           => __( 'Service Line Block', 'resto' ),
+			'mode'            => 'edit',
+			'render_template' => 'acf/blocks/service-line.php',
+			'category'        => 'formatting',
+			'icon'            => 'list-view',
+			'keywords'        => array( 'widget', 'block' ),
+			'supports'        => array(
+				'mode' => false,
+			),
+		) );
+
+
+		/**
+		 * Service include-in block
+		 */
+		acf_register_block_type( array(
+			'name'            => 'included-in',
+			'title'           => __( 'Service Included-in Block', 'resto' ),
+			'mode'            => 'edit',
+			'render_template' => 'acf/blocks/service-included-in.php',
+			'category'        => 'formatting',
+			'icon'            => 'list-view',
+			'keywords'        => array( 'widget', 'block' ),
+			'supports'        => array(
+				'mode' => false,
+			),
+		) );
+
+
+		/**
+		 * Ready Solution block
+		 */
+		acf_register_block_type( array(
+			'name'            => 'solution-ready',
+			'title'           => __( 'Ready Solution Block', 'resto' ),
+			'mode'            => 'edit',
+			'render_template' => 'acf/blocks/solution-ready.php',
+			'category'        => 'formatting',
+			'icon'            => 'album',
+			'keywords'        => array( 'widget', 'block' ),
+			'supports'        => array(
+				'mode' => false,
+			),
+		) );
+
+
+		/**
+		 * Solution Modules block
+		 */
+		acf_register_block_type( array(
+			'name'            => 'solution-modules',
+			'title'           => __( 'Solution Modules Block', 'resto' ),
+			'mode'            => 'edit',
+			'render_template' => 'acf/blocks/solution-modules.php',
+			'category'        => 'formatting',
+			'icon'            => 'admin-page',
 			'keywords'        => array( 'widget', 'block' ),
 			'supports'        => array(
 				'mode' => false,

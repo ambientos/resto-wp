@@ -328,9 +328,13 @@
 				size: 1.25rem;
 				weight: $font-weight-extra-bold;
 			}
+
+			&::before {
+				background-image: var(--icon);
+			}
 		}
 
-		&-list {
+		> ul {
 			margin: 1em 0 0;
 			padding-left: 1.5em;
 

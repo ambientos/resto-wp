@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-15 22:11+0500\n"
-"PO-Revision-Date: 2019-10-15 22:14+0500\n"
+"POT-Creation-Date: 2019-10-16 23:59+0500\n"
+"PO-Revision-Date: 2019-10-17 00:00+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -20,6 +20,18 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: acf/blocks/solution-ready.php:22 woocommerce/wc.php:247
+msgid "More"
+msgstr "Подробнее"
+
+#: acf/blocks/solution-ready.php:40
+msgid "Equipments"
+msgstr "Оборудование"
+
+#: acf/blocks/solution-ready.php:44
+msgid "Services"
+msgstr "Услуги"
+
 #: acf/init.php:15
 msgid "Promo Block"
 msgstr "Блок Промо"
@@ -27,6 +39,22 @@ msgstr "Блок Промо"
 #: acf/init.php:32
 msgid "Widget Block"
 msgstr "Блок Виджет"
+
+#: acf/init.php:49
+msgid "Service Line Block"
+msgstr ""
+
+#: acf/init.php:66
+msgid "Service Included-in Block"
+msgstr ""
+
+#: acf/init.php:83
+msgid "Ready Solution Block"
+msgstr ""
+
+#: acf/init.php:100
+msgid "Solution Modules Block"
+msgstr ""
 
 #: footer.php:56 header.php:22
 msgid "Call Me!"
@@ -222,11 +250,7 @@ msgstr "Документация и файлы для загрузки"
 msgid "In stock"
 msgstr "В наличии"
 
-#: woocommerce/wc.php:247
-msgid "More"
-msgstr "Подробнее"
-
-#: woocommerce/wc.php:295
+#: woocommerce/wc.php:297
 #, php-format
 msgid "%d item in total"
 msgid_plural "%d items in total"
@@ -234,14 +258,14 @@ msgstr[0] "%d товар на сумму"
 msgstr[1] "%d товара на сумму"
 msgstr[2] "%d товаров на сумму"
 
-#: woocommerce/wc.php:297
+#: woocommerce/wc.php:299
 msgid "View your shopping cart"
 msgstr "Посмотреть корзину"
 
-#: woocommerce/wc.php:298
+#: woocommerce/wc.php:300
 msgid "Order"
 msgstr "Оформить"
 
-#: woocommerce/wc.php:301
+#: woocommerce/wc.php:303
 msgid "Cart is Empty"
 msgstr "Корзина пуста"
