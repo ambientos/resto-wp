@@ -8,4 +8,6 @@
 	<?php the_post(); the_content(); ?>
 </div>
 
+<?php get_template_part( 'template-parts/content', 'after' ); ?>
+
 <?php get_footer(); ?>

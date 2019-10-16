@@ -83,7 +83,7 @@ function resto_register_sidebars(){
 	register_sidebar(
 		array(
 			'name'          => __( 'After Content', 'resto' ),
-			'id'            => 'after-content',
+			'id'            => 'content-after',
 			'description'   => '',
 			'before_widget' => '',
 			'after_widget'  => '',
