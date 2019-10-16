@@ -260,12 +260,14 @@ add_action( 'wp', function(){
 	 * Add custom Product Categories Menu
 	 */
 	add_action( 'woocommerce_sidebar', function(){
-		wp_nav_menu( array(
-			'theme_location'  => 'product_category_menu',
-			'menu_class'      => 'product-menu list-unstyled',
-			'item_spacing'    => 'discard',
-			'container_class' => false,
-		) );
+		if ( ! is_product() ) {
+			wp_nav_menu( array(
+				'theme_location'  => 'product_category_menu',
+				'menu_class'      => 'product-menu list-unstyled',
+				'item_spacing'    => 'discard',
+				'container_class' => false,
+			) );
+		}
 	}, 1 );
 
 	/**
