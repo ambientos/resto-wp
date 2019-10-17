@@ -237,8 +237,46 @@
 		}
 
 		&-search {
+			position: relative;
+
 			@include media-breakpoint-down('md') {
 				padding: 1em 0;
+			}
+
+			.form-control {
+				height: auto;
+				padding: {
+					top: .2em;
+					bottom: .2em;
+				}
+
+				@include media-breakpoint-up('lg') {
+					position: absolute;
+					top: 0;
+					right: 0;
+					opacity: 0;
+					visibility: hidden;
+
+					@include transition;
+
+					.show-control > & {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+
+			.btn {
+				@include media-breakpoint-down('md') {
+					display: none;
+				}
+
+				@include media-breakpoint-up('lg') {
+					.show-control > & {
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
 			}
 		}
 
