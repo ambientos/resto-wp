@@ -207,6 +207,13 @@ require 'inc/customizer.php';
 
 
 /**
+ * Shortcodes
+ */
+
+require 'inc/shortcodes.php';
+
+
+/**
  * WooCommerce
  */
 
