@@ -21,7 +21,7 @@ $taxonomy = 'rs-video-cat';
 					<div class="form-input-with-button">
 						<input class="form-control" type="text" name="s" value="" placeholder="<?php echo esc_attr( __( 'Search by Videos', 'resto' ) ) ?>">
 						<input class="btn-secondary btn-wide btn" type="submit" value="<?php echo esc_attr( __( 'Search', 'resto' ) ) ?>">
-						<input type="hidden" name="post_type" value="rs-video" />
+						<input type="hidden" name="post_type" value="rs-video">
 					</div>
 				</form>
 			</div>
