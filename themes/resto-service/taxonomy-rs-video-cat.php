@@ -1,0 +1,1 @@
+<?php require 'archive-rs-video.php';

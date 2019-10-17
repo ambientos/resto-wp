@@ -34,6 +34,7 @@ function resto_setup() {
 	 * Theme image sizes
 	 */
 	add_image_size( 'testimonial-thumb', 370, 240, true );
+	add_image_size( 'video-thumb', 170, 96, true );
 
 	/**
 	 * Theme filters

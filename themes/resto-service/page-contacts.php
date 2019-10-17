@@ -1,5 +1,3 @@
-<?php /* Template Name: Contacts */ ?>
-
 <?php get_header(); ?>
 
 <div class="container-inner container">

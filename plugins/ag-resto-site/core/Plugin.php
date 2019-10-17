@@ -106,6 +106,66 @@ class Plugin {
 		) );
 
 		/**
+		 * Video Categories
+		 */
+		register_taxonomy( 'rs-video-cat', array(), array(
+			'labels'                => array(
+				'name'              => __( 'Video Categories', TEXT_DOMAIN ),
+				'singular_name'     => __( 'Video Category', TEXT_DOMAIN ),
+				'search_items'      => __( 'Search Category', TEXT_DOMAIN ),
+				'all_items'         => __( 'All Categories', TEXT_DOMAIN ),
+				'view_item '        => __( 'View Category', TEXT_DOMAIN ),
+				'parent_item'       => __( 'Parent Category', TEXT_DOMAIN ),
+				'parent_item_colon' => __( 'Parent Category:', TEXT_DOMAIN ),
+				'edit_item'         => __( 'Edit Category', TEXT_DOMAIN ),
+				'update_item'       => __( 'Update Category', TEXT_DOMAIN ),
+				'add_new_item'      => __( 'Add New Category', TEXT_DOMAIN ),
+				'new_item_name'     => __( 'New Category Name', TEXT_DOMAIN ),
+				'menu_name'         => __( 'Video Categories', TEXT_DOMAIN ),
+			),
+			'publicly_queryable'    => true,
+			'show_in_rest'          => true,
+			'hierarchical'          => true,
+			'rewrite'               => array(
+				'slug'              => 'video-cat',
+				'with_front'        => false,
+				'hierarchical'      => true,
+			),
+			'show_admin_column'     => true,
+		) );
+
+		/**
+		 * Video
+		 */
+		register_post_type( 'rs-video', array(
+			'labels' => array(
+				'name'               => __( 'Videos', TEXT_DOMAIN ),
+				'singular_name'      => __( 'Video', TEXT_DOMAIN ),
+				'add_new'            => __( 'Add New Video', TEXT_DOMAIN ),
+				'add_new_item'       => __( 'Add New Video item', TEXT_DOMAIN ),
+				'edit_item'          => __( 'Edit Video Item', TEXT_DOMAIN ),
+				'new_item'           => __( 'New Video Item', TEXT_DOMAIN ),
+				'view_item'          => __( 'View Video Item', TEXT_DOMAIN ),
+				'search_items'       => __( 'Search Videos', TEXT_DOMAIN ),
+				'not_found'          => __( 'Nothing found Videos', TEXT_DOMAIN ),
+				'not_found_in_trash' => __( 'Nothing found Videos in Trash', TEXT_DOMAIN ),
+				'menu_name'          => __( 'Videos', TEXT_DOMAIN ),
+			),
+			'public'              => true,
+			'show_in_rest'        => true,
+			'menu_position'       => 5,
+			'menu_icon'           => 'dashicons-video-alt3',
+			'supports'            => array( 'title', 'editor', 'thumbnail', ),
+			'has_archive'         => true,
+			'taxonomies'          => array( 'rs-video-cat' ),
+			'rewrite'             => array(
+				'slug'            => 'video',
+				'with_front'      => false,
+				'feeds'           => false,
+			),
+		) );
+
+		/**
 		 * Testimonials
 		 */
 		register_post_type( 'rs-testimonial', array(

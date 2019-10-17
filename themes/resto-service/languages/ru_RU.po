@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-16 23:59+0500\n"
-"PO-Revision-Date: 2019-10-17 00:00+0500\n"
+"POT-Creation-Date: 2019-10-18 01:34+0500\n"
+"PO-Revision-Date: 2019-10-18 01:37+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -56,6 +56,26 @@ msgstr ""
 msgid "Solution Modules Block"
 msgstr ""
 
+#: archive-rs-video.php:17 page-knowledge.php:51
+msgid "All Videos"
+msgstr "Все видео"
+
+#: archive-rs-video.php:22
+msgid "Search by Videos"
+msgstr "Поиск по видео"
+
+#: archive-rs-video.php:23 page-knowledge.php:17
+msgid "Search"
+msgstr "Найти"
+
+#: archive-rs-video.php:37
+msgid "Videos"
+msgstr "Все видео"
+
+#: archive-rs-video.php:49
+msgid "All Lessons"
+msgstr "Все уроки"
+
 #: footer.php:56 header.php:22
 msgid "Call Me!"
 msgstr "Позвоните мне!"
@@ -76,15 +96,15 @@ msgstr "Footer Main Menu"
 msgid "Footer Sub Menu"
 msgstr "Footer Sub Menu"
 
-#: functions.php:85
+#: functions.php:86
 msgid "After Content"
 msgstr "After Content"
 
-#: functions.php:97
+#: functions.php:98
 msgid "Footer Menu List"
 msgstr "Footer Menu List"
 
-#: functions.php:109
+#: functions.php:110
 msgid "Hidden"
 msgstr "Hidden"
 
@@ -140,22 +160,57 @@ msgstr "Включить вывод рекламных и блоков анал�
 msgid "Analytics Code"
 msgstr "Код аналитики"
 
-#: search.php:4
-#, php-format
-msgid "Search Results by &laquo;%s&raquo;"
-msgstr "Результаты поиска по запросу &laquo;%s&raquo;"
+#: page-knowledge.php:16
+msgid "What are you interested in?"
+msgstr "Что вас интересует?"
 
-#: search.php:22
+#: page-knowledge.php:27
+msgid "Free Book about iiko"
+msgstr "Бесплатный учебник по iiko"
+
+#: page-knowledge.php:51
+msgid "Videos iiko"
+msgstr "Видеоуроки iiko"
+
+#: page-knowledge.php:97
+msgid "Show:"
+msgstr "Показать:"
+
+#: page-knowledge.php:100
+msgid "All"
+msgstr "Все"
+
+#: search.php:10
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+#: search.php:11
+#, php-format
+msgid "Found <b>%d</b> page"
+msgid_plural "Found <b>%d</b> pages"
+msgstr[0] "Найдена <b>%d</b> страница"
+msgstr[1] "Найдено <b>%d</b> страницы"
+msgstr[2] "Найдено <b>%d</b> страниц"
+
+#: search.php:21 search.php:25
+msgid "Post"
+msgstr "Статья"
+
+#: search.php:29
+msgid "Video Lesson"
+msgstr "Видеоурок"
+
+#: search.php:33 woocommerce/cart/cart.php:31
+msgid "Product"
+msgstr "Товар"
+
+#: search.php:53
 msgid "Sorry, but nothing found. Try another search."
 msgstr "Извините, но по вашему запросу ничего не найдено."
 
-#: searchform.php:3
-msgid "Search:"
-msgstr "Найти:"
-
-#: woocommerce/cart/cart.php:31
-msgid "Product"
-msgstr ""
+#: single-rs-video.php:11
+msgid "Back to all Videos"
+msgstr "Вернуться ко всем видео"
 
 #: woocommerce/cart/cart.php:32
 msgid "Unit price"
@@ -269,3 +324,10 @@ msgstr "Оформить"
 #: woocommerce/wc.php:303
 msgid "Cart is Empty"
 msgstr "Корзина пуста"
+
+#, php-format
+#~ msgid "Search Results by &laquo;%s&raquo;"
+#~ msgstr "Результаты поиска по запросу &laquo;%s&raquo;"
+
+#~ msgid "Search:"
+#~ msgstr "Найти:"

@@ -1,0 +1,1 @@
+<span><?php echo wp_kses_data( sprintf( _n( 'Found <b>%d</b> page', 'Found <b>%d</b> pages', $wp_query->found_posts, 'resto' ), $wp_query->found_posts ) ); ?></span>

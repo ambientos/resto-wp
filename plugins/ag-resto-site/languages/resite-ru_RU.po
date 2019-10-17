@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AG Resto Site Plugin 1.0\n"
-"POT-Creation-Date: 2019-10-16 23:59+0500\n"
-"PO-Revision-Date: 2019-10-16 23:59+0500\n"
+"POT-Creation-Date: 2019-10-17 21:53+0500\n"
+"PO-Revision-Date: 2019-10-17 21:55+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -100,42 +100,126 @@ msgstr "Услуг не найдено"
 msgid "Nothing found Services in Trash"
 msgstr "В корзине услуг не найдено"
 
-#: core/Plugin.php:113 core/Plugin.php:123
+#: core/Plugin.php:113 core/Plugin.php:124
+msgid "Video Categories"
+msgstr "Категории видео"
+
+#: core/Plugin.php:114
+msgid "Video Category"
+msgstr "Категория видео"
+
+#: core/Plugin.php:115
+msgid "Search Category"
+msgstr "Поиск по категориям"
+
+#: core/Plugin.php:116
+msgid "All Categories"
+msgstr "Все категории"
+
+#: core/Plugin.php:117
+msgid "View Category"
+msgstr "Посмотреть категорию"
+
+#: core/Plugin.php:118
+msgid "Parent Category"
+msgstr "Родительская категория"
+
+#: core/Plugin.php:119
+msgid "Parent Category:"
+msgstr "Родительская категория:"
+
+#: core/Plugin.php:120
+msgid "Edit Category"
+msgstr "Редактировать категорию"
+
+#: core/Plugin.php:121
+msgid "Update Category"
+msgstr "Обновить категорию"
+
+#: core/Plugin.php:122
+msgid "Add New Category"
+msgstr "Добавить новую категорию"
+
+#: core/Plugin.php:123
+msgid "New Category Name"
+msgstr "Имя новой категории"
+
+#: core/Plugin.php:142 core/Plugin.php:152
+msgid "Videos"
+msgstr "Видеоуроки"
+
+#: core/Plugin.php:143
+msgid "Video"
+msgstr "Видео"
+
+#: core/Plugin.php:144
+msgid "Add New Video"
+msgstr "Добавить новое видео"
+
+#: core/Plugin.php:145
+msgid "Add New Video item"
+msgstr "Добавить новое видео"
+
+#: core/Plugin.php:146
+msgid "Edit Video Item"
+msgstr "Редактировать запись"
+
+#: core/Plugin.php:147
+msgid "New Video Item"
+msgstr "Новое видео"
+
+#: core/Plugin.php:148
+msgid "View Video Item"
+msgstr "Посмотреть запись"
+
+#: core/Plugin.php:149
+msgid "Search Videos"
+msgstr "Поиск по видео"
+
+#: core/Plugin.php:150
+msgid "Nothing found Videos"
+msgstr "Видео не найдено"
+
+#: core/Plugin.php:151
+msgid "Nothing found Videos in Trash"
+msgstr "В корзине видео не найдено"
+
+#: core/Plugin.php:173 core/Plugin.php:183
 msgid "Testimonials"
 msgstr "Отзывы"
 
-#: core/Plugin.php:114
+#: core/Plugin.php:174
 msgid "Testimonial"
 msgstr "Отзыв"
 
-#: core/Plugin.php:115
+#: core/Plugin.php:175
 msgid "Add New Testimonial"
 msgstr "Добавить новый отзыв"
 
-#: core/Plugin.php:116
+#: core/Plugin.php:176
 msgid "Add New Testimonial item"
 msgstr "Добавить новый отзыв"
 
-#: core/Plugin.php:117
+#: core/Plugin.php:177
 msgid "Edit Testimonial Item"
 msgstr "Редактировать отзыв"
 
-#: core/Plugin.php:118
+#: core/Plugin.php:178
 msgid "New Testimonial Item"
 msgstr "Новый отзыв"
 
-#: core/Plugin.php:119
+#: core/Plugin.php:179
 msgid "View Testimonial Item"
 msgstr "Посмотреть отзыв"
 
-#: core/Plugin.php:120
+#: core/Plugin.php:180
 msgid "Search Testimonials"
 msgstr "Поиск по отзывам"
 
-#: core/Plugin.php:121
+#: core/Plugin.php:181
 msgid "Nothing found Testimonials"
 msgstr "Отзывов не найдено"
 
-#: core/Plugin.php:122
+#: core/Plugin.php:182
 msgid "Nothing found Testimonials in Trash"
 msgstr "В корзине отзывов не найдено"
