@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-18 01:34+0500\n"
-"PO-Revision-Date: 2019-10-18 01:37+0500\n"
+"POT-Creation-Date: 2019-10-18 01:58+0500\n"
+"PO-Revision-Date: 2019-10-18 01:58+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -68,11 +68,11 @@ msgstr "Поиск по видео"
 msgid "Search"
 msgstr "Найти"
 
-#: archive-rs-video.php:37
+#: archive-rs-video.php:38
 msgid "Videos"
 msgstr "Все видео"
 
-#: archive-rs-video.php:49
+#: archive-rs-video.php:50
 msgid "All Lessons"
 msgstr "Все уроки"
 
@@ -184,33 +184,33 @@ msgstr "Все"
 msgid "Search Results"
 msgstr "Результаты поиска"
 
-#: search.php:11
-#, php-format
-msgid "Found <b>%d</b> page"
-msgid_plural "Found <b>%d</b> pages"
-msgstr[0] "Найдена <b>%d</b> страница"
-msgstr[1] "Найдено <b>%d</b> страницы"
-msgstr[2] "Найдено <b>%d</b> страниц"
-
-#: search.php:21 search.php:25
+#: search.php:22 search.php:26
 msgid "Post"
 msgstr "Статья"
 
-#: search.php:29
+#: search.php:30
 msgid "Video Lesson"
 msgstr "Видеоурок"
 
-#: search.php:33 woocommerce/cart/cart.php:31
+#: search.php:34 woocommerce/cart/cart.php:31
 msgid "Product"
 msgstr "Товар"
 
-#: search.php:53
+#: search.php:58
 msgid "Sorry, but nothing found. Try another search."
 msgstr "Извините, но по вашему запросу ничего не найдено."
 
 #: single-rs-video.php:11
 msgid "Back to all Videos"
 msgstr "Вернуться ко всем видео"
+
+#: template-parts/search-count-info.php:1
+#, php-format
+msgid "Found <b>%d</b> page"
+msgid_plural "Found <b>%d</b> pages"
+msgstr[0] "Найдена <b>%d</b> страница"
+msgstr[1] "Найдено <b>%d</b> страницы"
+msgstr[2] "Найдено <b>%d</b> страниц"
 
 #: woocommerce/cart/cart.php:32
 msgid "Unit price"
@@ -240,20 +240,16 @@ msgstr "Артикул"
 msgid "Remove this item"
 msgstr ""
 
-#: woocommerce/cart/cart.php:151
-msgid "Send to E-mail"
-msgstr "Отправить на E-mail"
-
-#: woocommerce/cart/cart.php:154
+#: woocommerce/cart/cart.php:150
 #, php-format
 msgid ""
 "By submitting your data through these forms, you agree to <a href=\"%s\" "
 "target=\"_blank\">personal data processing policy</a>"
 msgstr ""
-"Отправляя свои данные через эти формы, вы соглашаетесь с <a href=\"%s\" "
-"target=\"_blank\">политикой обработки персональных данных</a>"
+"Отправляя свои данные, вы соглашаетесь с <a href=\"%s\" target=\"_blank"
+"\">политикой обработки персональных данных</a>"
 
-#: woocommerce/cart/cart.php:157 woocommerce/wc.php:110
+#: woocommerce/cart/cart.php:153 woocommerce/wc.php:110
 msgid "Buy One&nbsp;Click"
 msgstr "Купить в&nbsp;1&nbsp;клик"
 
@@ -324,10 +320,3 @@ msgstr "Оформить"
 #: woocommerce/wc.php:303
 msgid "Cart is Empty"
 msgstr "Корзина пуста"
-
-#, php-format
-#~ msgid "Search Results by &laquo;%s&raquo;"
-#~ msgstr "Результаты поиска по запросу &laquo;%s&raquo;"
-
-#~ msgid "Search:"
-#~ msgstr "Найти:"

@@ -146,14 +146,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<tr class="cart_tfoot">
 				<td class="actions" colspan="6">
 					<div class="row d-flex align-items-center justify-content-between">
-						<div class="form-input-with-button form-group col-md-5">
-							<input class="form-control" type="email" placeholder="E-mail">
-							<input class="btn btn-white" type="button" value="<?php echo esc_attr( __( 'Send to E-mail', 'resto' ) ) ?>">
-						</div>
-						<div class="form-group col-md-4">
+						<div class="form-group col-md">
 							<div class="form-note"><?php printf( __( 'By submitting your data through these forms, you agree to <a href="%s" target="_blank">personal data processing policy</a>', 'resto' ), site_url('/privacy-policy/') ) ?></div>
 						</div>
-						<div class="form-group col-md d-flex justify-content-end">
+						<div class="form-group col-md-3 d-flex justify-content-end">
 							<button class="btn btn-primary btn-block d-flex align-items-center justify-content-center" type="submit" value="<?php echo esc_attr( __( 'Buy One&nbsp;Click', 'resto' ) ) ?>"><span class="ico _btn-ico-card"></span><span><?php _e( 'Buy One&nbsp;Click', 'resto' ) ?></span></button>
 						</div>
 					</div>
