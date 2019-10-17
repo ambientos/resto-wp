@@ -26,7 +26,7 @@ function resto_last_articles_func( $atts ){
 
 				get_template_part( 'template-parts/content', 'article' );	
 
-			endforeach; ?>
+			endforeach; wp_reset_postdata(); ?>
 		</div>
 
 		<?php return ob_get_clean();
