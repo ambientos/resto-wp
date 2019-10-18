@@ -26,6 +26,23 @@
   .carousel-container {
     padding: 0 21px; } }
 
+.popup {
+  padding: 30px; }
+  .popup-container {
+    width: 450px;
+    color: #fff; }
+  .popup .form-note {
+    max-width: 300px;
+    margin: auto; }
+  .popup .col-lg-6 {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
+    max-width: 100% !important; }
+
+div.wpcf7 .ajax-loader {
+  position: absolute; }
+
 @font-face {
   font-family: "OpenSans";
   font-weight: 400;

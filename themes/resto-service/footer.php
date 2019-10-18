@@ -60,7 +60,7 @@
 	</footer>
 
 	<?php if ( is_active_sidebar( 'sidebar-hidden' ) ) : ?>
-		<div class="d-none">
+		<div hidden>
 			<?php dynamic_sidebar( 'sidebar-hidden' ); ?>
 		</div>
 	<?php endif; ?>

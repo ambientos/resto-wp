@@ -127,8 +127,26 @@
 
 
 	/**
+	 * Fancybox
+	 */
+
+	$('[data-fancybox]').fancybox({
+		afterLoad: function( instance, slide ) {
+			/*var popup = slide.$slide,
+				popupTitle = slide.opts.$orig.data('title'),
+				popupTitleObject = popup.find('.popup-title-form'),
+				popupTitleField = popup.find('[name="popup-title-field"]')
+
+			popupTitleObject.text( popupTitle )
+			popupTitleField.val( popupTitle )*/
+		}
+	})
+
+
+	/**
 	 * Navigation Search
 	 */
+
 	$('.header-nav-search').on('click', function(){
 		var searchButton = $(this),
 			parent = searchButton.parent()

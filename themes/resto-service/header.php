@@ -19,7 +19,7 @@
 					</figure>
 
 					<div class="header-callback d-none d-lg-block">
-						<span class="btn btn-primary"><?php _e( 'Call Me!', 'resto' ) ?></span>
+						<span class="btn btn-primary" data-fancybox data-src="#popup-callback"><?php _e( 'Call Me!', 'resto' ) ?></span>
 					</div>
 
 					<div class="header-phone d-none d-sm-block">

@@ -26,7 +26,13 @@ $home_addict_class = 'home' === $block_type ? ' _home' : '';
 				<h1 class="promo-title<?php echo $home_addict_class ?>"><?php echo esc_html( $title ); ?></h1>
 				<div class="promo-text"><?php echo wpautop( $content ); ?></div>
 				<div class="promo-more d-sm-flex align-items-sm-center justify-content-sm-between">
-					<span><a href="<?php echo esc_attr( $btn_link ) ?>" class="btn-primary btn-wide btn"><?php echo esc_html( $btn_text ) ?></a></span>
+					<span>
+						<?php if ( $btn_link ) : ?>
+							<a href="<?php echo esc_attr( $btn_link ) ?>" class="btn-primary btn-wide btn"><?php echo esc_html( $btn_text ) ?></a>
+						<?php else : ?>
+							<span data-fancybox data-src="#popup-callback" class="btn-primary btn-wide btn"><?php echo esc_html( $btn_text ) ?></span>
+						<?php endif; ?>
+					</span>
 					<?php echo $addict ?>
 				</div>
 			</div>

@@ -36,3 +36,26 @@
 		padding: 0 $grid-gutter-width * .7;
 	}
 }
+
+.popup {
+	padding: $grid-gutter-width;
+
+	&-container {
+		width: 450px;
+		color: $white;
+	}
+
+	.form-note {
+		max-width: 300px;
+		margin: auto;
+	}
+
+	.col-lg-6 {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+div.wpcf7 .ajax-loader {
+	position: absolute;
+}
