@@ -74,11 +74,7 @@ function resto_calc_price_func( $atts ) {
 
 	$price = get_field( 'price', get_the_ID() );
 
-	ob_start();
-
-	echo $price;
-
-	return ob_get_clean();
+	return $price;
 }
 
 add_shortcode( 'calc-price', 'resto_calc_price_func' );

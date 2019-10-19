@@ -158,11 +158,12 @@
 	/**
 	 * Calculator
 	 */
+
 	$('.calc-form').each(function(){
-		var form = $(this),
-			$options = form.find('.form-check-input'),
-			$qty = form.find('.calc-form-qty-control'),
-			$priceTotal = form.find('.calc-form-total-v'),
+		var $form = $(this),
+			$options = $form.find('.form-check-input'),
+			$qty = $form.find('.calc-form-qty-control'),
+			$priceTotal = $form.find('.calc-form-total-v'),
 			priceSingle = +$priceTotal.text(),
 			priceTotal = priceSingle,
 
@@ -193,7 +194,7 @@
 			.on('change', function(){
 				$(this).trigger('update')
 
-				form.trigger('setData')
+				$form.trigger('setData')
 			})
 			.trigger('update')
 
@@ -217,12 +218,12 @@
 				.on('change', function(){
 					$(this).trigger('update')
 
-					form.trigger('setData')
+					$form.trigger('setData')
 				})
 				.trigger('update')
 		})
 
-		form
+		$form
 			.on('setData', function(){
 				var data = []
 
@@ -233,6 +234,63 @@
 				})
 
 				$dataField.val( data.join("\n") )
+			})
+			.trigger('setData')
+	})
+
+
+	/**
+	 * Service Table
+	 */
+
+	$('.calc-st-table').each(function(){
+		var $table = $(this),
+			$options = $table.find('.calc-st-option'),
+			$infoRow = $table.find('.calc-st-info'),
+			$info = $table.find('.calc-st-selected'),
+
+			$dataField = $('[name="service-list"]'),
+			dataFieldOptions = []
+
+		$options.each(function(){
+			var $option = $(this),
+				val = $option.val()
+
+			$option
+				.on('update', function(){
+					if ( $(this).prop('checked') ) {
+						dataFieldOptions.push( val )
+					}
+					else {
+						var index = dataFieldOptions.indexOf( val )
+
+						if ( index != -1 ) {
+							dataFieldOptions.splice(index, 1)
+						}
+					}
+				})
+				.on('change', function(){
+					$(this).trigger('update')
+
+					$table.trigger('setData')
+				})
+				.trigger('update')
+		})
+
+		$table
+			.on('setData', function(){
+				if ( dataFieldOptions.length > 0 ) {
+					$info.text('Выбрано услуг: ' + dataFieldOptions.length)
+
+					$table.addClass('_show')
+				}
+				else {
+					$info.text('')
+
+					$table.removeClass('_show')
+				}
+
+				$dataField.val( dataFieldOptions.join('; ') )
 			})
 			.trigger('setData')
 	})

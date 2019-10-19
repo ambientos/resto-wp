@@ -124,6 +124,23 @@ function resto_acf_init(){
 				'mode' => false,
 			),
 		) );
+
+
+		/**
+		 * Service Table block
+		 */
+		acf_register_block_type( array(
+			'name'            => 'service-table-block',
+			'title'           => __( 'Service Table Block', 'resto' ),
+			'mode'            => 'edit',
+			'render_template' => 'acf/blocks/service-table.php',
+			'category'        => 'formatting',
+			'icon'            => 'editor-table',
+			'keywords'        => array( 'widget', 'block' ),
+			'supports'        => array(
+				'mode' => false,
+			),
+		) );
 	}
 }
 

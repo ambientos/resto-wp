@@ -151,4 +151,14 @@
 			text-decoration: underline;
 		}
 	}
+
+	&-st {
+		&-table {
+			&._without-btn:not(._show) {
+				.calc-st-info {
+					display: none;
+				}
+			}
+		}
+	}
 }

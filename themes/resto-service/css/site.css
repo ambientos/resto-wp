@@ -1406,6 +1406,9 @@ div.wpcf7 .ajax-loader {
     color: #d03239;
     text-decoration: underline; }
 
+.calc-st-table._without-btn:not(._show) .calc-st-info {
+  display: none; }
+
 .solutions-item {
   position: relative;
   padding: 0.1em 30px;
