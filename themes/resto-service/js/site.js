@@ -323,3 +323,22 @@
 			.trigger('setData')
 	})
 })(jQuery)
+
+
+/**
+ * Callbacks for CF7 successful submits
+ */
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+	jQuery.fancybox.close()
+	jQuery.fancybox.open('<div class="popup-container"><div class="popup widget _nomargin _dark _important text-center"><div class="h2 widget-title _big" style="margin-bottom: 0">Сообщение успешно отправлено</div></div></div>')
+
+	setTimeout( function(){
+		if ( '389' == event.detail.contactFormId ) {
+			jQuery(location).attr('href', cart.urlEmpty)
+		}
+		else {
+			jQuery.fancybox.close()
+		}
+	}, 2000)
+}, false )

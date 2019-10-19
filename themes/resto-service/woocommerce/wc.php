@@ -284,6 +284,22 @@ add_action( 'wp', function(){
 	} );
 } );
 
+
+/**
+ * Clear Cart by query argument
+ */
+
+function resto_clear_cart_url() {
+	if ( '/cart/?empty=1' === $_SERVER['REQUEST_URI'] ) {
+		global $woocommerce;
+
+		$woocommerce->cart->empty_cart();
+	}
+}
+
+add_action( 'init', 'resto_clear_cart_url' );
+
+
 function resto_header_cart(){
 	?>
 	<div class="header-cart-contents">
