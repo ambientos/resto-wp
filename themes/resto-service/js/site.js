@@ -339,6 +339,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 		}
 		else {
 			jQuery.fancybox.close()
+			jQuery('.wpcf7-response-output').hide()
 		}
 	}, 2000)
 }, false )

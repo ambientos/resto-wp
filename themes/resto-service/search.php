@@ -25,6 +25,14 @@
 						'type' => 'post',
 						'title' => __( 'Post', 'resto' ),
 					),
+					'rs-solution' => array(
+						'type' => 'post',
+						'title' => __( 'Post', 'resto' ),
+					),
+					'rs-service' => array(
+						'type' => 'post',
+						'title' => __( 'Post', 'resto' ),
+					),
 					'rs-video' => array(
 						'type' => 'video',
 						'title' => __( 'Video Lesson', 'resto' ),
