@@ -132,13 +132,41 @@
 
 	$('[data-fancybox]').fancybox({
 		afterLoad: function( instance, slide ) {
-			/*var popup = slide.$slide,
-				popupTitle = slide.opts.$orig.data('title'),
-				popupTitleObject = popup.find('.popup-title-form'),
-				popupTitleField = popup.find('[name="popup-title-field"]')
+			$('.single-product,.woocommerce-cart').each(function(){
+				var $body = $(this),
+					$popup = slide.$slide,
+					$orderField = $popup.find('[name="your-order"]'),
+					orderFieldData = []
 
-			popupTitleObject.text( popupTitle )
-			popupTitleField.val( popupTitle )*/
+				if ( $body.hasClass('single-product') ) {
+					$orderField.val( $('h1').eq(0).text() + ', Цена: '+ $('.product-buy-price').text() )
+				}
+
+				if ( $body.hasClass('woocommerce-cart') ) {
+					$('.woocommerce-cart-form__cart-item').each(function(){
+						var $productRow = $(this),
+							productTitle = $productRow.find('.cart-product-title a').text(),
+							productQty = $productRow.find('.input-text.qty.text').val(),
+							productSum = $productRow.find('.cart-product-subtotal .woocommerce-Price-amount').text()
+
+						orderFieldData.push({
+							title: productTitle,
+							qty: productQty,
+							sum: productSum
+						})
+					})
+
+					if ( orderFieldData.length > 0 ) {
+						var orderFieldRows = []
+
+						$.each(orderFieldData, function(index, object){
+							orderFieldRows.push( object.title +', Количество: '+ object.qty +', Общая цена: '+ object.sum )
+						})
+
+						$orderField.val( orderFieldRows.join("\n") )
+					}
+				}
+			})
 		}
 	})
 
