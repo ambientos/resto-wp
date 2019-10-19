@@ -1361,8 +1361,19 @@ div.wpcf7 .ajax-loader {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1; }
+    @media (max-width: 991.98px) {
+      .calc-form-total {
+        text-align: right; } }
     .calc-form-total-v {
+      position: absolute;
+      right: 0;
+      bottom: -.2em;
       font-size: 4.375rem; }
+      .calc-form-total-v-container {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        padding: 3em 0 0 1em; }
   .calc-form-info {
     padding: .8em;
     font-size: 1.25rem;

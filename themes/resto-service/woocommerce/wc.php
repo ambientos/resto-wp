@@ -31,12 +31,12 @@ add_action( 'wp', function(){
 
 				<?php if ( is_product() ) : ?>
 					<div class="col-md product-nav d-lg-flex justify-content-lg-between">
-						<a class="btn" href="/">
+						<span data-fancybox data-src="#popup-callback" class="btn">
 							<span class="ico _btn-ico-test"></span><span><?php _e( 'Free hardware test', 'resto' ) ?></span>
-						</a> 
-						<a class="btn" href="/">
+						</span> 
+						<span data-fancybox data-src="#popup-callback" class="btn">
 							<span class="ico _btn-ico-question"></span><span><?php _e( 'Ask a Question', 'resto' ) ?></span>
-						</a>
+						</span>
 					</div>
 				<?php else : ?>
 					<?php if ( have_posts() ) : ?>
@@ -107,7 +107,7 @@ add_action( 'wp', function(){
 			<?php if ( $product->is_in_stock() ) : ?>
 				<div class="product-buy-item d-flex">
 					<div class="product-buy-btn">
-						<button class="btn btn-primary d-flex align-items-center" type="button"><span class="ico _btn-ico-card"></span><span><?php _e( 'Buy One&nbsp;Click', 'resto' ) ?></span></button>
+						<button data-fancybox data-src="#popup-order" class="btn btn-primary d-flex align-items-center" type="button"><span class="ico _btn-ico-card"></span><span><?php _e( 'Buy One&nbsp;Click', 'resto' ) ?></span></button>
 					</div>
 					<div class="product-buy-btn">
 						<?php do_action( 'woocommerce_' . $product->get_type() . '_add_to_cart' ); ?>

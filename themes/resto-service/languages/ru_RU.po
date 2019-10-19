@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-18 01:58+0500\n"
-"PO-Revision-Date: 2019-10-18 01:58+0500\n"
+"POT-Creation-Date: 2019-10-19 07:28+0500\n"
+"PO-Revision-Date: 2019-10-19 07:29+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -19,6 +19,10 @@ msgstr ""
 "_esc_attr__;esc_html__;esc_html_e;esc_html_x\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: acf/blocks/calc.php:54
+msgid "Submit Order"
+msgstr "Оставить заявку"
 
 #: acf/blocks/solution-ready.php:22 woocommerce/wc.php:247
 msgid "More"
@@ -56,6 +60,10 @@ msgstr ""
 msgid "Solution Modules Block"
 msgstr ""
 
+#: acf/init.php:117
+msgid "Calculator Block"
+msgstr ""
+
 #: archive-rs-video.php:17 page-knowledge.php:51
 msgid "All Videos"
 msgstr "Все видео"
@@ -64,7 +72,7 @@ msgstr "Все видео"
 msgid "Search by Videos"
 msgstr "Поиск по видео"
 
-#: archive-rs-video.php:23 page-knowledge.php:17
+#: archive-rs-video.php:23 header.php:59 page-knowledge.php:17
 msgid "Search"
 msgstr "Найти"
 

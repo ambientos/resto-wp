@@ -88,8 +88,22 @@
 			}
 			line-height: 1;
 
+			@include media-breakpoint-down('md') {
+				text-align: right;
+			}
+
 			&-v {
+				position: absolute;
+				right: 0;
+				bottom: -.2em;
 				font-size: 4.375rem;
+
+				&-container {
+					display: inline-block;
+					position: relative;
+					width: 100px;
+					padding: 3em 0 0 1em;
+				}
 			}
 		}
 

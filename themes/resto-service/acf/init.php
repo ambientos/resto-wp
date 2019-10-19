@@ -107,6 +107,23 @@ function resto_acf_init(){
 				'mode' => false,
 			),
 		) );
+
+
+		/**
+		 * Calculator block
+		 */
+		acf_register_block_type( array(
+			'name'            => 'calc-block',
+			'title'           => __( 'Calculator Block', 'resto' ),
+			'mode'            => 'edit',
+			'render_template' => 'acf/blocks/calc.php',
+			'category'        => 'formatting',
+			'icon'            => 'forms',
+			'keywords'        => array( 'widget', 'block' ),
+			'supports'        => array(
+				'mode' => false,
+			),
+		) );
 	}
 }
 

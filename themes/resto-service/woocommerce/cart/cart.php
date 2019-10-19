@@ -150,7 +150,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<div class="form-note"><?php printf( __( 'By submitting your data through these forms, you agree to <a href="%s" target="_blank">personal data processing policy</a>', 'resto' ), site_url('/privacy-policy/') ) ?></div>
 						</div>
 						<div class="form-group col-md-3 d-flex justify-content-end">
-							<button class="btn btn-primary btn-block d-flex align-items-center justify-content-center" type="submit" value="<?php echo esc_attr( __( 'Buy One&nbsp;Click', 'resto' ) ) ?>"><span class="ico _btn-ico-card"></span><span><?php _e( 'Buy One&nbsp;Click', 'resto' ) ?></span></button>
+							<button data-fancybox data-src="#popup-order" class="btn btn-primary btn-block d-flex align-items-center justify-content-center" type="submit" value="<?php echo esc_attr( __( 'Buy One&nbsp;Click', 'resto' ) ) ?>"><span class="ico _btn-ico-card"></span><span><?php _e( 'Buy One&nbsp;Click', 'resto' ) ?></span></button>
 						</div>
 					</div>
 				</td>

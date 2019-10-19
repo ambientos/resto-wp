@@ -35,3 +35,50 @@ function resto_last_articles_func( $atts ){
 }
 
 add_shortcode( 'last-articles', 'resto_last_articles_func' );
+
+
+/**
+ * Calculator Checkboxes
+ */
+
+function resto_calc_checkboxes_func( $atts ) {
+	$atts = shortcode_atts( array(
+	), $atts );
+
+	$options = get_field( 'options', get_the_ID() );
+
+	ob_start();
+
+	foreach ($options as $option) : ?>
+		<div class="form-check form-group form-check-custom">
+			<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" value="<?php echo esc_attr( $option['price'] ) ?>"> <?php echo esc_html( $option['title'] ) ?>
+			</label>
+		</div>
+
+	<?php endforeach;
+
+	return ob_get_clean();
+}
+
+add_shortcode( 'calc-checkboxes', 'resto_calc_checkboxes_func' );
+
+
+/**
+ * Calculator Price
+ */
+
+function resto_calc_price_func( $atts ) {
+	$atts = shortcode_atts( array(
+	), $atts );
+
+	$price = get_field( 'price', get_the_ID() );
+
+	ob_start();
+
+	echo $price;
+
+	return ob_get_clean();
+}
+
+add_shortcode( 'calc-price', 'resto_calc_price_func' );
