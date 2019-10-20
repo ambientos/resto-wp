@@ -40,6 +40,12 @@
 			}
 			background-size: auto 100%;
 		}
+
+		&._home {
+			.container {
+				max-width: 1150px;
+			}
+		}
 	}
 
 	&-breadcrumbs {

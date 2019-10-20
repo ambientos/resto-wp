@@ -10,7 +10,7 @@ $btn_text   = $block['data']['btn_btn-text'];
 $btn_link   = $block['data']['btn_btn-link'];
 $addict     = $block['data']['addict'];
 
-$container_classes = 'home' === $block_type ? ' d-flex align-items-center' : '';
+$container_classes = 'home' === $block_type ? ' _home d-flex align-items-center' : '';
 $home_addict_class = 'home' === $block_type ? ' _home' : '';
 
 ?>
@@ -18,7 +18,7 @@ $home_addict_class = 'home' === $block_type ? ' _home' : '';
 <div class="promo">
 	<div class="promo-container<?php echo $container_classes ?>" style="background-image:url(<?php echo esc_url( $thumb_bg ) ?>)">
 		<div class="container">
-			<?php if ( ! is_front_page() ) : $promo_breadcrumbs = true; ?>
+			<?php if ( 'home' !== $block_type ) : $promo_breadcrumbs = true; ?>
 				<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 			<?php endif; ?>
 
