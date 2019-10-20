@@ -145,6 +145,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<tfoot>
 			<tr class="cart_tfoot">
 				<td class="actions" colspan="6">
+					<button hidden type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
+					<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
 					<div class="row d-flex align-items-center justify-content-between">
 						<div class="form-group col-md">
 							<div class="form-note"><?php printf( __( 'By submitting your data through these forms, you agree to <a href="%s" target="_blank">personal data processing policy</a>', 'resto' ), site_url('/privacy-policy/') ) ?></div>

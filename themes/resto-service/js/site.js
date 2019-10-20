@@ -100,29 +100,56 @@
 		changeQty(control, toggle)
 	})
 
-	$('.cart-product-quantity-container [type="number"]').each(function(){
-		var control = $(this),
-			toggle = control.parents('.cart-product-quantity-container').eq(0).find('.btn')
 
-		changeQty(control, toggle)
+	/**
+	 * Qty Cart control
+	 */
+	$(document).on('set_qty_controls', function(){
+		$('.cart-product-quantity-container [type="number"]').each(function(){
+			var $control = $(this),
+				$toggles = $control.parents('.cart-product-quantity-container').eq(0).find('.btn')
+
+			changeQty($control, $toggles)
+		})
+	}).trigger('set_qty_controls')
+
+	$( document.body ).on('updated_cart_totals', function(){
+		$(document).trigger('set_qty_controls')
 	})
 
-	function changeQty(control, toggle){
-		toggle.on('click', function(e){
-			var toggle = $(this),
-				controlValue = control.val()
+	function changeQty($control, $toggles){
+		var updateButtonTimer
 
-			if ( toggle.hasClass('_minus') ) {
+		$toggles.on('click', function(e){
+			var $toggle = $(this),
+				controlValue = $control.val()
+
+			if ( $toggle.hasClass('_minus') ) {
 				if ( controlValue > 1 ) {
-					control.val( --controlValue )
+					$control.val( --controlValue )
 				}
 			}
 			else {
-				control.val( ++controlValue )
+				$control.val( ++controlValue )
 			}
 
-			control.trigger('change')
+			if ( controlValue !== $control.val() ) {
+				$control.trigger('change')
+			}
 		})
+
+		$control
+			.on('change', function(){
+				$('[name="update_cart"]').each(function(){
+					var $updateButton = $(this)
+
+					clearTimeout(updateButtonTimer)
+
+					updateButtonTimer = setTimeout(function(){
+						$updateButton.trigger('click')
+					}, 1500)
+				})
+			})
 	}
 
 
