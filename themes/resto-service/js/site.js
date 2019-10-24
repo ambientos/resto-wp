@@ -20,6 +20,7 @@
 	$('.carousel-container').each(function(){
 		var container = $(this),
 			carousel = container.find('.carousel'),
+			autoPlay = container.data('play') || 0,
 			loop = container.data('loop') || 0,
 			margin = container.data('margin') || 0,
 			items = container.data('items') || 0
@@ -44,6 +45,13 @@
 					items: 4
 				}
 			}
+		}
+
+		if ( autoPlay ) {
+			options.autoplay = true
+			options.autoplaySpeed = 2000
+			options.autoplayTimeout = +autoPlay
+			options.autoplayHoverPause = true
 		}
 
 		if ( '1' == items ) {

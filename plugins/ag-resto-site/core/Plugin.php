@@ -238,7 +238,7 @@ class Plugin {
 
 		?>
 
-		<div class="carousel-container" data-loop="1" data-items="3" data-margin="30">
+		<div class="carousel-container" data-loop="1" data-items="3" data-margin="30" data-play="4000">
 			<div class="container-inner container">
 				<div class="promo-cite-carousel carousel owl-carousel">
 					<?php foreach ($testimonials as $post) : setup_postdata($post); ?>

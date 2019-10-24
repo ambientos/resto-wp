@@ -522,7 +522,8 @@ div.wpcf7 .ajax-loader {
     background-color: #212529; }
   .widget._night {
     color: #64c0d3;
-    background-color: #64c0d3; }
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #3cb0c8), to(#a0d8e4));
+    background: linear-gradient(to bottom, #3cb0c8 50%, #a0d8e4 100%); }
     .widget._night,
     .widget._night .widget-title {
       position: relative; }
@@ -845,6 +846,20 @@ div.wpcf7 .ajax-loader {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .promo-cite-carousel.owl-carousel .owl-nav button.owl-prev, .promo-cite-carousel.owl-carousel .owl-nav button.owl-next {
+    font-size: inherit; }
+    .promo-cite-carousel.owl-carousel .owl-nav button.owl-prev span, .promo-cite-carousel.owl-carousel .owl-nav button.owl-next span {
+      display: inline-block;
+      width: 20px;
+      height: 70px;
+      text-indent: -9999px;
+      background-image: url("../i/carousel-nav-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain; }
+  .promo-cite-carousel.owl-carousel .owl-nav button.owl-next span {
+    text-indent: 9999px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .promo-cite-item {
     position: relative;
     border-radius: .3em;

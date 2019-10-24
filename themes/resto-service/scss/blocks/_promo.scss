@@ -374,6 +374,34 @@
 			.owl-item {
 				display: flex;
 			}
+
+			&.owl-carousel {
+				.owl-nav {
+					button {
+						&.owl-prev,
+						&.owl-next {
+							font-size: inherit;
+
+							span {
+								display: inline-block;
+								width: 20px;
+								height: 70px;
+								text-indent: -9999px;
+								background: {
+									image: url('#{$img-dir}carousel-nav-arrow.svg');
+									repeat: no-repeat;
+									size: contain;
+								}
+							}
+						}
+
+						&.owl-next span {
+							text-indent: 9999px;
+							transform: rotate(180deg);
+						}
+					}
+				}
+			}
 		}
 
 		&-item {

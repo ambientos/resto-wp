@@ -49,7 +49,7 @@
 
 	&._night {
 		color: $sky;
-		background-color: $sky;
+		background: linear-gradient(to bottom, darken($sky, 10%) 50%, lighten($sky, 15%) 100%);
 
 		&,
 		.widget-title {
