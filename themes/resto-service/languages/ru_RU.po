@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-20 01:06+0500\n"
-"PO-Revision-Date: 2019-10-20 01:07+0500\n"
+"POT-Creation-Date: 2019-10-24 23:57+0500\n"
+"PO-Revision-Date: 2019-10-24 23:57+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: acf/blocks/calc.php:55 acf/blocks/service-table.php:42
+#: acf/blocks/calc.php:55
 msgid "Submit Order"
 msgstr "Оставить заявку"
 
@@ -31,6 +31,10 @@ msgstr "Услуга"
 #: acf/blocks/service-table.php:18 woocommerce/wc.php:103
 msgid "Price"
 msgstr "Стоимость"
+
+#: acf/blocks/service-table.php:42
+msgid "Service Order"
+msgstr "Заказать услуги"
 
 #: acf/blocks/solution-ready.php:22 woocommerce/wc.php:247
 msgid "More"
@@ -116,15 +120,15 @@ msgstr "Footer Main Menu"
 msgid "Footer Sub Menu"
 msgstr "Footer Sub Menu"
 
-#: functions.php:86
+#: functions.php:90
 msgid "After Content"
 msgstr "After Content"
 
-#: functions.php:98
+#: functions.php:102
 msgid "Footer Menu List"
 msgstr "Footer Menu List"
 
-#: functions.php:110
+#: functions.php:114
 msgid "Hidden"
 msgstr "Hidden"
 
@@ -204,19 +208,19 @@ msgstr "Все"
 msgid "Search Results"
 msgstr "Результаты поиска"
 
-#: search.php:22 search.php:26
+#: search.php:22 search.php:26 search.php:30 search.php:34
 msgid "Post"
 msgstr "Статья"
 
-#: search.php:30
+#: search.php:38
 msgid "Video Lesson"
 msgstr "Видеоурок"
 
-#: search.php:34 woocommerce/cart/cart.php:31
+#: search.php:42 woocommerce/cart/cart.php:31
 msgid "Product"
 msgstr "Товар"
 
-#: search.php:58
+#: search.php:66
 msgid "Sorry, but nothing found. Try another search."
 msgstr "Извините, но по вашему запросу ничего не найдено."
 
@@ -260,7 +264,11 @@ msgstr "Артикул"
 msgid "Remove this item"
 msgstr ""
 
-#: woocommerce/cart/cart.php:150
+#: woocommerce/cart/cart.php:148
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:153
 #, php-format
 msgid ""
 "By submitting your data through these forms, you agree to <a href=\"%s\" "
@@ -269,7 +277,7 @@ msgstr ""
 "Отправляя свои данные, вы соглашаетесь с <a href=\"%s\" target=\"_blank"
 "\">политикой обработки персональных данных</a>"
 
-#: woocommerce/cart/cart.php:153 woocommerce/wc.php:110
+#: woocommerce/cart/cart.php:156 woocommerce/wc.php:110
 msgid "Buy One&nbsp;Click"
 msgstr "Купить в&nbsp;1&nbsp;клик"
 
@@ -317,7 +325,7 @@ msgstr "Документация и файлы для загрузки"
 msgid "In stock"
 msgstr "В наличии"
 
-#: woocommerce/wc.php:297
+#: woocommerce/wc.php:313
 #, php-format
 msgid "%d item in total"
 msgid_plural "%d items in total"
@@ -325,14 +333,14 @@ msgstr[0] "%d товар на сумму"
 msgstr[1] "%d товара на сумму"
 msgstr[2] "%d товаров на сумму"
 
-#: woocommerce/wc.php:299
+#: woocommerce/wc.php:315
 msgid "View your shopping cart"
 msgstr "Посмотреть корзину"
 
-#: woocommerce/wc.php:300
+#: woocommerce/wc.php:316
 msgid "Order"
 msgstr "Оформить"
 
-#: woocommerce/wc.php:303
+#: woocommerce/wc.php:319
 msgid "Cart is Empty"
 msgstr "Корзина пуста"

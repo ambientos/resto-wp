@@ -314,6 +314,7 @@
 
 			$dataField = $('[name="service-list"]'),
 			dataFieldOptions = []
+			dataPrice = 0
 
 		$options.each(function(){
 			var $option = $(this),
@@ -321,14 +322,20 @@
 
 			$option
 				.on('update', function(){
-					if ( $(this).prop('checked') ) {
+					var $option = $(this),
+						optionPrice = +$option.data('price')
+
+					if ( $option.prop('checked') ) {
 						dataFieldOptions.push( val )
+						dataPrice += optionPrice
 					}
 					else {
 						var index = dataFieldOptions.indexOf( val )
 
 						if ( index != -1 ) {
 							dataFieldOptions.splice(index, 1)
+
+							dataPrice -= optionPrice
 						}
 					}
 				})
@@ -343,7 +350,7 @@
 		$table
 			.on('setData', function(){
 				if ( dataFieldOptions.length > 0 ) {
-					$info.text('Выбрано услуг: ' + dataFieldOptions.length)
+					$info.text('Выбрано услуг: ' + dataFieldOptions.length +', на сумму: '+ dataPrice)
 
 					$table.addClass('_show')
 				}
