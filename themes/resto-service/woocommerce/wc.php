@@ -304,9 +304,9 @@ function resto_header_cart(){
 		<?php $cart_count = WC()->cart->get_cart_contents_count() ?>
 
 		<?php if ( $cart_count > 0 ) : ?>
-			<span class="header-cart-num count">
+			<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="header-cart-num count">
 				<?php echo $cart_count ?>
-			</span> 
+			</a> 
 			<span class="header-cart-label">
 				<?php echo wp_kses_data( sprintf( _n( '%d item in total', '%d items in total', WC()->cart->get_cart_contents_count(), 'resto' ), WC()->cart->get_cart_contents_count() ) ); ?> <?php echo wp_kses_post( WC()->cart->get_cart_subtotal() ); ?>
 			</span> 
