@@ -1597,13 +1597,7 @@ div.wpcf7 .ajax-loader {
   .cart-product-quantity input[type="number"] {
     width: 30px;
     text-align: center;
-    -webkit-appearance: textfield;
-       -moz-appearance: textfield;
-            appearance: textfield;
     border: none; }
-    .cart-product-quantity input[type="number"]::-webkit-outer-spin-button, .cart-product-quantity input[type="number"]::-webkit-inner-spin-button {
-      margin: 0;
-      -webkit-appearance: none; }
   .cart-product-subtotal {
     text-align: right; }
   .cart thead {

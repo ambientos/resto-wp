@@ -440,9 +440,15 @@ progress {
 }
 
 // Correct the cursor style of increment and decrement buttons in Chrome.
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
+[type="number"] {
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    height: auto;
+    margin: 0;
+    -webkit-appearance: none;
+  }
 }
 
 [type="search"] {

@@ -261,9 +261,14 @@ legend {
 progress {
   vertical-align: baseline; }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield; }
+  [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+    margin: 0;
+    -webkit-appearance: none; }
 
 [type="search"] {
   outline-offset: -2px;
