@@ -141,6 +141,23 @@ function resto_acf_init(){
 				'mode' => false,
 			),
 		) );
+
+
+		/**
+		 * Grid Links block
+		 */
+		acf_register_block_type( array(
+			'name'            => 'grid-links-block',
+			'title'           => __( 'Grid Links Block', 'resto' ),
+			'mode'            => 'edit',
+			'render_template' => 'acf/blocks/grid-links.php',
+			'category'        => 'formatting',
+			'icon'            => 'grid-view',
+			'keywords'        => array( 'widget', 'block' ),
+			'supports'        => array(
+				'mode' => false,
+			),
+		) );
 	}
 }
 

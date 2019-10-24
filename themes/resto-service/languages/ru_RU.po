@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-24 23:57+0500\n"
-"PO-Revision-Date: 2019-10-24 23:57+0500\n"
+"POT-Creation-Date: 2019-10-25 04:50+0500\n"
+"PO-Revision-Date: 2019-10-25 04:50+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -28,7 +28,7 @@ msgstr "Оставить заявку"
 msgid "Service"
 msgstr "Услуга"
 
-#: acf/blocks/service-table.php:18 woocommerce/wc.php:103
+#: acf/blocks/service-table.php:18 woocommerce/wc.php:101
 msgid "Price"
 msgstr "Стоимость"
 
@@ -36,7 +36,7 @@ msgstr "Стоимость"
 msgid "Service Order"
 msgstr "Заказать услуги"
 
-#: acf/blocks/solution-ready.php:22 woocommerce/wc.php:247
+#: acf/blocks/solution-ready.php:22 woocommerce/wc.php:245
 msgid "More"
 msgstr "Подробнее"
 
@@ -80,7 +80,11 @@ msgstr ""
 msgid "Service Table Block"
 msgstr ""
 
-#: archive-rs-video.php:17 page-knowledge.php:51
+#: acf/init.php:151
+msgid "Grid Links Block"
+msgstr ""
+
+#: archive-rs-video.php:17 page-knowledge.php:39
 msgid "All Videos"
 msgstr "Все видео"
 
@@ -88,7 +92,7 @@ msgstr "Все видео"
 msgid "Search by Videos"
 msgstr "Поиск по видео"
 
-#: archive-rs-video.php:23 header.php:59 page-knowledge.php:17
+#: archive-rs-video.php:23 header.php:58 page-knowledge.php:17
 msgid "Search"
 msgstr "Найти"
 
@@ -188,19 +192,15 @@ msgstr "Код аналитики"
 msgid "What are you interested in?"
 msgstr "Что вас интересует?"
 
-#: page-knowledge.php:27
-msgid "Free Book about iiko"
-msgstr "Бесплатный учебник по iiko"
-
-#: page-knowledge.php:51
+#: page-knowledge.php:39
 msgid "Videos iiko"
 msgstr "Видеоуроки iiko"
 
-#: page-knowledge.php:97
+#: page-knowledge.php:85
 msgid "Show:"
 msgstr "Показать:"
 
-#: page-knowledge.php:100
+#: page-knowledge.php:88
 msgid "All"
 msgstr "Все"
 
@@ -277,11 +277,11 @@ msgstr ""
 "Отправляя свои данные, вы соглашаетесь с <a href=\"%s\" target=\"_blank"
 "\">политикой обработки персональных данных</a>"
 
-#: woocommerce/cart/cart.php:156 woocommerce/wc.php:110
+#: woocommerce/cart/cart.php:156 woocommerce/wc.php:108
 msgid "Buy One&nbsp;Click"
 msgstr "Купить в&nbsp;1&nbsp;клик"
 
-#: woocommerce/loop/pagination.php:35 woocommerce/wc.php:45
+#: woocommerce/loop/pagination.php:35 woocommerce/wc.php:43
 msgid "Sort by:"
 msgstr "Сортировать:"
 
@@ -301,31 +301,27 @@ msgstr ""
 msgid "You often buy with this product"
 msgstr "С этим товаром часто покупают"
 
-#: woocommerce/wc.php:35
-msgid "Free hardware test"
-msgstr "Бесплатный тест оборудования"
-
-#: woocommerce/wc.php:38
+#: woocommerce/wc.php:36
 msgid "Ask a Question"
 msgstr "Задать вопрос"
 
-#: woocommerce/wc.php:117 woocommerce/wc.php:221
+#: woocommerce/wc.php:115 woocommerce/wc.php:219
 msgid "Under the Order"
 msgstr "Под заказ"
 
-#: woocommerce/wc.php:131
+#: woocommerce/wc.php:129
 msgid "Characteristics"
 msgstr "Характеристики"
 
-#: woocommerce/wc.php:196
+#: woocommerce/wc.php:194
 msgid "Documentation and downloads"
 msgstr "Документация и файлы для загрузки"
 
-#: woocommerce/wc.php:221
+#: woocommerce/wc.php:219
 msgid "In stock"
 msgstr "В наличии"
 
-#: woocommerce/wc.php:313
+#: woocommerce/wc.php:311
 #, php-format
 msgid "%d item in total"
 msgid_plural "%d items in total"
@@ -333,14 +329,20 @@ msgstr[0] "%d товар на сумму"
 msgstr[1] "%d товара на сумму"
 msgstr[2] "%d товаров на сумму"
 
-#: woocommerce/wc.php:315
+#: woocommerce/wc.php:313
 msgid "View your shopping cart"
 msgstr "Посмотреть корзину"
 
-#: woocommerce/wc.php:316
+#: woocommerce/wc.php:314
 msgid "Order"
 msgstr "Оформить"
 
-#: woocommerce/wc.php:319
+#: woocommerce/wc.php:317
 msgid "Cart is Empty"
 msgstr "Корзина пуста"
+
+#~ msgid "Free Book about iiko"
+#~ msgstr "Бесплатный учебник по iiko"
+
+#~ msgid "Free hardware test"
+#~ msgstr "Бесплатный тест оборудования"

@@ -22,29 +22,9 @@
 	</div>
 </div>
 
+<?php the_post(); the_content(); ?>
+
 <div class="container-inner container">
-	<div class="widget">
-		<h2 class="widget-title _sub"><?php _e( 'Free Book about iiko', 'resto' ) ?></h2>
-		<?php
-
-		$menu_lessons = array(
-			'iikoOffice'    => 'https://ru.iiko.help/smart/project-iikooffice/getting-started',
-			'iikoFront'     => 'https://ru.iiko.help/smart/project-iikofront/getting-started',
-			'iikoDelivery'  => 'https://ru.iiko.help/smart/project-iikodelivery/getting-started',
-			'iicoCard'      => 'https://ru.iiko.help/articles/iikocard',
-			'API'           => 'https://ru.iiko.help/articles/api-documentations',
-			'iicoChain'     => 'https://ru.iiko.help/smart/project-iikochain/getting-started',
-			'Cпец. решения' => 'https://ru.iiko.help/articles/special-iiko',
-		);
-
-		?>
-		<ul class="list-links d-sm-flex flex-wrap">
-			<?php $i = 0; foreach ($menu_lessons as $menu_lessons_title => $menu_lessons_link) : $i++; ?>
-				<li class="list-links-item d-flex col-md-3 col-sm-4"><a class="list-links-item-link d-flex align-items-center" href="<?php echo esc_url( $menu_lessons_link ) ?>" target="_blank"><?php require dirname(__FILE__) . '/i/t/'. $i .'.svg' ?><span><?php echo $menu_lessons_title ?></span></a></li>
-			<?php endforeach; ?>
-		</ul>
-	</div>
-
 	<?php
 
 	$videos = get_posts( array(
