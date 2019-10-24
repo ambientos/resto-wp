@@ -757,10 +757,20 @@ div.wpcf7 .ajax-loader {
       @media (min-width: 768px) {
         .promo-type-item-title {
           font-size: 1.25rem; } }
-    .promo-type-item-thumb img {
-      border-radius: 50%;
-      -webkit-box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2); }
+    .promo-type-item-thumb {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      @media (prefers-reduced-motion: reduce) {
+        .promo-type-item-thumb {
+          -webkit-transition: none;
+          transition: none; } }
+      :hover > .promo-type-item-thumb {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05); }
+      .promo-type-item-thumb img {
+        border-radius: 50%;
+        -webkit-box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2); }
   .promo-adv {
     position: relative;
     margin: 1.5em 0; }

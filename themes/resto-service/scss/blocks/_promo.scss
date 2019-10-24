@@ -240,6 +240,12 @@
 			}
 
 			&-thumb {
+				@include transition;
+
+				:hover > & {
+					transform: scale(1.05);
+				}
+
 				img {
 					border-radius: 50%;
 					box-shadow: 0 10px 20px 1px rgba($black, .2);
