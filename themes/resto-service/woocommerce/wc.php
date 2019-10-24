@@ -31,9 +31,7 @@ add_action( 'wp', function(){
 
 				<?php if ( is_product() ) : ?>
 					<div class="col-md product-nav d-lg-flex justify-content-lg-between">
-						<span data-fancybox data-src="#popup-callback" class="btn">
-							<span class="ico _btn-ico-test"></span><span><?php _e( 'Free hardware test', 'resto' ) ?></span>
-						</span> 
+						<span></span> 
 						<span data-fancybox data-src="#popup-callback" class="btn">
 							<span class="ico _btn-ico-question"></span><span><?php _e( 'Ask a Question', 'resto' ) ?></span>
 						</span>
