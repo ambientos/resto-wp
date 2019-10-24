@@ -40,6 +40,9 @@
             flex: 0 0 100% !important;
     max-width: 100% !important; }
 
+div.wpcf7 input[type="file"] {
+  width: 100%; }
+
 div.wpcf7 .ajax-loader {
   position: absolute; }
 

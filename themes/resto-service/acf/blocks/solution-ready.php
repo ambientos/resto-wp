@@ -19,7 +19,7 @@ if ( ! empty($list_array) ) : ?>
 					<div class="solutions-item-row">
 						<div class="row align-items-center">
 							<div class="solutions-item-title col-lg col-12"><?php echo esc_html( $list_item['title'] ) ?></div>
-							<div class="solutions-item-more col-lg col-sm"><a class="btn-secondary btn-wide btn" href="<?php echo esc_url( $list_item['link'] ) ?>"><?php _e( 'More', 'resto' ) ?></a></div>
+							<div class="solutions-item-more col-lg col-sm"><span data-fancybox data-src="#popup-callback" class="btn-secondary btn-wide btn"><?php _e( 'More', 'resto' ) ?></span></div>
 
 							<?php $i = 0; foreach ($list_item['prices'] as $price_item) : ?>
 								<div class="solutions-item-price-c _<?php echo $i > 1 ? 'second' : 'first' ?> col-sm">
