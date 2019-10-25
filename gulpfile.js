@@ -2,6 +2,7 @@ const   gulp = require('gulp'),
         browsersync = require('browser-sync').create(),
         autoprefixer = require('gulp-autoprefixer'),
         sass = require('gulp-sass'),
+        notify = require('gulp-notify'),
         plumber = require('gulp-plumber'),
 
         path = {
@@ -30,8 +31,15 @@ function browserSync(done) {
 // CSS task
 function cssGenerate() {
     return gulp
-        .src( files.scss )
-        .pipe(plumber())
+        .src(files.scss)
+        .pipe(plumber({
+            errorHandler: notify.onError(function(err){
+                return {
+                    title: 'cssGenerate',
+                    message: err.message
+                }
+            })
+        }))
         .pipe(sass({ outputStyle: 'nested' }).on('error', sass.logError))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(gulp.dest( [path.dist, path.css].join('/') ))
