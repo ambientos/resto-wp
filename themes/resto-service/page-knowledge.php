@@ -69,37 +69,63 @@
 
 <?php
 
-$articles_query = new WP_Query( array(
-	'posts_per_page' => '9',
-) );
+$articles_args = array(
+	'paged'          => get_query_var( 'paged' ),
+	'posts_per_page' => 9,
+);
+
+if ( get_query_var( 'cat' ) ) {
+	$articles_args['cat'] = get_query_var( 'cat' );
+}
+
+query_posts( $articles_args );
 
 ?>
 
-<?php if ( $articles_query->have_posts() ) : ?>
+<?php if ( have_posts() ) : ?>
 	<div class="widget _with-pads _nomargin _gray">
 		<div class="container-inner container">
 			<div class="row align-items-center">
 				<div class="col-md">
-					<h2 class="widget-title _primary">Статьи от Resto-Service</h2>
+					<h2 class="widget-title _primary"><?php _e( 'Posts from Resto-Service', 'resto' ) ?></h2>
 				</div>
 				<div class="list-filter-container col-md d-sm-flex align-items-sm-center justify-content-sm-end"><span class="list-filter-label"><?php _e( 'Show:', 'resto' ) ?></span>
-					<?php $categories = get_categories(); ?>
+					<?php
+
+					$current_page_url = site_url( '/knowledge/' );
+
+					$categories = get_categories();
+
+					$categories_list = array(
+						__( 'All', 'resto' ) => array(
+							'term_id' => '',
+							'url'     => $current_page_url,
+						),
+					);
+
+					foreach ($categories as $category) :
+						$categories_list[ $category->name ] = array(
+							'term_id' => $category->term_id,
+							'url'     => add_query_arg( array( 'cat' => $category->term_id ), $current_page_url ),
+						);
+					endforeach;
+
+					?>
 					<ul class="d-sm-flex align-items-center list-filter list-unstyled">
-						<li class="active"><a href="#"><?php _e( 'All', 'resto' ) ?></a></li>
-						<?php foreach ($categories as $category) : ?>
-							<li><a href="<?php echo get_category_link( $category->term_id ) ?>"><?php echo $category->name ?></a></li>
+						<?php foreach ($categories_list as $category_title => $category_item) : ?>
+							<li<?php echo $category_item['term_id'] === get_query_var( 'cat' ) ? ' class="active"' : '' ?>><a href="<?php echo esc_url( $category_item['url'] ) ?>"><?php echo $category_title ?></a></li>
 						<?php endforeach; ?>
 					</ul>
 				</div>
 			</div>
 
 			<div class="knowledge-article-list row">
-				<?php while ($articles_query->have_posts() ) : $articles_query->the_post() ?>
+				<?php while ( have_posts() ) : the_post() ?>
 					<?php get_template_part( 'template-parts/content', 'article' ); ?>
 				<?php endwhile; ?>
 			</div>
 
-			<?php the_posts_pagination(); wp_reset_postdata(); ?>
+			<?php the_posts_pagination(); ?>
 		</div>
 	</div>
 <?php endif; ?>

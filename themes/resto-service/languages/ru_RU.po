@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pic Theme 1.0\n"
-"POT-Creation-Date: 2019-10-25 04:50+0500\n"
-"PO-Revision-Date: 2019-10-25 04:50+0500\n"
+"POT-Creation-Date: 2019-10-27 04:13+0500\n"
+"PO-Revision-Date: 2019-10-27 04:14+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -196,11 +196,15 @@ msgstr "Что вас интересует?"
 msgid "Videos iiko"
 msgstr "Видеоуроки iiko"
 
-#: page-knowledge.php:85
+#: page-knowledge.php:90
+msgid "Posts from Resto-Service"
+msgstr "Статьи от Resto-Service"
+
+#: page-knowledge.php:92
 msgid "Show:"
 msgstr "Показать:"
 
-#: page-knowledge.php:88
+#: page-knowledge.php:100
 msgid "All"
 msgstr "Все"
 
