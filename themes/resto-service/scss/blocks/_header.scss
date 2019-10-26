@@ -98,9 +98,13 @@
 				family: $font-main;
 				size: .875rem;
 			}
-			color: $white;
 			border-radius: 50%;
 			background: $red;
+
+			&,
+			&:hover {
+				color: $white;
+			}
 		}
 
 		&-num,

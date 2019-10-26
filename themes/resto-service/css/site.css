@@ -142,9 +142,10 @@ div.wpcf7 .ajax-loader {
     padding: 0 .35em;
     font-family: "OpenSans";
     font-size: .875rem;
-    color: #fff;
     border-radius: 50%;
     background: #d03239; }
+    .header-cart-num, .header-cart-num:hover {
+      color: #fff; }
   .header-cart-num, .header-cart-label, .header-cart-checkout {
     display: block; }
   .header-cart-sum {
