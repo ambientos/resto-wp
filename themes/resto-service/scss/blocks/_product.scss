@@ -314,11 +314,15 @@
 
 		.flex-control-thumbs {
 			display: flex;
-			padding: $grid-gutter-width * .5 0 0;
+			padding: 0;
 			list-style: none;
 
-			li:not(:first-child) {
-				margin-left: 1em;
+			li {
+				margin-top: $grid-gutter-width * .5;
+
+				&:not(:first-child) {
+					margin-left: 1em;
+				}
 			}
 
 			img {

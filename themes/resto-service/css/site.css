@@ -1256,10 +1256,12 @@ div.wpcf7 .ajax-loader {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 15px 0 0;
+    padding: 0;
     list-style: none; }
-    .product-thumb .flex-control-thumbs li:not(:first-child) {
-      margin-left: 1em; }
+    .product-thumb .flex-control-thumbs li {
+      margin-top: 15px; }
+      .product-thumb .flex-control-thumbs li:not(:first-child) {
+        margin-left: 1em; }
     .product-thumb .flex-control-thumbs img {
       border: 1px solid #e9ecef; }
   .product-thumb a {
