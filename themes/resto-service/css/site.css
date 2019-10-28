@@ -1252,6 +1252,16 @@ div.wpcf7 .ajax-loader {
     margin-top: 15px; }
     .product-thumb-carousel.owl-carousel .owl-nav {
       top: 22%; }
+  .product-thumb .flex-control-thumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 0 0;
+    list-style: none; }
+    .product-thumb .flex-control-thumbs li:not(:first-child) {
+      margin-left: 1em; }
+    .product-thumb .flex-control-thumbs img {
+      border: 1px solid #e9ecef; }
   .product-thumb a {
     display: inline-block;
     border: 1px solid #e9ecef; }
@@ -1274,7 +1284,8 @@ div.wpcf7 .ajax-loader {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("../i/label.svg");
-  background-size: contain; }
+  background-size: contain;
+  z-index: 1; }
   .product-best-sale::before {
     display: block;
     width: 15px;

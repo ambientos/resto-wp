@@ -312,6 +312,20 @@
 			}
 		}
 
+		.flex-control-thumbs {
+			display: flex;
+			padding: $grid-gutter-width * .5 0 0;
+			list-style: none;
+
+			li:not(:first-child) {
+				margin-left: 1em;
+			}
+
+			img {
+				border: 1px solid $gray-200;
+			}
+		}
+
 		a {
 			display: inline-block;
 			border: 1px solid $gray-200;
@@ -346,6 +360,7 @@
 			image: url('#{$img-dir}label.svg');
 			size: contain;
 		}
+		z-index: 1;
 
 		&::before {
 			$size: $grid-gutter-width * .5;

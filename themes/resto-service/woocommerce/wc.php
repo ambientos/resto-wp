@@ -6,6 +6,13 @@
 
 add_action( 'wp', function(){
 	/**
+	 * Add Theme Features for Product Images
+	 */
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
+
+
+	/**
 	 * Disable styles
 	 */
 	add_filter( 'woocommerce_enqueue_styles', function( $enqueue_styles ) {
