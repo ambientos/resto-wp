@@ -645,8 +645,8 @@ div.wpcf7 .ajax-loader {
         padding-top: 1px;
         padding-bottom: 24px;
         background-size: auto 100%; } }
-    .promo-container._home .container {
-      max-width: 1150px; }
+    .promo-container._home {
+      background-size: cover; }
   .promo-breadcrumbs {
     color: #fff; }
     @media (max-width: 991.98px) {
