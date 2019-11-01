@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Pic Theme 1.0\n"
+"Project-Id-Version: Resto Theme 1.0\n"
 "POT-Creation-Date: 2019-10-27 04:13+0500\n"
 "PO-Revision-Date: 2019-10-27 04:14+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
