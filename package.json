@@ -10,6 +10,9 @@
     "author": "Anton Grakhov",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.7.0",
+        "@babel/preset-env": "^7.7.1",
+        "babel-loader": "^8.0.6",
         "browser-sync": "^2.26.7",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",

@@ -10,6 +10,18 @@ module.exports = {
 		filename: 'site.build.js',
 		path: path.resolve(__dirname) + pathJs
 	},
+	module: {
+		rules: [{
+			test: /\.js$/,
+			exclude: /node_modules/,
+			use: {
+				loader: 'babel-loader',
+				options: {
+					presets: ['@babel/preset-env']
+				}
+			}
+		}]
+	},
 	plugins: [
 		new webpack.ProvidePlugin({
 			$: 'jquery',
