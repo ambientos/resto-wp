@@ -44,7 +44,7 @@ function cssGenerate() {
         .pipe(plumber({
             errorHandler: notify.onError(function(err){
                 return {
-                    title: 'cssGenerate',
+                    title: 'SASS builder',
                     message: err.message
                 }
             })
@@ -65,7 +65,7 @@ function jsGenerate(done) {
         .pipe(plumber({
             errorHandler: notify.onError(function(err){
                 return {
-                    title: 'Webpack',
+                    title: 'Webpack Builder',
                     message: err.message
                 }
             })
