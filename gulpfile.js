@@ -44,7 +44,7 @@ function cssGenerate() {
         .pipe(plumber({
             errorHandler: notify.onError(function(err){
                 return {
-                    title: 'SASS builder',
+                    title: 'SCSS Builder',
                     message: err.message
                 }
             })
