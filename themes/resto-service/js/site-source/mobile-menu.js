@@ -1,14 +1,12 @@
-(function($){
-	/**
-	 * Mobile menu
-	 */
+/**
+ * Mobile menu
+ */
 
-	$('.header-nav-list .menu-item-has-children')
-		.on('click', function(e){
-			if ( 'A' != e.target.nodeName && 'a' != e.target.nodeName ) {
-				e.stopPropagation()
+$('.header-nav-list .menu-item-has-children')
+	.on('click', function(e){
+		if ( 'A' != e.target.nodeName && 'a' != e.target.nodeName ) {
+			e.stopPropagation()
 
-				$(this).toggleClass('open')
-			}
-		})
-})(jQuery)
+			$(this).toggleClass('open')
+		}
+	})

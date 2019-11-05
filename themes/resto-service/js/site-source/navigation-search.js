@@ -1,12 +1,10 @@
-(function($){
-	/**
-	 * Navigation Search
-	 */
+/**
+ * Navigation Search
+ */
 
-	$('.header-nav-search').on('click', function(){
-		var searchButton = $(this),
-			parent = searchButton.parent()
+$('.header-nav-search').on('click', function(){
+	var searchButton = $(this),
+		parent = searchButton.parent()
 
-		parent.addClass('show-control')
-	})
-})(jQuery)
+	parent.addClass('show-control')
+})
