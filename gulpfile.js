@@ -1,8 +1,6 @@
 const   gulp = require('gulp'),
 
         webpackStream = require('webpack-stream'),
-        webpack = webpackStream.webpack,
-        named = require('vinyl-named'),
 
         browsersync = require('browser-sync').create(),
         autoprefixer = require('gulp-autoprefixer'),
@@ -42,12 +40,10 @@ function cssGenerate() {
     return gulp
         .src(files.scss)
         .pipe(plumber({
-            errorHandler: notify.onError(function(err){
-                return {
-                    title: 'SCSS Builder',
-                    message: err.message
-                }
-            })
+            errorHandler: notify.onError( err => ({
+                title: 'SCSS Builder',
+                message: err.message
+            }))
         }))
         .pipe(sass({ outputStyle: 'nested' }).on('error', sass.logError))
         .pipe(autoprefixer('last 2 versions'))
@@ -63,14 +59,11 @@ function jsGenerate(done) {
     return gulp
         .src(files.js)
         .pipe(plumber({
-            errorHandler: notify.onError(function(err){
-                return {
-                    title: 'Webpack Builder',
-                    message: err.message
-                }
-            })
+            errorHandler: notify.onError( err => ({
+                title: 'Webpack Builder',
+                message: err.message
+            }))
         }))
-        .pipe(named())
         .pipe(webpackStream(webpackOptions))
         .pipe(gulp.dest([path.dist, path.js].join('/')))
         .pipe(browsersync.stream())
