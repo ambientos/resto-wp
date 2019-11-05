@@ -53,7 +53,7 @@ function cssGenerate() {
 
 
 // Webpack
-function jsGenerate(done) {
+function jsGenerate() {
     webpackOptions.mode = 'development'
 
     return gulp
