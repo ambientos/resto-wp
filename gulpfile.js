@@ -1,4 +1,9 @@
 const   gulp = require('gulp'),
+
+        webpackStream = require('webpack-stream'),
+        webpack = webpackStream.webpack,
+        named = require('vinyl-named'),
+
         browsersync = require('browser-sync').create(),
         autoprefixer = require('gulp-autoprefixer'),
         sass = require('gulp-sass'),
@@ -9,13 +14,17 @@ const   gulp = require('gulp'),
             src: 'themes/resto-service',
             dist: 'themes/resto-service',
             scss: 'scss',
-            css: 'css'
+            css: 'css',
+            js: 'js'
         },
 
         files = {
             css: [path.dist, path.css, '**', '*.css'].join('/'),
-            scss: [path.src, path.scss, '**', '*.scss'].join('/')
+            scss: [path.src, path.scss, '**', '*.scss'].join('/'),
+            js: [path.dist, path.js, '**', '*.js'].join('/')
         }
+
+let webpackOptions = require('./webpack.config')
 
 
 // BrowserSync
@@ -47,13 +56,35 @@ function cssGenerate() {
 }
 
 
+// Webpack
+function jsGenerate(done) {
+    webpackOptions.mode = 'development'
+
+    return gulp
+        .src(files.js)
+        .pipe(plumber({
+            errorHandler: notify.onError(function(err){
+                return {
+                    title: 'Webpack',
+                    message: err.message
+                }
+            })
+        }))
+        .pipe(named())
+        .pipe(webpackStream(webpackOptions))
+        .pipe(gulp.dest([path.dist, path.js].join('/')))
+        .pipe(browsersync.stream())
+}
+
+
 // Watch files
 function watchFiles() {
     gulp.watch( files.scss, cssGenerate )
+    gulp.watch( files.js, jsGenerate )
 }
 
 
 const watch = gulp.parallel(watchFiles, browserSync)
 
 exports.css = cssGenerate
-exports.default = gulp.series(cssGenerate, watch)
+exports.default = gulp.series(jsGenerate, cssGenerate, watch)

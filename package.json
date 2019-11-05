@@ -4,16 +4,21 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "webpack-build": "webpack",
+        "webpack-dev": "webpack --mode=development --watch"
     },
     "author": "Anton Grakhov",
     "license": "ISC",
-    "dependencies": {
+    "devDependencies": {
         "browser-sync": "^2.26.7",
         "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^6.1.0",
+        "gulp-autoprefixer": "^7.0.1",
         "gulp-notify": "^3.2.0",
         "gulp-plumber": "^1.2.1",
-        "gulp-sass": "^4.0.2"
+        "gulp-sass": "^4.0.2",
+        "vinyl-named": "^1.1.0",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10",
+        "webpack-stream": "^5.2.1"
     }
 }
