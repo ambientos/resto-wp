@@ -1,13 +1,16 @@
 let path = require('path'),
+	webpack = require('webpack'),
 	pathJs = '/themes/resto-service/js'
-	webpack = require('webpack')
 
 module.exports = {
 	mode: 'production',
 	context: __dirname + pathJs,
-	entry: './site-source/index.js',
+	entry: {
+		site: './src/site/index.js',
+		bootstrap: './src/bootstrap/index.js'
+	},
 	output: {
-		filename: 'site.build.js',
+		filename: '[name].build.js',
 		path: path.resolve(__dirname) + pathJs
 	},
 	module: {
