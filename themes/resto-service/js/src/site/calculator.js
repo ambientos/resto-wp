@@ -8,7 +8,6 @@ $('.calc-form').each(function(){
 		$qty = $form.find('.calc-form-qty-control'),
 		$priceTotal = $form.find('.calc-form-total-v'),
 		priceSingle = +$priceTotal.text(),
-		priceTotal = priceSingle,
 
 		$dataField = $('[name="your-data"]'),
 		dataFieldOptions = {
