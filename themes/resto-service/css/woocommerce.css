@@ -119,15 +119,15 @@ p.demo_store {
     margin-left: 0 !important; }
 
 .woocommerce-message {
-  border-top-color: #8fae1b; }
+  border-top-color: #adb5bd; }
   .woocommerce-message::before {
     content: "\e015";
-    color: #8fae1b; }
+    color: #adb5bd; }
 
 .woocommerce-info {
-  border-top-color: #1e85be; }
+  border-top-color: #ced4da; }
   .woocommerce-info::before {
-    color: #1e85be; }
+    color: #ced4da; }
 
 .woocommerce-error {
   border-top-color: #b81c23; }

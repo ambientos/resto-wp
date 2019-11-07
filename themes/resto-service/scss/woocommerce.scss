@@ -1,3 +1,9 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
 
 @-webkit-keyframes spin {
 	100% {
@@ -156,19 +162,23 @@ p.demo_store {
 	}
 
 	&-message {
-		border-top-color: #8fae1b;
+		$color: $gray-500;
+
+		border-top-color: $color;
 
 		&::before {
 			content: "\e015";
-			color: #8fae1b;
+			color: $color;
 		}
 	}
 
 	&-info {
-		border-top-color: #1e85be;
+		$color: $gray-400;
+
+		border-top-color: $color;
 
 		&::before {
-			color: #1e85be;
+			color: $color;
 		}
 	}
 
