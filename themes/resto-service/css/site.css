@@ -136,7 +136,6 @@ div.wpcf7 .ajax-loader {
     left: 0;
     top: .7em; }
   .header-cart-num {
-    position: absolute;
     left: .8em;
     top: .4em;
     padding: 0 .35em;
@@ -144,6 +143,15 @@ div.wpcf7 .ajax-loader {
     font-size: .875rem;
     border-radius: 50%;
     background: #d03239; }
+    .header-cart-num, .header-cart-num::before {
+      display: block;
+      position: absolute; }
+    .header-cart-num::before {
+      top: 0;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      content: ''; }
     .header-cart-num, .header-cart-num:hover {
       color: #fff; }
   .header-cart-num, .header-cart-label, .header-cart-checkout {
