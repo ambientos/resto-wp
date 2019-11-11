@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 import './mobile-menu'
 import './navigation-search'
 import './popup'

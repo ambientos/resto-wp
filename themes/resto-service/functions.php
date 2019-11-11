@@ -67,11 +67,11 @@ function resto_scripts_styles() {
 	 */
 
 	wp_enqueue_script( 'resto-bs-js', get_template_directory_uri() . '/js/bootstrap.build.js', array('jquery'), '20191106', true );
-	wp_enqueue_script( 'resto-owl-carousel-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '2.3.4', true );
-	wp_enqueue_script( 'resto-fancybox-js', get_template_directory_uri() . '/js/jquery.fancybox.min.js', array('jquery'), '3.5.7', true );
+	wp_enqueue_script( 'resto-owl-carousel-js', get_template_directory_uri() . '/js/owl-carousel.build.js', array('jquery'), '2.3.4', true );
+	wp_enqueue_script( 'resto-fancybox-js', get_template_directory_uri() . '/js/fancybox.build.js', array('jquery'), '3.5.7', true );
 	wp_enqueue_script( 'resto-site-js', get_template_directory_uri() .'/js/site.build.js', array('jquery'), '20191106', true );
 
-	wp_localize_script( 'resto-site-js', 'cart', array(
+	wp_localize_script( 'resto-site-js', 'restoCart', array(
 		'urlEmpty' => add_query_arg( array( 'empty' => '1' ), site_url('/cart/') ),
 	) );
 }

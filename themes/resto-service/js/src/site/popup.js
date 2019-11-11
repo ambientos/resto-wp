@@ -53,7 +53,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 
 	setTimeout( function(){
 		if ( '389' == event.detail.contactFormId ) {
-			jQuery(location).attr('href', cart.urlEmpty)
+			jQuery(location).attr('href', restoCart.urlEmpty)
 		}
 		else {
 			jQuery.fancybox.close()

@@ -6,8 +6,10 @@ module.exports = {
 	mode: 'production',
 	context: __dirname + pathJs,
 	entry: {
-		site: './src/site/index.js',
-		bootstrap: './src/bootstrap/index.js'
+		fancybox: './src/fancybox/index.js',
+		'owl-carousel': './src/owl-carousel/index.js',
+		bootstrap: './src/bootstrap/index.js',
+		site: './src/site/index.js'
 	},
 	output: {
 		filename: '[name].build.js',
