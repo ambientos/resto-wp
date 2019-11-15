@@ -19,7 +19,7 @@ const   gulp = require('gulp'),
         files = {
             css: [path.dist, path.css, '**', '*.css'].join('/'),
             scss: [path.src, path.scss, '**', '*.scss'].join('/'),
-            js: [path.dist, path.js, 'src', '**', '*.js'].join('/')
+            js: [path.src, path.js, 'src', '**', '*.js'].join('/')
         }
 
 let webpackOptions = require('./webpack.config')
