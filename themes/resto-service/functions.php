@@ -183,6 +183,39 @@ add_filter('wp_nav_menu_objects', 'resto_product_cat_wp_nav_menu_objects', 10, 2
 
 
 /**
+ * Add knowledge custom trail to some post type pages
+ */
+
+function resto_knowledge_add_breadcrumb( $breadcrumb_trail ) {
+	/**
+	 * Allowed post types
+	 * @var array
+	 */
+	$post_types_list = array( 'post', 'rs-video', );
+
+	/**
+	 * Current post type
+	 * @var string
+	 */
+	$post_type_current = get_post_type();
+
+	/**
+	 * Condition for Knowledget Base trail add
+	 * @var boolean
+	 */
+	$condition_to_show = in_array( $post_type_current, $post_types_list );
+
+	if ( $condition_to_show ) {
+		$knowledge_breadcrumb = new bcn_breadcrumb( __( 'Knowledge Base', 'resto' ), NULL, array('knowledge'), '/knowledge/');
+
+		array_splice( $breadcrumb_trail->breadcrumbs, -1, 0, array($knowledge_breadcrumb) );
+	}
+}
+
+add_action('bcn_after_fill', 'resto_knowledge_add_breadcrumb');
+
+
+/**
  * Additional Classes
  */
 

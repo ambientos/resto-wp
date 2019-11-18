@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Resto Theme 1.0\n"
-"POT-Creation-Date: 2019-10-27 04:13+0500\n"
-"PO-Revision-Date: 2019-10-27 04:14+0500\n"
+"POT-Creation-Date: 2019-11-15 16:31+0500\n"
+"PO-Revision-Date: 2019-11-15 16:31+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -28,7 +28,7 @@ msgstr "Оставить заявку"
 msgid "Service"
 msgstr "Услуга"
 
-#: acf/blocks/service-table.php:18 woocommerce/wc.php:101
+#: acf/blocks/service-table.php:18 woocommerce/wc.php:108
 msgid "Price"
 msgstr "Стоимость"
 
@@ -36,7 +36,7 @@ msgstr "Стоимость"
 msgid "Service Order"
 msgstr "Заказать услуги"
 
-#: acf/blocks/solution-ready.php:22 woocommerce/wc.php:245
+#: acf/blocks/solution-ready.php:22 woocommerce/wc.php:252
 msgid "More"
 msgstr "Подробнее"
 
@@ -124,17 +124,21 @@ msgstr "Footer Main Menu"
 msgid "Footer Sub Menu"
 msgstr "Footer Sub Menu"
 
-#: functions.php:90
+#: functions.php:89
 msgid "After Content"
 msgstr "After Content"
 
-#: functions.php:102
+#: functions.php:101
 msgid "Footer Menu List"
 msgstr "Footer Menu List"
 
-#: functions.php:114
+#: functions.php:113
 msgid "Hidden"
 msgstr "Hidden"
+
+#: functions.php:237
+msgid "Knowledge Base"
+msgstr "База знаний"
 
 #: inc/customizer.php:27
 msgid "Social Items"
@@ -281,11 +285,11 @@ msgstr ""
 "Отправляя свои данные, вы соглашаетесь с <a href=\"%s\" target=\"_blank"
 "\">политикой обработки персональных данных</a>"
 
-#: woocommerce/cart/cart.php:156 woocommerce/wc.php:108
+#: woocommerce/cart/cart.php:156 woocommerce/wc.php:115
 msgid "Buy One&nbsp;Click"
 msgstr "Купить в&nbsp;1&nbsp;клик"
 
-#: woocommerce/loop/pagination.php:35 woocommerce/wc.php:43
+#: woocommerce/loop/pagination.php:35 woocommerce/wc.php:50
 msgid "Sort by:"
 msgstr "Сортировать:"
 
@@ -297,7 +301,7 @@ msgstr "Добавить в&nbsp;корзину"
 msgid "Best Price Guaranteed"
 msgstr "Гарантия лучшей цены"
 
-#: woocommerce/single-product/product-image.php:45
+#: woocommerce/single-product/product-image.php:46
 msgid "Awaiting product image"
 msgstr ""
 
@@ -305,27 +309,27 @@ msgstr ""
 msgid "You often buy with this product"
 msgstr "С этим товаром часто покупают"
 
-#: woocommerce/wc.php:36
+#: woocommerce/wc.php:43
 msgid "Ask a Question"
 msgstr "Задать вопрос"
 
-#: woocommerce/wc.php:115 woocommerce/wc.php:219
+#: woocommerce/wc.php:122 woocommerce/wc.php:226
 msgid "Under the Order"
 msgstr "Под заказ"
 
-#: woocommerce/wc.php:129
+#: woocommerce/wc.php:136
 msgid "Characteristics"
 msgstr "Характеристики"
 
-#: woocommerce/wc.php:194
+#: woocommerce/wc.php:201
 msgid "Documentation and downloads"
 msgstr "Документация и файлы для загрузки"
 
-#: woocommerce/wc.php:219
+#: woocommerce/wc.php:226
 msgid "In stock"
 msgstr "В наличии"
 
-#: woocommerce/wc.php:311
+#: woocommerce/wc.php:318
 #, php-format
 msgid "%d item in total"
 msgid_plural "%d items in total"
@@ -333,15 +337,15 @@ msgstr[0] "%d товар на сумму"
 msgstr[1] "%d товара на сумму"
 msgstr[2] "%d товаров на сумму"
 
-#: woocommerce/wc.php:313
+#: woocommerce/wc.php:320
 msgid "View your shopping cart"
 msgstr "Посмотреть корзину"
 
-#: woocommerce/wc.php:314
+#: woocommerce/wc.php:321
 msgid "Order"
 msgstr "Оформить"
 
-#: woocommerce/wc.php:317
+#: woocommerce/wc.php:324
 msgid "Cart is Empty"
 msgstr "Корзина пуста"
 
