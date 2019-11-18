@@ -28,6 +28,10 @@
 					</div>
 
 					<div class="header-social-list navi-social-list">
+						<?php if ( ! empty(get_option('resto_vb')) ) : ?>
+							<a class="header-social-item navi-social-item _top-vb ico" href="<?php echo esc_attr( get_option('resto_vb') ); ?>" title="Viber">&nbsp;</a>
+						<?php endif; ?>
+
 						<?php if ( ! empty(get_option('resto_wa')) ) : ?>
 							<a class="header-social-item navi-social-item _top-wa ico" href="<?php echo esc_attr( get_option('resto_wa') ); ?>" title="WhatsApp">&nbsp;</a>
 						<?php endif; ?>
