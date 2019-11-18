@@ -28,9 +28,17 @@
 					</div>
 
 					<div class="header-social-list navi-social-list">
-						<a class="header-social-item navi-social-item _top-wa ico" href="<?php echo esc_attr( get_option('resto_wa') ); ?>" title="WhatsApp">&nbsp;</a>
-						<a class="header-social-item navi-social-item _top-tg ico" href="<?php echo esc_attr( get_option('resto_tg') ); ?>" title="Telegram">&nbsp;</a>
-						<a class="header-social-item navi-social-item _top-sk ico" href="<?php echo esc_attr( get_option('resto_sk') ); ?>" title="Skype">&nbsp;</a>
+						<?php if ( ! empty(get_option('resto_wa')) ) : ?>
+							<a class="header-social-item navi-social-item _top-wa ico" href="<?php echo esc_attr( get_option('resto_wa') ); ?>" title="WhatsApp">&nbsp;</a>
+						<?php endif; ?>
+
+						<?php if ( ! empty(get_option('resto_tg')) ) : ?>
+							<a class="header-social-item navi-social-item _top-tg ico" href="<?php echo esc_attr( get_option('resto_tg') ); ?>" title="Telegram">&nbsp;</a>
+						<?php endif; ?>
+
+						<?php if ( ! empty(get_option('resto_sk')) ) : ?>
+							<a class="header-social-item navi-social-item _top-sk ico" href="<?php echo esc_attr( get_option('resto_sk') ); ?>" title="Skype">&nbsp;</a>
+						<?php endif; ?>
 					</div>
 
 					<div class="header-cart _cart-mini ico d-flex align-items-center">
