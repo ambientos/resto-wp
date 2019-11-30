@@ -2,6 +2,8 @@
  * Fancybox
  */
 
+$.fancybox.defaults.touch = false
+
 $('[data-fancybox]').fancybox({
 	afterLoad: function( instance, slide ) {
 		$('.single-product,.woocommerce-cart').each(function(){
