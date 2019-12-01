@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AG Resto Site Plugin 1.0\n"
-"POT-Creation-Date: 2019-10-17 21:53+0500\n"
-"PO-Revision-Date: 2019-10-17 21:55+0500\n"
+"POT-Creation-Date: 2019-12-02 01:56+0500\n"
+"PO-Revision-Date: 2019-12-02 02:00+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -20,206 +20,276 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: core/Plugin.php:53 core/Plugin.php:63
-msgid "Solutions"
-msgstr "Решения"
+#: acf/blocks/calc.php:30
+msgid "Number of PC"
+msgstr "Количество ПК"
 
-#: core/Plugin.php:54
-msgid "Solution"
-msgstr "Решение"
+#: acf/blocks/calc.php:36
+msgid "Service cost"
+msgstr "Стоимость услуги"
 
-#: core/Plugin.php:55
-msgid "Add New Solution"
-msgstr "Добавить новую запись"
+#: acf/blocks/calc.php:38
+msgid "rub/mon."
+msgstr "руб./мес."
 
-#: core/Plugin.php:56
-msgid "Add New Solution item"
-msgstr "Добавить новую запись"
+#: acf/blocks/calc.php:55
+msgid "Submit Order"
+msgstr "Оставить заявку"
 
-#: core/Plugin.php:57
-msgid "Edit Solution Item"
-msgstr "Редактировать запись"
-
-#: core/Plugin.php:58
-msgid "New Solution Item"
-msgstr "Новая запись"
-
-#: core/Plugin.php:59
-msgid "View Solution Item"
-msgstr "Посмотреть запись"
-
-#: core/Plugin.php:60
-msgid "Search Solutions"
-msgstr "Поиск по записям"
-
-#: core/Plugin.php:61
-msgid "Nothing found Solutions"
-msgstr "Записей не найдено"
-
-#: core/Plugin.php:62
-msgid "Nothing found Solutions in Trash"
-msgstr "В корзине записей не найдено"
-
-#: core/Plugin.php:83 core/Plugin.php:93
-msgid "Services"
-msgstr "Услуги"
-
-#: core/Plugin.php:84
+#: acf/blocks/service-table.php:17 core/Plugin.php:89
 msgid "Service"
 msgstr "Услуга"
 
-#: core/Plugin.php:85
+#: acf/blocks/service-table.php:18
+msgid "Price"
+msgstr "Стоимость"
+
+#: acf/blocks/service-table.php:42
+msgid "Service Order"
+msgstr "Заказать услуги"
+
+#: acf/blocks/solution-ready.php:22
+msgid "More"
+msgstr "Подробнее"
+
+#: acf/blocks/solution-ready.php:40
+msgid "Equipments"
+msgstr "Оборудование"
+
+#: acf/blocks/solution-ready.php:44 core/Plugin.php:88 core/Plugin.php:98
+msgid "Services"
+msgstr "Услуги"
+
+#: core/Plugin.php:58 core/Plugin.php:68
+msgid "Solutions"
+msgstr "Решения"
+
+#: core/Plugin.php:59
+msgid "Solution"
+msgstr "Решение"
+
+#: core/Plugin.php:60
+msgid "Add New Solution"
+msgstr "Добавить новую запись"
+
+#: core/Plugin.php:61
+msgid "Add New Solution item"
+msgstr "Добавить новую запись"
+
+#: core/Plugin.php:62
+msgid "Edit Solution Item"
+msgstr "Редактировать запись"
+
+#: core/Plugin.php:63
+msgid "New Solution Item"
+msgstr "Новая запись"
+
+#: core/Plugin.php:64
+msgid "View Solution Item"
+msgstr "Посмотреть запись"
+
+#: core/Plugin.php:65
+msgid "Search Solutions"
+msgstr "Поиск по записям"
+
+#: core/Plugin.php:66
+msgid "Nothing found Solutions"
+msgstr "Записей не найдено"
+
+#: core/Plugin.php:67
+msgid "Nothing found Solutions in Trash"
+msgstr "В корзине записей не найдено"
+
+#: core/Plugin.php:90
 msgid "Add New Service"
 msgstr "Добавить новую услугу"
 
-#: core/Plugin.php:86
+#: core/Plugin.php:91
 msgid "Add New Service item"
 msgstr "Добавить новую услугу"
 
-#: core/Plugin.php:87
+#: core/Plugin.php:92
 msgid "Edit Service Item"
 msgstr "Редактировать услугу"
 
-#: core/Plugin.php:88
+#: core/Plugin.php:93
 msgid "New Service Item"
 msgstr "Новая услуга"
 
-#: core/Plugin.php:89
+#: core/Plugin.php:94
 msgid "View Service Item"
 msgstr "Посмотреть запись"
 
-#: core/Plugin.php:90
+#: core/Plugin.php:95
 msgid "Search Services"
 msgstr "Поиск по услугам"
 
-#: core/Plugin.php:91
+#: core/Plugin.php:96
 msgid "Nothing found Services"
 msgstr "Услуг не найдено"
 
-#: core/Plugin.php:92
+#: core/Plugin.php:97
 msgid "Nothing found Services in Trash"
 msgstr "В корзине услуг не найдено"
 
-#: core/Plugin.php:113 core/Plugin.php:124
+#: core/Plugin.php:118 core/Plugin.php:129
 msgid "Video Categories"
 msgstr "Категории видео"
 
-#: core/Plugin.php:114
+#: core/Plugin.php:119
 msgid "Video Category"
 msgstr "Категория видео"
 
-#: core/Plugin.php:115
+#: core/Plugin.php:120
 msgid "Search Category"
 msgstr "Поиск по категориям"
 
-#: core/Plugin.php:116
+#: core/Plugin.php:121
 msgid "All Categories"
 msgstr "Все категории"
 
-#: core/Plugin.php:117
+#: core/Plugin.php:122
 msgid "View Category"
 msgstr "Посмотреть категорию"
 
-#: core/Plugin.php:118
+#: core/Plugin.php:123
 msgid "Parent Category"
 msgstr "Родительская категория"
 
-#: core/Plugin.php:119
+#: core/Plugin.php:124
 msgid "Parent Category:"
 msgstr "Родительская категория:"
 
-#: core/Plugin.php:120
+#: core/Plugin.php:125
 msgid "Edit Category"
 msgstr "Редактировать категорию"
 
-#: core/Plugin.php:121
+#: core/Plugin.php:126
 msgid "Update Category"
 msgstr "Обновить категорию"
 
-#: core/Plugin.php:122
+#: core/Plugin.php:127
 msgid "Add New Category"
 msgstr "Добавить новую категорию"
 
-#: core/Plugin.php:123
+#: core/Plugin.php:128
 msgid "New Category Name"
 msgstr "Имя новой категории"
 
-#: core/Plugin.php:142 core/Plugin.php:152
+#: core/Plugin.php:147 core/Plugin.php:157
 msgid "Videos"
 msgstr "Видеоуроки"
 
-#: core/Plugin.php:143
+#: core/Plugin.php:148
 msgid "Video"
 msgstr "Видео"
 
-#: core/Plugin.php:144
+#: core/Plugin.php:149
 msgid "Add New Video"
 msgstr "Добавить новое видео"
 
-#: core/Plugin.php:145
+#: core/Plugin.php:150
 msgid "Add New Video item"
 msgstr "Добавить новое видео"
 
-#: core/Plugin.php:146
+#: core/Plugin.php:151
 msgid "Edit Video Item"
 msgstr "Редактировать запись"
 
-#: core/Plugin.php:147
+#: core/Plugin.php:152
 msgid "New Video Item"
 msgstr "Новое видео"
 
-#: core/Plugin.php:148
+#: core/Plugin.php:153
 msgid "View Video Item"
 msgstr "Посмотреть запись"
 
-#: core/Plugin.php:149
+#: core/Plugin.php:154
 msgid "Search Videos"
 msgstr "Поиск по видео"
 
-#: core/Plugin.php:150
+#: core/Plugin.php:155
 msgid "Nothing found Videos"
 msgstr "Видео не найдено"
 
-#: core/Plugin.php:151
+#: core/Plugin.php:156
 msgid "Nothing found Videos in Trash"
 msgstr "В корзине видео не найдено"
 
-#: core/Plugin.php:173 core/Plugin.php:183
+#: core/Plugin.php:178 core/Plugin.php:188
 msgid "Testimonials"
 msgstr "Отзывы"
 
-#: core/Plugin.php:174
+#: core/Plugin.php:179
 msgid "Testimonial"
 msgstr "Отзыв"
 
-#: core/Plugin.php:175
+#: core/Plugin.php:180
 msgid "Add New Testimonial"
 msgstr "Добавить новый отзыв"
 
-#: core/Plugin.php:176
+#: core/Plugin.php:181
 msgid "Add New Testimonial item"
 msgstr "Добавить новый отзыв"
 
-#: core/Plugin.php:177
+#: core/Plugin.php:182
 msgid "Edit Testimonial Item"
 msgstr "Редактировать отзыв"
 
-#: core/Plugin.php:178
+#: core/Plugin.php:183
 msgid "New Testimonial Item"
 msgstr "Новый отзыв"
 
-#: core/Plugin.php:179
+#: core/Plugin.php:184
 msgid "View Testimonial Item"
 msgstr "Посмотреть отзыв"
 
-#: core/Plugin.php:180
+#: core/Plugin.php:185
 msgid "Search Testimonials"
 msgstr "Поиск по отзывам"
 
-#: core/Plugin.php:181
+#: core/Plugin.php:186
 msgid "Nothing found Testimonials"
 msgstr "Отзывов не найдено"
 
-#: core/Plugin.php:182
+#: core/Plugin.php:187
 msgid "Nothing found Testimonials in Trash"
 msgstr "В корзине отзывов не найдено"
+
+#: core/Plugin.php:293
+msgid "Promo Block"
+msgstr ""
+
+#: core/Plugin.php:310
+msgid "Widget Block"
+msgstr ""
+
+#: core/Plugin.php:327
+msgid "Service Line Block"
+msgstr ""
+
+#: core/Plugin.php:344
+msgid "Service Included-in Block"
+msgstr ""
+
+#: core/Plugin.php:361
+#, fuzzy
+#| msgid "Search Solutions"
+msgid "Ready Solution Block"
+msgstr "Поиск по записям"
+
+#: core/Plugin.php:378
+msgid "Solution Modules Block"
+msgstr ""
+
+#: core/Plugin.php:395
+msgid "Calculator Block"
+msgstr ""
+
+#: core/Plugin.php:412
+msgid "Service Table Block"
+msgstr ""
+
+#: core/Plugin.php:429
+msgid "Grid Links Block"
+msgstr ""

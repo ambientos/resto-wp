@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Resto Theme 1.0\n"
-"POT-Creation-Date: 2019-11-15 16:31+0500\n"
-"PO-Revision-Date: 2019-11-15 16:31+0500\n"
+"POT-Creation-Date: 2019-12-02 02:01+0500\n"
+"PO-Revision-Date: 2019-12-02 02:01+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -20,70 +20,6 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: acf/blocks/calc.php:55
-msgid "Submit Order"
-msgstr "Оставить заявку"
-
-#: acf/blocks/service-table.php:17
-msgid "Service"
-msgstr "Услуга"
-
-#: acf/blocks/service-table.php:18 woocommerce/wc.php:108
-msgid "Price"
-msgstr "Стоимость"
-
-#: acf/blocks/service-table.php:42
-msgid "Service Order"
-msgstr "Заказать услуги"
-
-#: acf/blocks/solution-ready.php:22 woocommerce/wc.php:252
-msgid "More"
-msgstr "Подробнее"
-
-#: acf/blocks/solution-ready.php:40
-msgid "Equipments"
-msgstr "Оборудование"
-
-#: acf/blocks/solution-ready.php:44
-msgid "Services"
-msgstr "Услуги"
-
-#: acf/init.php:15
-msgid "Promo Block"
-msgstr "Блок Промо"
-
-#: acf/init.php:32
-msgid "Widget Block"
-msgstr "Блок Виджет"
-
-#: acf/init.php:49
-msgid "Service Line Block"
-msgstr ""
-
-#: acf/init.php:66
-msgid "Service Included-in Block"
-msgstr ""
-
-#: acf/init.php:83
-msgid "Ready Solution Block"
-msgstr ""
-
-#: acf/init.php:100
-msgid "Solution Modules Block"
-msgstr ""
-
-#: acf/init.php:117
-msgid "Calculator Block"
-msgstr ""
-
-#: acf/init.php:134
-msgid "Service Table Block"
-msgstr ""
-
-#: acf/init.php:151
-msgid "Grid Links Block"
-msgstr ""
-
 #: archive-rs-video.php:17 page-knowledge.php:39
 msgid "All Videos"
 msgstr "Все видео"
@@ -92,7 +28,7 @@ msgstr "Все видео"
 msgid "Search by Videos"
 msgstr "Поиск по видео"
 
-#: archive-rs-video.php:23 header.php:58 page-knowledge.php:17
+#: archive-rs-video.php:23 header.php:70 page-knowledge.php:17
 msgid "Search"
 msgstr "Найти"
 
@@ -136,7 +72,7 @@ msgstr "Footer Menu List"
 msgid "Hidden"
 msgstr "Hidden"
 
-#: functions.php:237
+#: functions.php:209
 msgid "Knowledge Base"
 msgstr "База знаний"
 
@@ -313,6 +249,10 @@ msgstr "С этим товаром часто покупают"
 msgid "Ask a Question"
 msgstr "Задать вопрос"
 
+#: woocommerce/wc.php:108
+msgid "Price"
+msgstr "Стоимость"
+
 #: woocommerce/wc.php:122 woocommerce/wc.php:226
 msgid "Under the Order"
 msgstr "Под заказ"
@@ -328,6 +268,10 @@ msgstr "Документация и файлы для загрузки"
 #: woocommerce/wc.php:226
 msgid "In stock"
 msgstr "В наличии"
+
+#: woocommerce/wc.php:252
+msgid "More"
+msgstr "Подробнее"
 
 #: woocommerce/wc.php:318
 #, php-format
@@ -348,9 +292,3 @@ msgstr "Оформить"
 #: woocommerce/wc.php:324
 msgid "Cart is Empty"
 msgstr "Корзина пуста"
-
-#~ msgid "Free Book about iiko"
-#~ msgstr "Бесплатный учебник по iiko"
-
-#~ msgid "Free hardware test"
-#~ msgstr "Бесплатный тест оборудования"
