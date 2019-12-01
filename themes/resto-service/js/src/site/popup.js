@@ -2,8 +2,22 @@
  * Fancybox
  */
 
+
+/**
+ * Set default touch to false
+ */
 $.fancybox.defaults.touch = false
 
+
+/**
+ * Add fancybox to gutenberg block image
+ */
+$('.wp-block-image a').fancybox()
+
+
+/**
+ * One-click product order popup
+ */
 $('[data-fancybox]').fancybox({
 	afterLoad: function( instance, slide ) {
 		$('.single-product,.woocommerce-cart').each(function(){
