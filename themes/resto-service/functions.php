@@ -223,13 +223,6 @@ require 'classes/bs4navwalker.php';
 
 
 /**
- * ACF
- */
-
-require 'acf/init.php';
-
-
-/**
  * Template functions
  */
 
