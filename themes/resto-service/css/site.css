@@ -1107,6 +1107,10 @@ div.wpcf7 .ajax-loader {
   .product-item:hover {
     border-color: #ced4da;
     z-index: 1; }
+    .product-item:hover:not(._carousel-item) {
+      border-color: #fff;
+      -webkit-box-shadow: 0 15px 30px 0 rgba(38, 48, 59, 0.25);
+              box-shadow: 0 15px 30px 0 rgba(38, 48, 59, 0.25); }
     .product-item:hover ._stock {
       color: #1fc160; }
     .product-item:hover ._order {
@@ -1147,10 +1151,18 @@ div.wpcf7 .ajax-loader {
     font-weight: 700;
     text-transform: uppercase; }
     .product-item-more a {
+      position: relative;
+      margin-right: .8em;
       color: inherit;
       border-bottom-width: 1px;
       border-bottom-style: dotted; }
-      .product-item-more a:hover {
+      .product-item-more a::after {
+        position: absolute;
+        right: -.7em;
+        font-size: 120%;
+        line-height: 1.2;
+        content: '\025B8'; }
+      .product-item:hover .product-item-more a {
         color: #d03239; }
   .product-item .attachment-woocommerce_thumbnail {
     max-width: 100%;
