@@ -27,15 +27,15 @@ $sales = get_field('sale');
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label><?php _e( 'Number of PC', TEXT_DOMAIN ) ?></label>
+											<label><?php _e( 'Number of PC', 'resite' ) ?></label>
 											<input class="calc-form-qty-control form-control" name="qty" type="number" value="1">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label><?php _e( 'Service cost', TEXT_DOMAIN ) ?></label>
+											<label><?php _e( 'Service cost', 'resite' ) ?></label>
 											<div class="calc-form-total">
-												<span class="calc-form-total-v-container"><span class="calc-form-total-v"><?php echo esc_html( $block['data']['price'] ) ?></span></span> <span><?php _e( 'rub/mon.', TEXT_DOMAIN ) ?></span></div>
+												<span class="calc-form-total-v-container"><span class="calc-form-total-v"><?php echo esc_html( $block['data']['price'] ) ?></span></span> <span><?php _e( 'rub/mon.', 'resite' ) ?></span></div>
 										</div>
 									</div>
 								</div>
@@ -52,7 +52,7 @@ $sales = get_field('sale');
 						</div>
 					</div>
 					<div class="calc-form-submit form-submit">
-						<input class="btn-primary btn-wide btn" data-fancybox data-src="#popup-calc" type="button" value="<?php echo esc_attr( __( 'Submit Order', TEXT_DOMAIN ) ) ?>">
+						<input class="btn-primary btn-wide btn" data-fancybox data-src="#popup-calc" type="button" value="<?php echo esc_attr( __( 'Submit Order', 'resite' ) ) ?>">
 					</div>
 				</form>
 			</div>

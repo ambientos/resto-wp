@@ -19,7 +19,7 @@ if ( ! empty($list_array) ) : ?>
 					<div class="solutions-item-row">
 						<div class="row align-items-center">
 							<div class="solutions-item-title col-lg col-12"><?php echo esc_html( $list_item['title'] ) ?></div>
-							<div class="solutions-item-more col-lg col-sm"><span data-fancybox data-src="#popup-callback" class="btn-secondary btn-wide btn"><?php _e( 'More', TEXT_DOMAIN ) ?></span></div>
+							<div class="solutions-item-more col-lg col-sm"><span data-fancybox data-src="#popup-callback" class="btn-secondary btn-wide btn"><?php _e( 'More', 'resite' ) ?></span></div>
 
 							<?php $i = 0; foreach ($list_item['prices'] as $price_item) : ?>
 								<div class="solutions-item-price-c _<?php echo $i > 1 ? 'second' : 'first' ?> col-sm">
@@ -37,11 +37,11 @@ if ( ! empty($list_array) ) : ?>
 								<p><b><?php echo esc_html( $list_item['info'] ) ?></b></p>
 							</div>
 							<div class="solutions-item-descr _second col">
-								<b><?php _e( 'Equipments', TEXT_DOMAIN ) ?>:</b>
+								<b><?php _e( 'Equipments', 'resite' ) ?>:</b>
 								<?php echo $list_item['equip'] ?>
 							</div>
 							<div class="solutions-item-descr _third col">
-								<b><?php _e( 'Services', TEXT_DOMAIN ) ?>:</b>
+								<b><?php _e( 'Services', 'resite' ) ?>:</b>
 								<?php echo $list_item['service'] ?>
 							</div>
 						</div>

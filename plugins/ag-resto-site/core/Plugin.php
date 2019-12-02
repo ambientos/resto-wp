@@ -24,11 +24,6 @@ class Plugin {
 		 * Login customize
 		 */
 		add_action( 'login_head', array( __CLASS__, 'login_head' ) );
-
-		/**
-		 * ACF init
-		 */
-		add_action( 'acf/init', array( __CLASS__, 'acf_init' ) );
 	}
 
 	/**
@@ -43,7 +38,15 @@ class Plugin {
 		 */
 		load_textdomain( TEXT_DOMAIN, PLUGIN_FOLDER . '/languages/' . TEXT_DOMAIN . '-' . get_locale() . '.mo' );
 
+		/**
+		 * Add testimonials carousel shortcode
+		 */
 		add_shortcode( 'testimonials_carousel', array( __CLASS__, 'testimonials_carousel' ) );
+
+		/**
+		 * ACF init
+		 */
+		add_action( 'acf/init', array( __CLASS__, 'acf_init' ) );
 	}
 
 	/**
@@ -278,7 +281,7 @@ class Plugin {
 	/**
 	 * ACF init
 	 */
-	public function acf_init() {
+	public static function acf_init() {
 
 		/**
 		 * Add Gutenberg blocks
@@ -290,7 +293,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'promo',
-				'title'           => __( 'Promo Block', 'resto' ),
+				'title'           => __( 'Promo Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/promo.php',
 				'category'        => 'formatting',
@@ -307,7 +310,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'widget',
-				'title'           => __( 'Widget Block', 'resto' ),
+				'title'           => __( 'Widget Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/widget.php',
 				'category'        => 'formatting',
@@ -324,7 +327,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'service-line',
-				'title'           => __( 'Service Line Block', 'resto' ),
+				'title'           => __( 'Service Line Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/service-line.php',
 				'category'        => 'formatting',
@@ -341,7 +344,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'included-in',
-				'title'           => __( 'Service Included-in Block', 'resto' ),
+				'title'           => __( 'Service Included-in Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/service-included-in.php',
 				'category'        => 'formatting',
@@ -358,7 +361,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'solution-ready',
-				'title'           => __( 'Ready Solution Block', 'resto' ),
+				'title'           => __( 'Ready Solution Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/solution-ready.php',
 				'category'        => 'formatting',
@@ -375,7 +378,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'solution-modules',
-				'title'           => __( 'Solution Modules Block', 'resto' ),
+				'title'           => __( 'Solution Modules Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/solution-modules.php',
 				'category'        => 'formatting',
@@ -392,7 +395,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'calc-block',
-				'title'           => __( 'Calculator Block', 'resto' ),
+				'title'           => __( 'Calculator Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/calc.php',
 				'category'        => 'formatting',
@@ -409,7 +412,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'service-table-block',
-				'title'           => __( 'Service Table Block', 'resto' ),
+				'title'           => __( 'Service Table Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/service-table.php',
 				'category'        => 'formatting',
@@ -426,7 +429,7 @@ class Plugin {
 			 */
 			acf_register_block_type( array(
 				'name'            => 'grid-links-block',
-				'title'           => __( 'Grid Links Block', 'resto' ),
+				'title'           => __( 'Grid Links Block', TEXT_DOMAIN ),
 				'mode'            => 'edit',
 				'render_template' => PLUGIN_FOLDER . '/acf/blocks/grid-links.php',
 				'category'        => 'formatting',

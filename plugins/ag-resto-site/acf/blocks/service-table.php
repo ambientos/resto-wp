@@ -14,8 +14,8 @@ if ( ! empty($list) ) :
 			<table class="calc-st-table table table-bordered<?php if ( ! $block['data']['button-in-table'] ) : ?> _without-btn<?php endif; ?>">
 				<thead>
 					<tr class="table-secondary">
-						<th><?php _e( 'Service', TEXT_DOMAIN ) ?></th>
-						<th><?php _e( 'Price', TEXT_DOMAIN ) ?></th>
+						<th><?php _e( 'Service', 'resite' ) ?></th>
+						<th><?php _e( 'Price', 'resite' ) ?></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -39,7 +39,7 @@ if ( ! empty($list) ) :
 							<div class="row align-items-sm-center">
 								<?php if ( $block['data']['button-in-table'] ) : ?>
 									<div class="col-md-6"><b class="calc-st-selected"></b></div>
-									<div class="col-md-6 text-right"><span data-fancybox data-src="#popup-services" class="btn-primary btn-sm btn"><?php _e( 'Service Order', TEXT_DOMAIN ) ?></span></div>
+									<div class="col-md-6 text-right"><span data-fancybox data-src="#popup-services" class="btn-primary btn-sm btn"><?php _e( 'Service Order', 'resite' ) ?></span></div>
 								<?php else : ?>
 									<div class="col-md"><b class="calc-st-selected"></b></div>
 								<?php endif; ?>
