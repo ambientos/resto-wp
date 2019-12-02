@@ -47,7 +47,12 @@
 	}
 
 	&-breadcrumbs {
-		color: $black;
+		color: $white;
+
+		.postid-280 &,
+		.postid-287 & {
+			color: $black;
+		}
 
 		@include media-breakpoint-down('md') {
 			margin-top: 0;
