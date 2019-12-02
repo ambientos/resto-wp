@@ -283,6 +283,10 @@
 				width: 1px;
 				style: dotted;
 			}
+
+			&:not(._show-all):nth-child(3) ~ & {
+				display: none !important;
+			}
 		}
 
 		&-title,
@@ -312,6 +316,37 @@
 			font-weight: $font-weight-bold;
 			color: $secondary;
 			cursor: pointer;
+		}
+
+		&-toggle {
+			padding: .5em 0;
+			font-size: .9375rem;
+			text-transform: lowercase;
+			border: none;
+			background: transparent;
+
+			@include transition;
+
+			&:hover {
+				color: $link-hover-color;
+			}
+
+			&:not(._show-all) {
+				span._on {
+					display: none;
+				}
+			}
+
+			&._show-all {
+				span._off {
+					display: none;
+				}
+			}
+
+			.icon {
+				width: 15px;
+				vertical-align: text-bottom;
+			}
 		}
 	}
 

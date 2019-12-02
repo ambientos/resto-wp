@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Resto Theme 1.0\n"
-"POT-Creation-Date: 2019-12-02 02:01+0500\n"
-"PO-Revision-Date: 2019-12-02 02:01+0500\n"
+"POT-Creation-Date: 2019-12-02 15:56+0500\n"
+"PO-Revision-Date: 2019-12-02 15:56+0500\n"
 "Last-Translator: Anton Grakhov <ant.grakhov@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -253,7 +253,7 @@ msgstr "Задать вопрос"
 msgid "Price"
 msgstr "Стоимость"
 
-#: woocommerce/wc.php:122 woocommerce/wc.php:226
+#: woocommerce/wc.php:122 woocommerce/wc.php:233
 msgid "Under the Order"
 msgstr "Под заказ"
 
@@ -261,19 +261,27 @@ msgstr "Под заказ"
 msgid "Characteristics"
 msgstr "Характеристики"
 
-#: woocommerce/wc.php:201
+#: woocommerce/wc.php:193
+msgid "See full description"
+msgstr "Смотреть полное описание"
+
+#: woocommerce/wc.php:194
+msgid "Hide full description"
+msgstr "Скрыть полное описание"
+
+#: woocommerce/wc.php:208
 msgid "Documentation and downloads"
 msgstr "Документация и файлы для загрузки"
 
-#: woocommerce/wc.php:226
+#: woocommerce/wc.php:233
 msgid "In stock"
 msgstr "В наличии"
 
-#: woocommerce/wc.php:252
+#: woocommerce/wc.php:259
 msgid "More"
 msgstr "Подробнее"
 
-#: woocommerce/wc.php:318
+#: woocommerce/wc.php:325
 #, php-format
 msgid "%d item in total"
 msgid_plural "%d items in total"
@@ -281,14 +289,14 @@ msgstr[0] "%d товар на сумму"
 msgstr[1] "%d товара на сумму"
 msgstr[2] "%d товаров на сумму"
 
-#: woocommerce/wc.php:320
+#: woocommerce/wc.php:327
 msgid "View your shopping cart"
 msgstr "Посмотреть корзину"
 
-#: woocommerce/wc.php:321
+#: woocommerce/wc.php:328
 msgid "Order"
 msgstr "Оформить"
 
-#: woocommerce/wc.php:324
+#: woocommerce/wc.php:331
 msgid "Cart is Empty"
 msgstr "Корзина пуста"

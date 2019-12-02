@@ -187,6 +187,14 @@ add_action( 'wp', function(){
 						?>
 					<?php endforeach; echo $attributes_html; ?>
 				</ul>
+
+				<?php if ( count($attributes) > 3 ) : ?>
+					<button class="product-chars-toggle" type="button">
+						<?php echo file_get_contents( get_bloginfo( 'template_directory' ) .'/i/chars-toggle.svg' ) ?>
+						<span class="_off"><?php _e( 'See full description', 'resto' ) ?></span>
+						<span class="_on"><?php _e( 'Hide full description', 'resto' ) ?></span>
+					</button>
+				<?php endif; ?>
 			</div>
 
 		<?php endif;
