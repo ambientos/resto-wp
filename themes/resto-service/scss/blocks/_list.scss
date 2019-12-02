@@ -71,6 +71,7 @@
 			}
 
 			&-content {
+				align-self: flex-start;
 				order: 2;
 
 				@include media-breakpoint-down('xs') {

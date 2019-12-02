@@ -956,6 +956,8 @@ div.wpcf7 .ajax-loader {
       background-position: 50% 50%;
       background-size: contain; }
     .list-ico-item-content {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2; }
