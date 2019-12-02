@@ -1150,7 +1150,8 @@ div.wpcf7 .ajax-loader {
     font-family: "MullerNarrow";
     font-size: 1.1875rem;
     font-weight: 800;
-    line-height: 1.2; }
+    line-height: 1.2;
+    color: #26303b; }
   .product-item-more {
     font-size: .875rem;
     font-weight: 700;
