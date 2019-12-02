@@ -385,15 +385,21 @@
 						&.owl-next {
 							font-size: inherit;
 
+							&:hover {
+								span {
+									background-position: 0 -79px;
+								}
+							}
+
 							span {
 								display: inline-block;
 								width: 20px;
-								height: 70px;
+								height: 79px;
 								text-indent: -9999px;
 								background: {
 									image: url('#{$img-dir}carousel-nav-arrow.svg');
 									repeat: no-repeat;
-									size: contain;
+									size: 100% auto;
 								}
 							}
 						}

@@ -863,14 +863,16 @@ div.wpcf7 .ajax-loader {
     display: flex; }
   .promo-cite-carousel.owl-carousel .owl-nav button.owl-prev, .promo-cite-carousel.owl-carousel .owl-nav button.owl-next {
     font-size: inherit; }
+    .promo-cite-carousel.owl-carousel .owl-nav button.owl-prev:hover span, .promo-cite-carousel.owl-carousel .owl-nav button.owl-next:hover span {
+      background-position: 0 -79px; }
     .promo-cite-carousel.owl-carousel .owl-nav button.owl-prev span, .promo-cite-carousel.owl-carousel .owl-nav button.owl-next span {
       display: inline-block;
       width: 20px;
-      height: 70px;
+      height: 79px;
       text-indent: -9999px;
       background-image: url("../i/carousel-nav-arrow.svg");
       background-repeat: no-repeat;
-      background-size: contain; }
+      background-size: 100% auto; }
   .promo-cite-carousel.owl-carousel .owl-nav button.owl-next span {
     text-indent: 9999px;
     -webkit-transform: rotate(180deg);
