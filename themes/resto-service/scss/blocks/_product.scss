@@ -460,6 +460,7 @@
 			image: url('#{$img-dir}label.svg');
 			size: contain;
 		}
+		cursor: pointer;
 		z-index: 1;
 
 		&::before {

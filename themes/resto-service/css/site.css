@@ -1365,6 +1365,7 @@ div.wpcf7 .ajax-loader {
   background-position: 50% 50%;
   background-image: url("../i/label.svg");
   background-size: contain;
+  cursor: pointer;
   z-index: 1; }
   .product-best-sale::before {
     display: block;

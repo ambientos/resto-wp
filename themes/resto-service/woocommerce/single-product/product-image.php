@@ -35,7 +35,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
 ) );
 ?>
 <div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
-	<div class="product-best-sale"><?php _e( 'Best Price Guaranteed', 'resto' ) ?></div>
+	<div class="product-best-sale" data-fancybox data-src="#popup-bestprice"><?php _e( 'Best Price Guaranteed', 'resto' ) ?></div>
 
 	<figure class="woocommerce-product-gallery__wrapper">
 		<?php
