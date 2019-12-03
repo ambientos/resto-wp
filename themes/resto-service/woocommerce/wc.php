@@ -188,7 +188,7 @@ add_action( 'wp', function(){
 					<?php endforeach; echo $attributes_html; ?>
 				</ul>
 
-				<?php if ( count($attributes) > 3 ) : ?>
+				<?php if ( count($attributes) > 5 ) : ?>
 					<button class="product-chars-toggle" type="button">
 						<?php echo file_get_contents( get_bloginfo( 'template_directory' ) .'/i/chars-toggle.svg' ) ?>
 						<span class="_off"><?php _e( 'See full description', 'resto' ) ?></span>

@@ -330,7 +330,7 @@
 				style: dotted;
 			}
 
-			&:not(._show-all):nth-child(3) ~ & {
+			&:not(._show-all):nth-child(5) ~ & {
 				display: none !important;
 			}
 		}

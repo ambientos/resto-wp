@@ -1278,7 +1278,7 @@ div.wpcf7 .ajax-loader {
   margin: .5em 0;
   border-bottom-width: 1px;
   border-bottom-style: dotted; }
-  .product-chars-item:not(._show-all):nth-child(3) ~ .product-chars-item {
+  .product-chars-item:not(._show-all):nth-child(5) ~ .product-chars-item {
     display: none !important; }
 
 .product-chars-title, .product-chars-v {
