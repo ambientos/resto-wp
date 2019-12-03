@@ -1212,33 +1212,57 @@ div.wpcf7 .ajax-loader {
   .product-menu a {
     display: block; }
 
-.product-buy-item {
-  margin: 1em 0; }
-
-.product-buy-price {
-  font-size: 2.75rem;
-  font-weight: 800;
-  line-height: 1;
-  white-space: nowrap; }
-  .product-buy-price, .product-buy-price-label {
-    font-family: "MullerNarrow";
-    color: #26303b; }
-  .product-buy-price-label {
-    display: block;
-    min-width: 180px;
-    font-weight: 700; }
-
-.product-buy-btn:not(:first-child) .btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
-
-.product-buy-btn:not(:last-child) .btn {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
-
-.product-buy-btn .btn {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em; }
+.product-buy {
+  position: relative;
+  padding-top: 3em; }
+  .product-buy-item {
+    margin: 1em 0; }
+  .product-buy-price {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1;
+    white-space: nowrap; }
+    .product-buy-price, .product-buy-price-label {
+      font-family: "MullerNarrow";
+      color: #26303b; }
+    .product-buy-price-label {
+      display: block;
+      min-width: 180px;
+      font-weight: 700; }
+  .product-buy-btn:not(:first-child) .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .product-buy-btn:not(:last-child) .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .product-buy-btn .btn {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+  .product-buy-qty {
+    position: absolute;
+    right: 0;
+    bottom: 55px; }
+    @media (min-width: 576px) {
+      .product-buy-qty {
+        bottom: 70px; } }
+    .product-buy-qty-control {
+      text-align: center; }
+      @media (max-width: 991.98px) {
+        .product-buy-qty-control {
+          height: 2.5em;
+          padding-top: 0;
+          padding-bottom: 0; } }
+    .product-buy-qty .calc-form-qty {
+      width: 100px;
+      margin-top: 0; }
+    .product-buy-qty label {
+      font-family: "MullerNarrow";
+      font-weight: 700;
+      color: #26303b; }
+      @media (min-width: 576px) {
+        .product-buy-qty label {
+          margin-right: 1em;
+          margin-bottom: 0; } }
 
 .product-nav {
   margin-top: 1.5em; }

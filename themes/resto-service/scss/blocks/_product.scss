@@ -205,6 +205,9 @@
 	}
 
 	&-buy {
+		position: relative;
+		padding-top: 3em;
+
 		&-item {
 			margin: 1em 0;
 		}
@@ -255,6 +258,48 @@
 				padding: {
 					top: $padding-y;
 					bottom: $padding-y;
+				}
+			}
+		}
+
+		&-qty {
+			position: absolute;
+			right: 0;
+			bottom: 55px;
+
+			@include media-breakpoint-up('sm') {
+				bottom: 70px;
+			}
+
+			&-control {
+				text-align: center;
+
+				@include media-breakpoint-down('md') {
+					height: 2.5em;
+					padding: {
+						top: 0;
+						bottom: 0;
+					}
+				}
+			}
+
+			.calc-form-qty {
+				width: 100px;
+				margin-top: 0;
+			}
+
+			label {
+				font: {
+					family: $font-sub;
+					weight: $font-weight-bold;
+				}
+				color: $secondary;
+
+				@include media-breakpoint-up('sm') {
+					margin: {
+						right: 1em;
+						bottom: 0;
+					}
 				}
 			}
 		}

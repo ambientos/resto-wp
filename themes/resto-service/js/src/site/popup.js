@@ -27,7 +27,7 @@ $('[data-fancybox]').fancybox({
 				orderFieldData = []
 
 			if ( $body.hasClass('single-product') ) {
-				$orderField.val( $('h1').eq(0).text() + ', Цена: '+ $('.product-buy-price').text() )
+				$orderField.val( $('h1').eq(0).text() + ', Количество: '+ $('[name="quantity"]').val() +', Цена: '+ $('.product-buy-price').text() )
 			}
 
 			if ( $body.hasClass('woocommerce-cart') ) {

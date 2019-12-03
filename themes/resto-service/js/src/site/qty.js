@@ -2,7 +2,7 @@
  * Qty calc control
  */
 
-$('.calc-form-qty-control').each(function(){
+$('.calc-form-qty-control,.product-buy-qty-control').each(function(){
 	var control = $(this)
 
 	control.wrap('<span class="calc-form-qty"/>')
