@@ -1530,6 +1530,30 @@ div.wpcf7 .ajax-loader {
 .calc-st-table._without-btn:not(._show) .calc-st-info {
   display: none; }
 
+.calc-st-row-with-btn:hover {
+  -webkit-box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.18);
+          box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.18);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .calc-st-row-with-btn:hover {
+      -webkit-transition: none;
+      transition: none; } }
+  .calc-st-row-with-btn:hover .btn {
+    opacity: 1; }
+
+.calc-st-row-with-btn td {
+  vertical-align: middle; }
+
+.calc-st-row-with-btn .btn {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    .calc-st-row-with-btn .btn {
+      -webkit-transition: none;
+      transition: none; } }
+
 .solutions-item {
   position: relative;
   padding: 0.1em 30px;

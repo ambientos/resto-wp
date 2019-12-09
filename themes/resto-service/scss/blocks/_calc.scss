@@ -160,5 +160,27 @@
 				}
 			}
 		}
+
+		&-row-with-btn {
+			&:hover {
+				box-shadow: 0 5px 18px 0 rgba($black, .18);
+
+				@include transition;
+
+				.btn {
+					opacity: 1;
+				}
+			}
+
+			td {
+				vertical-align: middle;
+			}
+
+			.btn {
+				opacity: 0;
+
+				@include transition;
+			}
+		}
 	}
 }
