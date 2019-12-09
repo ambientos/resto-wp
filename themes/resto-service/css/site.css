@@ -1189,6 +1189,8 @@ div.wpcf7 .ajax-loader {
     display: block; }
     .product-menu > li:hover > a, .product-menu > li.current-menu-item > a {
       background-color: #f2f4f5; }
+    .product-menu > li .current-menu-item {
+      font-weight: 700; }
     .product-menu > li > a {
       position: relative;
       margin: .3em 0;
@@ -1313,6 +1315,8 @@ div.wpcf7 .ajax-loader {
       transition: none; } }
   .product-chars-toggle:hover {
     color: #d03239; }
+  .product-chars-toggle:focus {
+    outline: none; }
   .product-chars-toggle:not(._show-all) span._on {
     display: none; }
   .product-chars-toggle._show-all span._off {
