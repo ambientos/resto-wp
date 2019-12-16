@@ -1,8 +1,9 @@
 <?php
 
-$bg_url = get_field('bg');
+$type    = get_field('type');
+$bg_url  = get_field('bg');
 $options = get_field('options');
-$sales = get_field('sale');
+$sales   = get_field('sale');
 
 ?>
 
@@ -10,7 +11,7 @@ $sales = get_field('sale');
 	<div class="widget">
 		<h2 class="widget-title"><?php echo esc_html( $block['data']['title'] ) ?></h2>
 		<div class="calc">
-			<div class="calc-form" style="background-image:url(<?php echo esc_url( $bg_url ) ?>)">
+			<div class="calc-form" data-type="<?php echo esc_attr( $type ) ?>" style="background-image:url(<?php echo esc_url( $bg_url ) ?>)">
 				<form>
 					<div class="calc-form-item">
 						<div class="row">
