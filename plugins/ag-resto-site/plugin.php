@@ -30,11 +30,27 @@ $plugin_folder_name = 'ag-resto-site';
 
 
 /**
- * Main constants
+ * Text Domain
  */
 define( $plugin_prefix . 'TEXT_DOMAIN', 'resite' );
+
+
+/**
+ * Plugin Folder
+ */
 define( $plugin_prefix . 'PLUGIN_FOLDER', WP_PLUGIN_DIR . '/' . $plugin_folder_name );
+
+
+/**
+ * Plugin URI
+ */
 define( $plugin_prefix . 'PLUGIN_URI', plugins_url( $plugin_folder_name ) );
+
+
+/**
+ * ACF folder for load/save local JSON
+ */
+define( $plugin_prefix . 'ACF_LOCAL_JSON_DIR', WP_PLUGIN_DIR . '/' . $plugin_folder_name . '/acf' );
 
 
 /**

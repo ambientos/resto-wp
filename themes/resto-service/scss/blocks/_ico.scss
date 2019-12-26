@@ -159,8 +159,25 @@
 	&[class*='_promo'] {
 		$size: $grid-gutter-width * 1.2;
 
-		&::before {
+		svg {
+			path,
+			g {
+				@include transition;
+			}
+		}
+
+		:hover > & {
+			svg {
+				path,
+				g {
+					fill: $link-hover-color;
+				}
+			}
+		}
+
+		svg {
 			@include flex-width($size);
+
 			width: $size;
 			height: $size;
 			margin: {

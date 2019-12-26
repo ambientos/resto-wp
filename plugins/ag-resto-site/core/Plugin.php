@@ -24,6 +24,12 @@ class Plugin {
 		 * Login customize
 		 */
 		add_action( 'login_head', array( __CLASS__, 'login_head' ) );
+
+		/**
+		 * Change local JSON path settings for load/save
+		 */
+		add_filter( 'acf/settings/load_json', array( __CLASS__, 'set_dir_json_for_load' ) );
+		add_filter( 'acf/settings/save_json', array( __CLASS__, 'set_dir_json_for_save' ) );
 	}
 
 	/**
@@ -275,6 +281,24 @@ class Plugin {
 		<?php
 
 		return ob_get_clean();
+	}
+
+
+	/**
+	 * Change local JSON settings path for load
+	 */
+	public static function set_dir_json_for_load() {
+		return (array) ACF_LOCAL_JSON_DIR;
+	}
+
+
+	/**
+	 * Create and change local JSON path settings for save
+	 */
+	public static function set_dir_json_for_save() {
+		wp_mkdir_p( ACF_LOCAL_JSON_DIR );
+
+		return ACF_LOCAL_JSON_DIR;
 	}
 
 

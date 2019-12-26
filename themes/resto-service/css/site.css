@@ -428,7 +428,19 @@ div.wpcf7 .ajax-loader {
           height: 60px; } }
       .ico._social-item:not(:last-child), .ico._social-item:first-child {
         margin-right: 1em; }
-  .ico[class*='_promo']::before {
+  .ico[class*='_promo'] svg path,
+  .ico[class*='_promo'] svg g {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .ico[class*='_promo'] svg path,
+      .ico[class*='_promo'] svg g {
+        -webkit-transition: none;
+        transition: none; } }
+  :hover > .ico[class*='_promo'] svg path,
+  :hover > .ico[class*='_promo'] svg g {
+    fill: #d03239; }
+  .ico[class*='_promo'] svg {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 36px;
             flex: 0 0 36px;
@@ -788,13 +800,21 @@ div.wpcf7 .ajax-loader {
         -webkit-box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
                 box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2); }
   .promo-adv {
+    display: block;
     position: relative;
-    margin: 1.5em 0; }
+    margin: 1.5em 0;
+    padding: 1.5em; }
+    .promo-adv:hover {
+      background-color: #fff;
+      -webkit-box-shadow: 0 5px 10px 0 rgba(38, 48, 59, 0.1);
+              box-shadow: 0 5px 10px 0 rgba(38, 48, 59, 0.1); }
     @media (min-width: 576px) {
       .promo-adv {
-        max-width: 300px;
+        max-width: 310px;
         margin-top: 0;
         margin-bottom: 0; }
+        .promo-adv:hover::before {
+          border-color: #26303b; }
         .promo-adv::before {
           position: absolute;
           top: 0;
@@ -807,17 +827,24 @@ div.wpcf7 .ajax-loader {
           border-style: solid;
           border-color: #d03239;
           border-radius: 50%;
-          background-color: #fff; } }
+          background-color: #fff;
+          -webkit-transition: border-color 0.2s ease-in-out;
+          transition: border-color 0.2s ease-in-out; } }
+    @media (min-width: 576px) and (prefers-reduced-motion: reduce) {
+      .promo-adv::before {
+        -webkit-transition: none;
+        transition: none; } }
     @media (min-width: 576px) {
       .promo-adv._left {
-        margin-left: auto; }
+        margin-left: auto;
+        margin-right: 1.5em; }
         .promo-adv._left::before {
-          right: -2.25em; } }
+          right: -3.75em; } }
     @media (min-width: 576px) {
       .promo-adv._right {
-        margin-left: 30px; }
+        margin-left: 1.5em; }
         .promo-adv._right::before {
-          left: -4.75em; }
+          left: -3.75em; }
         .promo-adv._right:not(._first) {
           margin-top: 150px; }
         .promo-adv._right._first {
@@ -831,9 +858,9 @@ div.wpcf7 .ajax-loader {
           .promo-adv-container::before {
             position: absolute;
             left: 0;
-            top: 6em;
+            top: 8.5em;
             right: 0;
-            bottom: 8em;
+            bottom: 9em;
             width: 2px;
             margin: 0 auto;
             content: '';
@@ -842,13 +869,13 @@ div.wpcf7 .ajax-loader {
       font-family: "MullerNarrow";
       font-size: 1.25rem;
       font-weight: 800; }
-      .promo-adv-title::before {
-        background-image: var(--icon); }
-    .promo-adv > ul {
-      margin: 1em 0 0;
-      padding-left: 1.5em; }
-      .promo-adv > ul li {
-        margin: .7em 0; }
+    .promo-adv-content {
+      color: #26303b; }
+      .promo-adv-content > ul {
+        margin: 1em 0 0;
+        padding-left: 1.5em; }
+        .promo-adv-content > ul li {
+          margin: .7em 0; }
     .promo-adv-btn {
       margin: 1.5em 0;
       text-align: center; }

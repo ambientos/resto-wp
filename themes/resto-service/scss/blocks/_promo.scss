@@ -258,14 +258,27 @@
 	}
 
 	&-adv {
+		display: block;
 		position: relative;
 		margin: 1.5em 0;
+		padding: 1.5em;
+
+		&:hover {
+			background-color: $white;
+			box-shadow: 0 5px 10px 0 rgba($secondary, .1);
+		}
 
 		@include media-breakpoint-up('sm') {
-			max-width: 300px;
+			max-width: 310px;
 			margin: {
 				top: 0;
 				bottom: 0;
+			}
+
+			&:hover {
+				&::before {
+					border-color: $secondary;
+				}
 			}
 
 			&::before {
@@ -285,25 +298,30 @@
 					radius: 50%;
 				}
 				background-color: $white;
+
+				@include transition(border-color .2s ease-in-out);
 			}
 		}
 
 		&._left {
 			@include media-breakpoint-up('sm') {
-				margin-left: auto;
+				margin: {
+					left: auto;
+					right: 1.5em;
+				}
 
 				&::before {
-					right: -2.25em;
+					right: -3.75em;
 				}
 			}
 		}
 
 		&._right {
 			@include media-breakpoint-up('sm') {
-				margin-left: $grid-gutter-width;
+				margin-left: 1.5em;
 
 				&::before {
-					left: -4.75em;
+					left: -3.75em;
 				}
 
 				&:not(._first) {
@@ -326,9 +344,9 @@
 				&::before {
 					position: absolute;
 					left: 0;
-					top: 6em;
+					top: 8.5em;
 					right: 0;
-					bottom: 8em;
+					bottom: 9em;
 					width: 2px;
 					margin: 0 auto;
 					content: '';
@@ -343,18 +361,18 @@
 				size: 1.25rem;
 				weight: $font-weight-extra-bold;
 			}
-
-			&::before {
-				background-image: var(--icon);
-			}
 		}
 
-		> ul {
-			margin: 1em 0 0;
-			padding-left: 1.5em;
+		&-content {
+			color: $link-color;
 
-			li {
-				margin: .7em 0;
+			> ul {
+				margin: 1em 0 0;
+				padding-left: 1.5em;
+
+				li {
+					margin: .7em 0;
+				}
 			}
 		}
 
