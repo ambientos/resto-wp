@@ -17,9 +17,10 @@ const   gulp = require('gulp'),
         },
 
         files = {
-            css: [path.dist, path.css, '**', '*.css'].join('/'),
-            scss: [path.src, path.scss, '**', '*.scss'].join('/'),
-            js: [path.src, path.js, 'src', '**', '*.js'].join('/')
+            php: '**/*.php',
+            css: `${path.dist}/${path.css}/**/*.css`,
+            scss: `${path.src}/${path.scss}/**/*.scss`,
+            js: `${path.src}/${path.js}/src/**/*.js`
         }
 
 let webpackOptions = require('./webpack.config')
@@ -30,6 +31,14 @@ function browserSync(done) {
     browsersync.init({
         proxy: 'resto'
     })
+
+    done()
+}
+
+
+// BrowserSync Reload
+function browserSyncReload(done) {
+    browsersync.reload()
 
     done()
 }
@@ -47,7 +56,7 @@ function cssGenerate() {
         }))
         .pipe(sass({ outputStyle: 'nested' }).on('error', sass.logError))
         .pipe(autoprefixer('last 2 versions'))
-        .pipe(gulp.dest( [path.dist, path.css].join('/') ))
+        .pipe(gulp.dest(`${path.dist}/${path.css}`))
         .pipe(browsersync.stream())
 }
 
@@ -65,15 +74,16 @@ function jsGenerate() {
             }))
         }))
         .pipe(webpackStream(webpackOptions))
-        .pipe(gulp.dest([path.dist, path.js].join('/')))
+        .pipe(gulp.dest(`${path.dist}/${path.js}`))
         .pipe(browsersync.stream())
 }
 
 
 // Watch files
 function watchFiles() {
-    gulp.watch( files.scss, cssGenerate )
-    gulp.watch( files.js, jsGenerate )
+    gulp.watch(files.scss, cssGenerate)
+    gulp.watch(files.js, jsGenerate)
+    gulp.watch([ files.php ], browserSyncReload)
 }
 
 
