@@ -12,7 +12,7 @@
 				<?php endwhile; ?>
 			</div>
 
-			<?php the_posts_pagination(); ?>
+			<?php get_template_part( 'template-parts/main/pagination' ); ?>
 		</div>
 	<?php endif; ?>
 </div>
